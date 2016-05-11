@@ -1,0 +1,6 @@
+framework module FTMTableSectionModules {
+  umbrella header "FTMTableSectionModules-umbrella.h"
+
+  export *
+  module * { export * }
+}
