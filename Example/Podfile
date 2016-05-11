@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FTMTableSectionModules_Example' do
+  pod 'FTMTableSectionModules', :path => '../'
+
+  target 'FTMTableSectionModules_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
