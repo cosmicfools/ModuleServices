@@ -15,6 +15,11 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		B5DE1FCD1CE525F400939E7C /* FirstSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1FCC1CE525F400939E7C /* FirstSectionModule.swift */; };
+		B5DE1FD11CE526BD00939E7C /* Example1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1FCF1CE526BD00939E7C /* Example1TableViewCell.swift */; };
+		B5DE1FD21CE526BD00939E7C /* Example1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */; };
+		B5DE1FD51CE5273C00939E7C /* Example2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1FD31CE5273C00939E7C /* Example2TableViewCell.swift */; };
+		B5DE1FD61CE5273C00939E7C /* Example2TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE1FD41CE5273C00939E7C /* Example2TableViewCell.xib */; };
 		B5E10EB21CE4DE7600A6DA26 /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E10EB01CE4DE7600A6DA26 /* ModulesViewController.swift */; };
 		B5E10EB31CE4DE7600A6DA26 /* TableSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E10EB11CE4DE7600A6DA26 /* TableSectionModule.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +53,11 @@
 		840D9156D5639A255BDEED7A /* FTMTableSectionModules.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FTMTableSectionModules.podspec; path = ../FTMTableSectionModules.podspec; sourceTree = "<group>"; };
 		AB86A5501DA8DD0A7E06B5A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B4D790F2B59F315D5D91BA8F /* Pods_FTMTableSectionModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DE1FCC1CE525F400939E7C /* FirstSectionModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSectionModule.swift; sourceTree = "<group>"; };
+		B5DE1FCF1CE526BD00939E7C /* Example1TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example1TableViewCell.swift; sourceTree = "<group>"; };
+		B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Example1TableViewCell.xib; sourceTree = "<group>"; };
+		B5DE1FD31CE5273C00939E7C /* Example2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example2TableViewCell.swift; sourceTree = "<group>"; };
+		B5DE1FD41CE5273C00939E7C /* Example2TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Example2TableViewCell.xib; sourceTree = "<group>"; };
 		B5E10EB01CE4DE7600A6DA26 /* ModulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesViewController.swift; sourceTree = "<group>"; };
 		B5E10EB11CE4DE7600A6DA26 /* TableSectionModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionModule.swift; sourceTree = "<group>"; };
 		C3B4C8E24C53033419E93DC7 /* Pods_FTMTableSectionModules_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +119,7 @@
 		607FACD21AFB9204008FA782 /* Example for FTMTableSectionModules */ = {
 			isa = PBXGroup;
 			children = (
+				B5DE1FCB1CE525C700939E7C /* FirstModule */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -162,6 +173,26 @@
 				B4D790F2B59F315D5D91BA8F /* Pods_FTMTableSectionModules_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5DE1FCB1CE525C700939E7C /* FirstModule */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE1FCE1CE5268800939E7C /* Cells */,
+				B5DE1FCC1CE525F400939E7C /* FirstSectionModule.swift */,
+			);
+			path = FirstModule;
+			sourceTree = "<group>";
+		};
+		B5DE1FCE1CE5268800939E7C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE1FCF1CE526BD00939E7C /* Example1TableViewCell.swift */,
+				B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */,
+				B5DE1FD31CE5273C00939E7C /* Example2TableViewCell.swift */,
+				B5DE1FD41CE5273C00939E7C /* Example2TableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		B5E10EAE1CE4DE4100A6DA26 /* FTMTableSectionModules */ = {
@@ -271,7 +302,9 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				B5DE1FD21CE526BD00939E7C /* Example1TableViewCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				B5DE1FD61CE5273C00939E7C /* Example2TableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +417,10 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				B5DE1FD11CE526BD00939E7C /* Example1TableViewCell.swift in Sources */,
+				B5DE1FD51CE5273C00939E7C /* Example2TableViewCell.swift in Sources */,
 				B5E10EB31CE4DE7600A6DA26 /* TableSectionModule.swift in Sources */,
+				B5DE1FCD1CE525F400939E7C /* FirstSectionModule.swift in Sources */,
 				B5E10EB21CE4DE7600A6DA26 /* ModulesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

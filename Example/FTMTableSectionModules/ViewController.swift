@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: ModulesViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
         
 
+    }
+    
+    override func createModules() {
+        super.createModules()
+        
+        self.appendModule(FirstSectionModule(tableView: self.tableView!))
     }
 
 }
