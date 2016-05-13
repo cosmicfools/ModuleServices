@@ -23,10 +23,33 @@ public class ModulesViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    internal func createModules() {
-        self.modules = []
+    public override func viewWillAppear(animated: Bool) {
+        for module in self.modules {
+            module.willAppear()
+        }
+    }
+    
+    public override func viewWillDisappear(animated: Bool) {
+        for module in self.modules {
+            module.willDissappear()
+        }
     }
 
+    public func createModules() {
+        self.modules = []
+    }
+    
+    public func startFecthModules() {
+        for module in self.modules {
+            module.startFetch()
+        }
+    }
+    
+    public func stopFetchModules() {
+        for module in self.modules {
+            module.stopFetch()
+        }
+    }
 }
 
 // MARK: - TableSectionModuleSectionSource

@@ -22,6 +22,8 @@ public class TableSectionModule: NSObject {
         }
         set { self.section = newValue }
     }
+    private(set) public var isPresented:Bool = false
+    private(set) public var isFetching:Bool = false
     
     public init(tableView:UITableView) {
         super.init()
@@ -37,6 +39,22 @@ public class TableSectionModule: NSObject {
     
     public func createRows() {
         self.rows = []
+    }
+    
+    public func startFetch() {
+        self.isFetching = true
+    }
+    
+    public func stopFetch() {
+        self.isFetching = false
+    }
+    
+    internal func willAppear() {
+        self.isPresented = true
+    }
+    
+    internal func willDissappear() {
+        self.isPresented = false
     }
 }
 
@@ -224,20 +242,20 @@ internal extension TableSectionModule {
         return nil
     }
     
-    public func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+    internal func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return nil
     }
     
-    public func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    internal func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return false
     }
     
-    public func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    internal func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return false
     }
     
-    public func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {}
     
-    public func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {}
+    internal func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {}
     
 }
