@@ -103,24 +103,24 @@ extension TableSectionModule {
 }
 
 // MARK: - UITableViewDelegate
-extension TableSectionModule: UITableViewDelegate{
-    public func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {}
+internal extension TableSectionModule {
+    internal func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {}
     
-    public func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {}
+    internal func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {}
     
-    public func tableView(tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {}
+    internal func tableView(tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {}
     
-    public func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {}
     
-    public func tableView(tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {}
+    internal func tableView(tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {}
     
-    public func tableView(tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int) {}
+    internal func tableView(tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int) {}
     
-    public func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    internal func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return CGSizeZero.height
     }
     
-    public func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    internal func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         var height = CGSizeZero.height
         if (tableView.style == UITableViewStyle.Grouped) {
             height = CGFloat.min
@@ -128,7 +128,7 @@ extension TableSectionModule: UITableViewDelegate{
         return height
     }
     
-    public func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    internal func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         var height = CGSizeZero.height
         if (tableView.style == UITableViewStyle.Grouped) {
             height = CGFloat.min
@@ -136,91 +136,91 @@ extension TableSectionModule: UITableViewDelegate{
         return height
     }
     
-    public func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    internal func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return TableSectionModuleConstants.EstimatedHeight
     }
     
-    public func tableView(tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+    internal func tableView(tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return CGSizeZero.height
     }
     
-    public func tableView(tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
+    internal func tableView(tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
         return CGSizeZero.height
     }
     
-    public func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    internal func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return nil
     }
     
-    public func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+    internal func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return nil
     }
     
-    public func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {}
     
-    public func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    internal func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
     
-    public func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {}
     
-    public func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {}
     
-    public func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+    internal func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
         return indexPath
     }
     
-    public func tableView(tableView: UITableView, willDeselectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+    internal func tableView(tableView: UITableView, willDeselectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
         return indexPath
     }
     
-    public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {}
     
-    public func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {}
     
-    public func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+    internal func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
         return UITableViewCellEditingStyle.None
     }
     
-    public func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -> String? {
+    internal func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -> String? {
         return nil
     }
     
-    public func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+    internal func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
         return nil
     }
     
-    public func tableView(tableView: UITableView, shouldIndentWhileEditingRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    internal func tableView(tableView: UITableView, shouldIndentWhileEditingRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
     
-    public func tableView(tableView: UITableView, willBeginEditingRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(tableView: UITableView, willBeginEditingRowAtIndexPath indexPath: NSIndexPath) {}
     
-    public func tableView(tableView: UITableView, didEndEditingRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(tableView: UITableView, didEndEditingRowAtIndexPath indexPath: NSIndexPath) {}
     
-    public func tableView(tableView: UITableView, indentationLevelForRowAtIndexPath indexPath: NSIndexPath) -> Int {
+    internal func tableView(tableView: UITableView, indentationLevelForRowAtIndexPath indexPath: NSIndexPath) -> Int {
         return Int.min
     }
     
-    public func tableView(tableView: UITableView, shouldShowMenuForRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    internal func tableView(tableView: UITableView, shouldShowMenuForRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return false
     }
     
-    public func tableView(tableView: UITableView, canPerformAction action: Selector, forRowAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
+    internal func tableView(tableView: UITableView, canPerformAction action: Selector, forRowAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
         return false
     }
     
-    public func tableView(tableView: UITableView, performAction action: Selector, forRowAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {}
+    internal func tableView(tableView: UITableView, performAction action: Selector, forRowAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {}
     
-    public func tableView(tableView: UITableView, canFocusRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    internal func tableView(tableView: UITableView, canFocusRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
     
-    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    internal func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         return UITableViewCell.init()
     }
     
-    public func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    internal func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return nil
     }
     
