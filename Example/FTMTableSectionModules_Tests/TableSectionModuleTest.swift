@@ -120,6 +120,15 @@ extension TableSectionModuleTest {
 
 //MARK: - isPresented Functions
 extension TableSectionModuleTest {
+    func testRegisterNotNilHeader() {
+        let tableView : UITableView = UITableView()
+        let module : TestModule1 = TestModule1(tableView: tableView)
+        
+        let header : UITableViewHeaderFooterView = module.tableView.dequeueReusableHeaderFooterViewWithIdentifier(String(TestExample1HeaderFooterView))!
+        
+        XCTAssertNotNil(header, "The TestExample1HeaderFooterView should be dequeued")
+    }
+    
     func testRegisterNotNilCells() {
         let tableView : UITableView = UITableView()
         let module : TestModule1 = TestModule1(tableView: tableView)
@@ -127,5 +136,25 @@ extension TableSectionModuleTest {
         let cell : UITableViewCell = module.tableView.dequeueReusableCellWithIdentifier(String(TestExample1TableViewCell))!
         
         XCTAssertNotNil(cell, "The TestExample1TableViewCell should be dequeued")
+    }
+    
+    func testRegisterFullModule() {
+        let tableView : UITableView = UITableView()
+        let module : TestModule3 = TestModule3(tableView: tableView)
+        var header : UITableViewHeaderFooterView
+        var cell : UITableViewCell
+        
+        header = module.tableView.dequeueReusableHeaderFooterViewWithIdentifier(String(TestExample1HeaderFooterView))!
+        XCTAssertNotNil(header, "The TestExample1HeaderFooterView should be dequeued")
+        
+        header = module.tableView.dequeueReusableHeaderFooterViewWithIdentifier(String(TestExample2HeaderFooterView))!
+        XCTAssertNotNil(header, "The TestExample2HeaderFooterView should be dequeued")
+        
+        cell = module.tableView.dequeueReusableCellWithIdentifier(String(TestExample1TableViewCell))!
+        XCTAssertNotNil(cell, "The TestExample1TableViewCell should be dequeued")
+        
+        cell = module.tableView.dequeueReusableCellWithIdentifier(String(TestExample2TableViewCell))!
+        XCTAssertNotNil(cell, "The TestExample2TableViewCell should be dequeued")
+        
     }
 }
