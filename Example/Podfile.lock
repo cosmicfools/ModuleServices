@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FTMTableSectionModules: e1cd7eaabd3d9df9ecfccb673f9d228afbc103b7
+  FTMTableSectionModules: 98a95b49cf99370626801e989f9e2bac150e7fc4
 
 PODFILE CHECKSUM: 0ad70c3b7e39b7ffbcad2d265f54025cf8489d77
 
-COCOAPODS: 1.0.0.beta.4
+COCOAPODS: 1.0.0

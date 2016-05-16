@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		11512335AE41AC58A1F8E7FA /* Pods_FTMTableSectionModules_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B4C8E24C53033419E93DC7 /* Pods_FTMTableSectionModules_Example.framework */; };
-		1DF88C5CBE9F3FF803A6B0A8 /* Pods_FTMTableSectionModules_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D790F2B59F315D5D91BA8F /* Pods_FTMTableSectionModules_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		690BCA101CE9DB42006C4381 /* TableSectionModuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BCA0F1CE9DB42006C4381 /* TableSectionModuleTest.swift */; };
+		690BCA121CE9EDCD006C4381 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BCA111CE9EDCD006C4381 /* TestHelpers.swift */; };
 		B5DE1FCD1CE525F400939E7C /* FirstSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1FCC1CE525F400939E7C /* FirstSectionModule.swift */; };
 		B5DE1FD11CE526BD00939E7C /* Example1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1FCF1CE526BD00939E7C /* Example1TableViewCell.swift */; };
 		B5DE1FD21CE526BD00939E7C /* Example1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */; };
@@ -22,15 +22,16 @@
 		B5DE1FD61CE5273C00939E7C /* Example2TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE1FD41CE5273C00939E7C /* Example2TableViewCell.xib */; };
 		B5E10EB21CE4DE7600A6DA26 /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E10EB01CE4DE7600A6DA26 /* ModulesViewController.swift */; };
 		B5E10EB31CE4DE7600A6DA26 /* TableSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E10EB11CE4DE7600A6DA26 /* TableSectionModule.swift */; };
+		B65F3E3EFA0FAB9D18F26337 /* Pods_FTMTableSectionModules_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D790F2B59F315D5D91BA8F /* Pods_FTMTableSectionModules_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
+		690BCA0A1CE9DA86006C4381 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = FTMTableSectionModules;
+			remoteInfo = FTMTableSectionModules_Example;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,9 +46,10 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* FTMTableSectionModules_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTMTableSectionModules_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		690BCA051CE9DA86006C4381 /* FTMTableSectionModules_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTMTableSectionModules_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		690BCA091CE9DA86006C4381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		690BCA0F1CE9DB42006C4381 /* TableSectionModuleTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionModuleTest.swift; sourceTree = "<group>"; };
+		690BCA111CE9EDCD006C4381 /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		7AB9F441DC532B15E983932C /* Pods-FTMTableSectionModules_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTMTableSectionModules_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7E3537C5895588CAD611A11E /* Pods-FTMTableSectionModules_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTMTableSectionModules_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example.release.xcconfig"; sourceTree = "<group>"; };
 		840D9156D5639A255BDEED7A /* FTMTableSectionModules.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FTMTableSectionModules.podspec; path = ../FTMTableSectionModules.podspec; sourceTree = "<group>"; };
@@ -72,11 +74,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
+		690BCA021CE9DA86006C4381 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DF88C5CBE9F3FF803A6B0A8 /* Pods_FTMTableSectionModules_Tests.framework in Frameworks */,
+				B65F3E3EFA0FAB9D18F26337 /* Pods_FTMTableSectionModules_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +102,7 @@
 				B5E10EAE1CE4DE4100A6DA26 /* FTMTableSectionModules */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for FTMTableSectionModules */,
-				607FACE81AFB9204008FA782 /* Tests */,
+				690BCA061CE9DA86006C4381 /* FTMTableSectionModules_Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				0C680ABD7D2C67FA9A240F6F /* Pods */,
 				6B00F214ABD68281C9296C28 /* Frameworks */,
@@ -111,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* FTMTableSectionModules_Example.app */,
-				607FACE51AFB9204008FA782 /* FTMTableSectionModules_Tests.xctest */,
+				690BCA051CE9DA86006C4381 /* FTMTableSectionModules_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,23 +141,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +149,16 @@
 				AB86A5501DA8DD0A7E06B5A5 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		690BCA061CE9DA86006C4381 /* FTMTableSectionModules_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				690BCA0F1CE9DB42006C4381 /* TableSectionModuleTest.swift */,
+				690BCA111CE9EDCD006C4381 /* TestHelpers.swift */,
+				690BCA091CE9DA86006C4381 /* Info.plist */,
+			);
+			path = FTMTableSectionModules_Tests;
 			sourceTree = "<group>";
 		};
 		6B00F214ABD68281C9296C28 /* Frameworks */ = {
@@ -220,12 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "FTMTableSectionModules_Example" */;
 			buildPhases = (
-				C625A4341918EE85621C6C15 /* Check Pods Manifest.lock */,
+				C625A4341918EE85621C6C15 /* 📦 Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				57023C46FF22B02F2180F518 /* Embed Pods Frameworks */,
-				8DC97D7C426942BA947B1D9E /* Copy Pods Resources */,
+				57023C46FF22B02F2180F518 /* 📦 Embed Pods Frameworks */,
+				8DC97D7C426942BA947B1D9E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,25 +231,25 @@
 			productReference = 607FACD01AFB9204008FA782 /* FTMTableSectionModules_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* FTMTableSectionModules_Tests */ = {
+		690BCA041CE9DA86006C4381 /* FTMTableSectionModules_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "FTMTableSectionModules_Tests" */;
+			buildConfigurationList = 690BCA0C1CE9DA86006C4381 /* Build configuration list for PBXNativeTarget "FTMTableSectionModules_Tests" */;
 			buildPhases = (
-				EEAE89F579B84F0836EA651F /* Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				434C32A71E980FB81F459CB9 /* Embed Pods Frameworks */,
-				086F25223C91CAF1247FD3AA /* Copy Pods Resources */,
+				D4D38F8488F5CEB5881BCF20 /* 📦 Check Pods Manifest.lock */,
+				690BCA011CE9DA86006C4381 /* Sources */,
+				690BCA021CE9DA86006C4381 /* Frameworks */,
+				690BCA031CE9DA86006C4381 /* Resources */,
+				B7609DCD71E82D522CB7EECB /* 📦 Embed Pods Frameworks */,
+				F2FA43F845B00D75C528BA7E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
+				690BCA0B1CE9DA86006C4381 /* PBXTargetDependency */,
 			);
 			name = FTMTableSectionModules_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* FTMTableSectionModules_Tests.xctest */;
+			productName = FTMTableSectionModules_Tests;
+			productReference = 690BCA051CE9DA86006C4381 /* FTMTableSectionModules_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -263,15 +258,15 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
+					690BCA041CE9DA86006C4381 = {
+						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -290,7 +285,7 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* FTMTableSectionModules_Example */,
-				607FACE41AFB9204008FA782 /* FTMTableSectionModules_Tests */,
+				690BCA041CE9DA86006C4381 /* FTMTableSectionModules_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -308,7 +303,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
+		690BCA031CE9DA86006C4381 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,44 +313,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		086F25223C91CAF1247FD3AA /* Copy Pods Resources */ = {
+		57023C46FF22B02F2180F518 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		434C32A71E980FB81F459CB9 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		57023C46FF22B02F2180F518 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,14 +328,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8DC97D7C426942BA947B1D9E /* Copy Pods Resources */ = {
+		8DC97D7C426942BA947B1D9E /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,14 +343,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C625A4341918EE85621C6C15 /* Check Pods Manifest.lock */ = {
+		B7609DCD71E82D522CB7EECB /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C625A4341918EE85621C6C15 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,19 +373,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		EEAE89F579B84F0836EA651F /* Check Pods Manifest.lock */ = {
+		D4D38F8488F5CEB5881BCF20 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2FA43F845B00D75C528BA7E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -425,21 +420,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
+		690BCA011CE9DA86006C4381 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				690BCA101CE9DB42006C4381 /* TableSectionModuleTest.swift in Sources */,
+				690BCA121CE9EDCD006C4381 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
+		690BCA0B1CE9DA86006C4381 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* FTMTableSectionModules_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+			targetProxy = 690BCA0A1CE9DA86006C4381 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -573,31 +569,34 @@
 			};
 			name = Release;
 		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
+		690BCA0D1CE9DA86006C4381 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 448E821C22BE2A440A40F95F /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = FTMTableSectionModules_Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.FTMTableSectionModules-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTMTableSectionModules_Example.app/FTMTableSectionModules_Example";
 			};
 			name = Debug;
 		};
-		607FACF41AFB9204008FA782 /* Release */ = {
+		690BCA0E1CE9DA86006C4381 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AB9F441DC532B15E983932C /* Pods-FTMTableSectionModules_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Tests/Info.plist;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = FTMTableSectionModules_Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.FTMTableSectionModules-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTMTableSectionModules_Example.app/FTMTableSectionModules_Example";
 			};
 			name = Release;
 		};
@@ -622,11 +621,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "FTMTableSectionModules_Tests" */ = {
+		690BCA0C1CE9DA86006C4381 /* Build configuration list for PBXNativeTarget "FTMTableSectionModules_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
+				690BCA0D1CE9DA86006C4381 /* Debug */,
+				690BCA0E1CE9DA86006C4381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
