@@ -61,9 +61,3 @@ class TestModule3 : TableSectionModule {
                 TestExample2HeaderFooterView.classForCoder()]
     }
 }
-
-class TestHelpers: XCTestCase {
-
-    
-    
-}

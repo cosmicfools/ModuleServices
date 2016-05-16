@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		690BCA101CE9DB42006C4381 /* TableSectionModuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BCA0F1CE9DB42006C4381 /* TableSectionModuleTest.swift */; };
 		690BCA121CE9EDCD006C4381 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BCA111CE9EDCD006C4381 /* TestHelpers.swift */; };
+		B5A18EF11CEA575C00536A04 /* ModulesViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A18EF01CEA575C00536A04 /* ModulesViewControllerTest.swift */; };
 		B5DE1FCD1CE525F400939E7C /* FirstSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1FCC1CE525F400939E7C /* FirstSectionModule.swift */; };
 		B5DE1FD11CE526BD00939E7C /* Example1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1FCF1CE526BD00939E7C /* Example1TableViewCell.swift */; };
 		B5DE1FD21CE526BD00939E7C /* Example1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */; };
@@ -55,6 +56,7 @@
 		840D9156D5639A255BDEED7A /* FTMTableSectionModules.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FTMTableSectionModules.podspec; path = ../FTMTableSectionModules.podspec; sourceTree = "<group>"; };
 		AB86A5501DA8DD0A7E06B5A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B4D790F2B59F315D5D91BA8F /* Pods_FTMTableSectionModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A18EF01CEA575C00536A04 /* ModulesViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesViewControllerTest.swift; sourceTree = "<group>"; };
 		B5DE1FCC1CE525F400939E7C /* FirstSectionModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSectionModule.swift; sourceTree = "<group>"; };
 		B5DE1FCF1CE526BD00939E7C /* Example1TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example1TableViewCell.swift; sourceTree = "<group>"; };
 		B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Example1TableViewCell.xib; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		690BCA061CE9DA86006C4381 /* FTMTableSectionModules_Tests */ = {
 			isa = PBXGroup;
 			children = (
+				B5A18EF01CEA575C00536A04 /* ModulesViewControllerTest.swift */,
 				690BCA0F1CE9DB42006C4381 /* TableSectionModuleTest.swift */,
 				690BCA111CE9EDCD006C4381 /* TestHelpers.swift */,
 				690BCA091CE9DA86006C4381 /* Info.plist */,
@@ -424,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A18EF11CEA575C00536A04 /* ModulesViewControllerTest.swift in Sources */,
 				690BCA101CE9DB42006C4381 /* TableSectionModuleTest.swift in Sources */,
 				690BCA121CE9EDCD006C4381 /* TestHelpers.swift in Sources */,
 			);

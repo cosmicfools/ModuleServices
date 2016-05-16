@@ -11,17 +11,6 @@ import XCTest
 import FTMTableSectionModules
 
 class TableSectionModuleTest: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
 }
 
 // MARK: - Fetching functions
@@ -118,7 +107,7 @@ extension TableSectionModuleTest {
     }
 }
 
-//MARK: - isPresented Functions
+//MARK: - Registers Functions
 extension TableSectionModuleTest {
     func testRegisterNotNilHeader() {
         let tableView : UITableView = UITableView()
