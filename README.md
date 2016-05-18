@@ -11,6 +11,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+Is valid for iOS 7 and higher.
+Requires Swift 2.2 and XCodde 7.3 or higher.
+
 ## Installation
 
 FTMTableSectionModules is available through [CocoaPods](http://cocoapods.org). To install
@@ -19,6 +22,15 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "FTMTableSectionModules"
 ```
+
+## How to use it
+
+FTMTableSectionModules basically is a pack of tools that is helping you to develop faster. This libabry is so useful for those UIViewControllers that are based in UITableView.
+The main concept in this libary is, a Module means a Section in a UITableView, so there is a subclass of UIViewController called ModulesViewController that manage all modules.
+
+A Module is a like and mini UIViewController, should be able to work it self.
+
+Basically a ModulesViewController has an array of TableSectionModules.
 
 ## Author
 
