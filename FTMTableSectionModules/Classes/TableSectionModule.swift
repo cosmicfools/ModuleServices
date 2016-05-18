@@ -9,7 +9,8 @@
 import UIKit
 
 private struct TableSectionModuleConstants{
-    static let EstimatedHeight: CGFloat = 44
+    static let EstimatedHeight : CGFloat = 44
+    static let SeparatorHeight : CGFloat = 1
 }
 
 public class TableSectionModule: NSObject {
@@ -117,6 +118,37 @@ extension TableSectionModule {
             let nib = UINib.init(nibName: identifier, bundle: nil)
             self.tableView.registerNib(nib, forHeaderFooterViewReuseIdentifier: identifier)
         }
+    }
+}
+
+// MARK: - Methods for sepatartor of the Cells
+public extension TableSectionModule {
+    public func setupSeparatorInsetForCell(cell : UITableViewCell, forIndexPath indexPath : NSIndexPath) {
+        // Remove seperator inset
+        cell.separatorInset = UIEdgeInsetsZero
+        cell.preservesSuperviewLayoutMargins = false
+        cell.layoutMargins = UIEdgeInsetsZero
+    }
+    
+    public func removeSeparatorInsetForCell(cell : UITableViewCell, forIndexPath indexPath : NSIndexPath) {
+        // Remove seperator inset
+        cell.separatorInset = UIEdgeInsetsMake(CGSizeZero.height, cell.bounds.size.width, CGSizeZero.width, CGSizeZero.height)
+        cell.preservesSuperviewLayoutMargins = true
+        cell.layoutMargins = UIEdgeInsetsZero
+    }
+}
+
+// MARK: - Autocalculate the needed height of a cells
+public extension TableSectionModule {
+    public func calculateHeightForSizingCell(sizingCell: UITableViewCell) -> CGFloat {
+        sizingCell.bounds = CGRectMake(CGPointZero.x, CGPointZero.y, CGRectGetWidth(self.tableView.frame), CGRectGetHeight(sizingCell.bounds))
+        sizingCell.setNeedsLayout()
+        sizingCell.layoutIfNeeded()
+    
+        let size : CGSize = sizingCell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize)
+        let separator : CGFloat = TableSectionModuleConstants.SeparatorHeight / UIScreen.mainScreen().scale
+        
+        return size.height + separator // Add space for the cell separator height
     }
 }
 
