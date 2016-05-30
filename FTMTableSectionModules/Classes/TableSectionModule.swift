@@ -25,6 +25,7 @@ public class TableSectionModule: NSObject {
     }
     private(set) public var isPresented:Bool = false
     private(set) public var isFetching:Bool = false
+    private var dynamicCells = Dictionary<String, UITableViewCell>()
     
     public init(tableView:UITableView) {
         super.init()
@@ -140,6 +141,16 @@ public extension TableSectionModule {
 
 // MARK: - Autocalculate the needed height of a cells
 public extension TableSectionModule {
+    public func dequeueDynamicHeightCellWithIdentifier(identifier: String) -> UITableViewCell {
+        var sizingCell : UITableViewCell? = self.dynamicCells[identifier]
+        if sizingCell == nil {
+            sizingCell = self.tableView.dequeueReusableCellWithIdentifier(identifier)
+            self.dynamicCells[identifier] = sizingCell
+        }
+        
+        return sizingCell!
+    }
+    
     public func calculateHeightForSizingCell(sizingCell: UITableViewCell) -> CGFloat {
         sizingCell.bounds = CGRectMake(CGPointZero.x, CGPointZero.y, CGRectGetWidth(self.tableView.frame), CGRectGetHeight(sizingCell.bounds))
         sizingCell.setNeedsLayout()
