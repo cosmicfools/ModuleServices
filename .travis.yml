@@ -33,6 +33,6 @@ script:
     - xcodebuild clean build -workspace Example/FTMTableSectionModules.xcworkspace -scheme 'FTMTableSectionModules-Example' -configuration Debug -destination 'name=iPhone 6s' | xcpretty -c
 
     - echo Run the tests
-    - xcodebuild clean build -workspace Example/FTMTableSectionModules.xcworkspace -scheme 'FTMTableSectionModules-Example' -configuration Debug -destination 'name=iPhone 6s' | xcpretty -c
+    - xcodebuild test -workspace Example/FTMTableSectionModules.xcworkspace -scheme 'FTMTableSectionModules-Example' -configuration Debug -destination 'name=iPhone 6s' | xcpretty -c
 
 after_success:
