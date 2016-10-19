@@ -113,7 +113,7 @@ extension TableSectionModuleTest {
         let tableView : UITableView = UITableView()
         let module : TestModule1 = TestModule1(tableView: tableView)
         
-        let header : UITableViewHeaderFooterView = module.tableView.dequeueReusableHeaderFooterViewWithIdentifier(String(TestExample1HeaderFooterView))!
+        let header : UITableViewHeaderFooterView = module.tableView.dequeueReusableHeaderFooterView(withIdentifier: String(describing: TestExample1HeaderFooterView.self))!
         
         XCTAssertNotNil(header, "The TestExample1HeaderFooterView should be dequeued")
     }
@@ -122,7 +122,7 @@ extension TableSectionModuleTest {
         let tableView : UITableView = UITableView()
         let module : TestModule1 = TestModule1(tableView: tableView)
         
-        let cell : UITableViewCell = module.tableView.dequeueReusableCellWithIdentifier(String(TestExample1TableViewCell))!
+        let cell : UITableViewCell = module.tableView.dequeueReusableCell(withIdentifier: String(describing: TestExample1TableViewCell.self))!
         
         XCTAssertNotNil(cell, "The TestExample1TableViewCell should be dequeued")
     }
@@ -133,16 +133,16 @@ extension TableSectionModuleTest {
         var header : UITableViewHeaderFooterView
         var cell : UITableViewCell
         
-        header = module.tableView.dequeueReusableHeaderFooterViewWithIdentifier(String(TestExample1HeaderFooterView))!
+        header = module.tableView.dequeueReusableHeaderFooterView(withIdentifier: String(describing: TestExample1HeaderFooterView.self))!
         XCTAssertNotNil(header, "The TestExample1HeaderFooterView should be dequeued")
         
-        header = module.tableView.dequeueReusableHeaderFooterViewWithIdentifier(String(TestExample2HeaderFooterView))!
+        header = module.tableView.dequeueReusableHeaderFooterView(withIdentifier: String(describing: TestExample2HeaderFooterView.self))!
         XCTAssertNotNil(header, "The TestExample2HeaderFooterView should be dequeued")
         
-        cell = module.tableView.dequeueReusableCellWithIdentifier(String(TestExample1TableViewCell))!
+        cell = module.tableView.dequeueReusableCell(withIdentifier: String(describing: TestExample1TableViewCell.self))!
         XCTAssertNotNil(cell, "The TestExample1TableViewCell should be dequeued")
         
-        cell = module.tableView.dequeueReusableCellWithIdentifier(String(TestExample2TableViewCell))!
+        cell = module.tableView.dequeueReusableCell(withIdentifier: String(describing: TestExample2TableViewCell.self))!
         XCTAssertNotNil(cell, "The TestExample2TableViewCell should be dequeued")
         
     }

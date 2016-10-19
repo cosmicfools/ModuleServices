@@ -13,19 +13,19 @@ private struct TableSectionModuleConstants{
     static let SeparatorHeight : CGFloat = 1
 }
 
-public class TableSectionModule: NSObject {
-    public var rows:[AnyObject] = []
+open class TableSectionModule: NSObject {
+    open var rows:[AnyObject] = []
     weak internal var sectionSource: TableSectionModuleSectionSource?
-    private(set) public var tableView:UITableView!
-    private(set) public var section:NSInteger{
+    fileprivate(set) open var tableView:UITableView!
+    fileprivate(set) open var section:NSInteger{
         get {
             return (self.sectionSource?.sectionForModule(self))!
         }
         set { self.section = newValue }
     }
-    private(set) public var isPresented:Bool = false
-    private(set) public var isFetching:Bool = false
-    private var dynamicCells = Dictionary<String, UITableViewCell>()
+    fileprivate(set) open var isPresented:Bool = false
+    fileprivate(set) open var isFetching:Bool = false
+    fileprivate var dynamicCells = Dictionary<String, UITableViewCell>()
     
     public init(tableView:UITableView) {
         super.init()
@@ -35,19 +35,19 @@ public class TableSectionModule: NSObject {
         self.createRows()
     }
     
-    public func registerViews() {
+    open func registerViews() {
         self.autoRegisterViews()
     }
     
-    public func createRows() {
+    open func createRows() {
         self.rows = []
     }
     
-    public func startFetch() {
+    open func startFetch() {
         self.isFetching = true
     }
     
-    public func stopFetch() {
+    open func stopFetch() {
         self.isFetching = false
     }
     
@@ -62,12 +62,12 @@ public class TableSectionModule: NSObject {
 
 // MARK: - Private Protocol for auto control of the section
 internal protocol TableSectionModuleSectionSource : NSObjectProtocol {
-    func sectionForModule(module: TableSectionModule) -> NSInteger
+    func sectionForModule(_ module: TableSectionModule) -> NSInteger
 }
 
 // MARK: - Autoregistration of Cells, Header and Footer methods
 extension TableSectionModule {
-    private func autoRegisterViews() {
+    fileprivate func autoRegisterViews() {
         self.autoRegisterClassForCells()
         self.autoRegisterClassForHeadersFooters()
         self.autoRegisterNibsForCells()
@@ -75,89 +75,89 @@ extension TableSectionModule {
     }
     
     //Autoregistrion - Override those methods if the ReuseIdentifier is exactly the same that the Class and the Nib file (if exits)
-    public func registerClassForCells() -> [AnyClass] {
+    open func registerClassForCells() -> [AnyClass] {
         return []
     }
     
-    public func registerClassForHeadersFooters() -> [AnyClass] {
+    open func registerClassForHeadersFooters() -> [AnyClass] {
         return []
     }
     
-    public func registerNibsForCells() -> [AnyClass] {
+    open func registerNibsForCells() -> [AnyClass] {
         return []
     }
     
-    public func registerNibsForHeadersFooters() -> [AnyClass] {
+    open func registerNibsForHeadersFooters() -> [AnyClass] {
         return []
     }
     
-    private func autoRegisterClassForCells() {
+    fileprivate func autoRegisterClassForCells() {
         for currentClass in self.registerClassForCells() {
-            let identifier = String(currentClass)
-            self.tableView.registerClass(currentClass, forCellReuseIdentifier: identifier)
+            let identifier = String(describing: currentClass)
+            self.tableView.register(currentClass, forCellReuseIdentifier: identifier)
         }
     }
     
-    private func autoRegisterClassForHeadersFooters() {
+    fileprivate func autoRegisterClassForHeadersFooters() {
         for currentClass in self.registerClassForHeadersFooters() {
-            let identifier = String(currentClass)
-            self.tableView.registerClass(currentClass, forHeaderFooterViewReuseIdentifier: identifier)
+            let identifier = String(describing: currentClass)
+            self.tableView.register(currentClass, forHeaderFooterViewReuseIdentifier: identifier)
         }
     }
     
-    private func autoRegisterNibsForCells() {
+    fileprivate func autoRegisterNibsForCells() {
         for currentClass in self.registerNibsForCells() {
-            let identifier = String(currentClass)
+            let identifier = String(describing: currentClass)
             let nib = UINib.init(nibName: identifier, bundle: nil)
-            self.tableView.registerNib(nib, forCellReuseIdentifier: identifier)
+            self.tableView.register(nib, forCellReuseIdentifier: identifier)
         }
     }
     
-    private func autoRegisterNibsForHeadersFooters() {
+    fileprivate func autoRegisterNibsForHeadersFooters() {
         for currentClass in self.registerNibsForHeadersFooters() {
-            let identifier = String(currentClass)
+            let identifier = String(describing: currentClass)
             let nib = UINib.init(nibName: identifier, bundle: nil)
-            self.tableView.registerNib(nib, forHeaderFooterViewReuseIdentifier: identifier)
+            self.tableView.register(nib, forHeaderFooterViewReuseIdentifier: identifier)
         }
     }
 }
 
 // MARK: - Methods for sepatartor of the Cells
 public extension TableSectionModule {
-    public func setupSeparatorInsetForCell(cell : UITableViewCell, forIndexPath indexPath : NSIndexPath) {
+    public func setupSeparatorInsetForCell(_ cell : UITableViewCell, forIndexPath indexPath : IndexPath) {
         // Remove seperator inset
-        cell.separatorInset = UIEdgeInsetsZero
+        cell.separatorInset = UIEdgeInsets.zero
         cell.preservesSuperviewLayoutMargins = false
-        cell.layoutMargins = UIEdgeInsetsZero
+        cell.layoutMargins = UIEdgeInsets.zero
     }
     
-    public func removeSeparatorInsetForCell(cell : UITableViewCell, forIndexPath indexPath : NSIndexPath) {
+    public func removeSeparatorInsetForCell(_ cell : UITableViewCell, forIndexPath indexPath : IndexPath) {
         // Remove seperator inset
-        cell.separatorInset = UIEdgeInsetsMake(CGSizeZero.height, cell.bounds.size.width, CGSizeZero.width, CGSizeZero.height)
+        cell.separatorInset = UIEdgeInsetsMake(CGSize.zero.height, cell.bounds.size.width, CGSize.zero.width, CGSize.zero.height)
         cell.preservesSuperviewLayoutMargins = true
-        cell.layoutMargins = UIEdgeInsetsZero
+        cell.layoutMargins = UIEdgeInsets.zero
     }
 }
 
 // MARK: - Autocalculate the needed height of a cells
 public extension TableSectionModule {
-    public func dequeueDynamicHeightCellWithIdentifier(identifier: String) -> UITableViewCell {
+    public func dequeueDynamicHeightCellWithIdentifier(_ identifier: String) -> UITableViewCell {
         var sizingCell : UITableViewCell? = self.dynamicCells[identifier]
         if sizingCell == nil {
-            sizingCell = self.tableView.dequeueReusableCellWithIdentifier(identifier)
+            sizingCell = self.tableView.dequeueReusableCell(withIdentifier: identifier)
             self.dynamicCells[identifier] = sizingCell
         }
         
         return sizingCell!
     }
     
-    public func calculateHeightForSizingCell(sizingCell: UITableViewCell) -> CGFloat {
-        sizingCell.bounds = CGRectMake(CGPointZero.x, CGPointZero.y, CGRectGetWidth(self.tableView.frame), CGRectGetHeight(sizingCell.bounds))
+    public func calculateHeightForSizingCell(_ sizingCell: UITableViewCell) -> CGFloat {
+        sizingCell.bounds = CGRect(x: CGPoint.zero.x, y: CGPoint.zero.y, width: self.tableView.frame.width, height: sizingCell.bounds.height)
         sizingCell.setNeedsLayout()
         sizingCell.layoutIfNeeded()
     
-        let size : CGSize = sizingCell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize)
-        let separator : CGFloat = TableSectionModuleConstants.SeparatorHeight / UIScreen.mainScreen().scale
+        let size : CGSize = sizingCell.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
+        let separator : CGFloat = TableSectionModuleConstants.SeparatorHeight / UIScreen.main.scale
         
         return size.height + separator // Add space for the cell separator height
     }
@@ -165,140 +165,140 @@ public extension TableSectionModule {
 
 // MARK: - UITableViewDelegate
 internal extension TableSectionModule {
-    internal func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(_ tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: IndexPath) {}
     
-    internal func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {}
+    internal func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {}
     
-    internal func tableView(tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {}
+    internal func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {}
     
-    internal func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(_ tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: IndexPath) {}
     
-    internal func tableView(tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {}
+    internal func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {}
     
-    internal func tableView(tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int) {}
+    internal func tableView(_ tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int) {}
     
-    internal func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return CGSizeZero.height
+    internal func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
+        return CGSize.zero.height
     }
     
-    internal func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        var height = CGSizeZero.height
-        if (tableView.style == UITableViewStyle.Grouped) {
-            height = CGFloat.min
+    internal func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        var height = CGSize.zero.height
+        if (tableView.style == UITableViewStyle.grouped) {
+            height = CGFloat.leastNormalMagnitude
         }
         return height
     }
     
-    internal func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        var height = CGSizeZero.height
-        if (tableView.style == UITableViewStyle.Grouped) {
-            height = CGFloat.min
+    internal func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        var height = CGSize.zero.height
+        if (tableView.style == UITableViewStyle.grouped) {
+            height = CGFloat.leastNormalMagnitude
         }
         return height
     }
     
-    internal func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    internal func tableView(_ tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
         return TableSectionModuleConstants.EstimatedHeight
     }
     
-    internal func tableView(tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-        return CGSizeZero.height
+    internal func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+        return CGSize.zero.height
     }
     
-    internal func tableView(tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
-        return CGSizeZero.height
+    internal func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
+        return CGSize.zero.height
     }
     
-    internal func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    internal func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return nil
     }
     
-    internal func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+    internal func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return nil
     }
     
-    internal func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: IndexPath) {}
     
-    internal func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    internal func tableView(_ tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: IndexPath) -> Bool {
         return true
     }
     
-    internal func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(_ tableView: UITableView, didHighlightRowAtIndexPath indexPath: IndexPath) {}
     
-    internal func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(_ tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: IndexPath) {}
     
-    internal func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+    internal func tableView(_ tableView: UITableView, willSelectRowAtIndexPath indexPath: IndexPath) -> IndexPath? {
         return indexPath
     }
     
-    internal func tableView(tableView: UITableView, willDeselectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+    internal func tableView(_ tableView: UITableView, willDeselectRowAtIndexPath indexPath: IndexPath) -> IndexPath? {
         return indexPath
     }
     
-    internal func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {}
     
-    internal func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(_ tableView: UITableView, didDeselectRowAtIndexPath indexPath: IndexPath) {}
     
-    internal func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
-        return UITableViewCellEditingStyle.None
+    internal func tableView(_ tableView: UITableView, editingStyleForRowAtIndexPath indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle.none
     }
     
-    internal func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -> String? {
+    internal func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: IndexPath) -> String? {
         return nil
     }
     
-    internal func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+    internal func tableView(_ tableView: UITableView, editActionsForRowAtIndexPath indexPath: IndexPath) -> [UITableViewRowAction]? {
         return nil
     }
     
-    internal func tableView(tableView: UITableView, shouldIndentWhileEditingRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    internal func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAtIndexPath indexPath: IndexPath) -> Bool {
         return true
     }
     
-    internal func tableView(tableView: UITableView, willBeginEditingRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(_ tableView: UITableView, willBeginEditingRowAtIndexPath indexPath: IndexPath) {}
     
-    internal func tableView(tableView: UITableView, didEndEditingRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(_ tableView: UITableView, didEndEditingRowAtIndexPath indexPath: IndexPath) {}
     
-    internal func tableView(tableView: UITableView, indentationLevelForRowAtIndexPath indexPath: NSIndexPath) -> Int {
+    internal func tableView(_ tableView: UITableView, indentationLevelForRowAtIndexPath indexPath: IndexPath) -> Int {
         return Int.min
     }
     
-    internal func tableView(tableView: UITableView, shouldShowMenuForRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    internal func tableView(_ tableView: UITableView, shouldShowMenuForRowAtIndexPath indexPath: IndexPath) -> Bool {
         return false
     }
     
-    internal func tableView(tableView: UITableView, canPerformAction action: Selector, forRowAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
+    internal func tableView(_ tableView: UITableView, canPerformAction action: Selector, forRowAtIndexPath indexPath: IndexPath, withSender sender: AnyObject?) -> Bool {
         return false
     }
     
-    internal func tableView(tableView: UITableView, performAction action: Selector, forRowAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {}
+    internal func tableView(_ tableView: UITableView, performAction action: Selector, forRowAtIndexPath indexPath: IndexPath, withSender sender: AnyObject?) {}
     
-    internal func tableView(tableView: UITableView, canFocusRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    internal func tableView(_ tableView: UITableView, canFocusRowAtIndexPath indexPath: IndexPath) -> Bool {
         return true
     }
     
-    internal func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    internal func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell.init()
     }
     
-    internal func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    internal func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return nil
     }
     
-    internal func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+    internal func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return nil
     }
     
-    internal func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    internal func tableView(_ tableView: UITableView, canEditRowAtIndexPath indexPath: IndexPath) -> Bool {
         return false
     }
     
-    internal func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    internal func tableView(_ tableView: UITableView, canMoveRowAtIndexPath indexPath: IndexPath) -> Bool {
         return false
     }
     
-    internal func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {}
+    internal func tableView(_ tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: IndexPath) {}
     
-    internal func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {}
+    internal func tableView(_ tableView: UITableView, moveRowAtIndexPath sourceIndexPath: IndexPath, toIndexPath destinationIndexPath: IndexPath) {}
     
 }

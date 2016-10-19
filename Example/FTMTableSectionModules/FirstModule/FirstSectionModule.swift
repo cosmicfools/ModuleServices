@@ -21,21 +21,21 @@ class FirstSectionModule: TableSectionModule {
     override func createRows() {
         super.createRows()
         
-        self.rows.append(String(Example1TableViewCell))
-        self.rows.append(String(UITableViewCell))
-        self.rows.append(String(Example2TableViewCell))
+        self.rows.append(String(describing: Example1TableViewCell.self) as AnyObject)
+        self.rows.append(String(describing: UITableViewCell.self) as AnyObject)
+        self.rows.append(String(describing: Example2TableViewCell.self) as AnyObject)
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let className = self.rows[indexPath.row] as! String
-        let cell = tableView.dequeueReusableCellWithIdentifier(className, forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
+        let className = self.rows[(indexPath as NSIndexPath).row] as! String
+        let cell = tableView.dequeueReusableCell(withIdentifier: className, for: indexPath)
         
         //Addtional configuration for the cell
         switch className {
-        case String(Example1TableViewCell):
+        case String(describing: Example1TableViewCell.self):
             
             break
-        case String(UITableViewCell):
+        case String(describing: UITableViewCell.self):
             cell.textLabel?.text = "A tottally native cell"
             break
         default:
@@ -45,7 +45,7 @@ class FirstSectionModule: TableSectionModule {
         return cell
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
         return 44
     }
 }

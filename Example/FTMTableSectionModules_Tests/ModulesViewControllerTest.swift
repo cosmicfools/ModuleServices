@@ -15,18 +15,18 @@ class ModulesViewControllerTest: XCTestCase {
         let modulesVC : ModulesViewController = ModulesViewController()
         let newTableView : UITableView = UITableView()
         
-        XCTAssertEqual(modulesVC.numberOfSectionsInTableView(newTableView), 0, "The number of section shoulb be 0")
+        XCTAssertEqual(modulesVC.numberOfSections(in: newTableView), 0, "The number of section shoulb be 0")
     }
     
     func testModulesDataSource() {
         let modulesVC : ModulesViewController = ModulesViewController()
         let newTableView : UITableView = UITableView()
         
-        XCTAssertEqual(modulesVC.numberOfSectionsInTableView(newTableView), 0, "The number of section shoulb be 0")
+        XCTAssertEqual(modulesVC.numberOfSections(in: newTableView), 0, "The number of section shoulb be 0")
         
         modulesVC.appendModule(TestModule1(tableView: newTableView))
         
-        XCTAssertEqual(modulesVC.numberOfSectionsInTableView(newTableView), 1, "The number of section shoulb be 0")
+        XCTAssertEqual(modulesVC.numberOfSections(in: newTableView), 1, "The number of section shoulb be 0")
     }
     
 }
