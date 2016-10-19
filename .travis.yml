@@ -1,14 +1,38 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
 
 language: objective-c
 osx_image: xcode8
-cache: cocoapods
-podfile: Example/Podfile
+
+env:
+  global:
+    - LC_CTYPE=en_US.UTF-8
+    - LANG=en_US.UTF-8
+
+
 before_install:
-  - gem install cocoapods --pre # Since Travis is not always on latest version
-  - pod install --project-directory=Example
+    - env
+    - locale
+    - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
+    - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+    - pod --version
+    - pod setup --silent > /dev/null
+    - pod repo update --silent
+    - xcpretty --version
+    - xcodebuild -version
+    - xcodebuild -showsdks
+
 script:
-  - set -o pipefail && xcodebuild test -workspace Example/FTMTableSectionModules.xcworkspace -scheme FTMTableSectionModules-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-  - pod lib lint
+    - set -o pipefail
+
+    - echo Check if the library described by the podspec can be built
+    - pod lib lint --allow-warnings
+
+    - echo Build
+    - xcodebuild clean build -workspace Example/FTMTableSectionModules.xcworkspace -scheme 'FTMTableSectionModules' -sdk iphonesimulator PLATFORM_NAME=iphonesimulator -configuration Debug | xcpretty -c
+
+    - echo Build the Demo apps
+    - xcodebuild clean build -workspace Example/FTMTableSectionModules.xcworkspace -scheme 'FTMTableSectionModules-Example' -configuration Debug -destination 'name=iPhone 6s' | xcpretty -c
+
+    - echo Run the tests
+    - xcodebuild clean build -workspace Example/FTMTableSectionModules.xcworkspace -scheme 'FTMTableSectionModules-Example' -configuration Debug -destination 'name=iPhone 6s' | xcpretty -c
+
+after_success:
