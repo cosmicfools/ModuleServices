@@ -12,7 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 Is valid for iOS 7 and higher.
-Requires Swift 2.2 and XCodde 7.3 or higher.
+Requires Swift 3.0 and XCodde 8.0 or higher.
 
 ## Installation
 
