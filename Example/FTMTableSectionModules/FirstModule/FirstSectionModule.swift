@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FTMTableSectionModules
 
 class FirstSectionModule: TableSectionModule {
     override func registerNibsForCells() -> [AnyClass] {
