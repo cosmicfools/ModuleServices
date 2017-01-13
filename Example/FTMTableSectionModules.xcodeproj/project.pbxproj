@@ -21,8 +21,6 @@
 		B5DE1FD21CE526BD00939E7C /* Example1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */; };
 		B5DE1FD51CE5273C00939E7C /* Example2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1FD31CE5273C00939E7C /* Example2TableViewCell.swift */; };
 		B5DE1FD61CE5273C00939E7C /* Example2TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE1FD41CE5273C00939E7C /* Example2TableViewCell.xib */; };
-		B5E10EB21CE4DE7600A6DA26 /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E10EB01CE4DE7600A6DA26 /* ModulesViewController.swift */; };
-		B5E10EB31CE4DE7600A6DA26 /* TableSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E10EB11CE4DE7600A6DA26 /* TableSectionModule.swift */; };
 		B65F3E3EFA0FAB9D18F26337 /* Pods_FTMTableSectionModules_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D790F2B59F315D5D91BA8F /* Pods_FTMTableSectionModules_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,8 +60,6 @@
 		B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Example1TableViewCell.xib; sourceTree = "<group>"; };
 		B5DE1FD31CE5273C00939E7C /* Example2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example2TableViewCell.swift; sourceTree = "<group>"; };
 		B5DE1FD41CE5273C00939E7C /* Example2TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Example2TableViewCell.xib; sourceTree = "<group>"; };
-		B5E10EB01CE4DE7600A6DA26 /* ModulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesViewController.swift; sourceTree = "<group>"; };
-		B5E10EB11CE4DE7600A6DA26 /* TableSectionModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionModule.swift; sourceTree = "<group>"; };
 		C3B4C8E24C53033419E93DC7 /* Pods_FTMTableSectionModules_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,7 +97,6 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				B5E10EAE1CE4DE4100A6DA26 /* FTMTableSectionModules */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for FTMTableSectionModules */,
 				690BCA061CE9DA86006C4381 /* FTMTableSectionModules_Tests */,
@@ -193,24 +188,6 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		B5E10EAE1CE4DE4100A6DA26 /* FTMTableSectionModules */ = {
-			isa = PBXGroup;
-			children = (
-				B5E10EAF1CE4DE6600A6DA26 /* Classes */,
-			);
-			name = FTMTableSectionModules;
-			path = ../FTMTableSectionModules;
-			sourceTree = "<group>";
-		};
-		B5E10EAF1CE4DE6600A6DA26 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B5E10EB01CE4DE7600A6DA26 /* ModulesViewController.swift */,
-				B5E10EB11CE4DE7600A6DA26 /* TableSectionModule.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,7 +239,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -419,9 +396,7 @@
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				B5DE1FD11CE526BD00939E7C /* Example1TableViewCell.swift in Sources */,
 				B5DE1FD51CE5273C00939E7C /* Example2TableViewCell.swift in Sources */,
-				B5E10EB31CE4DE7600A6DA26 /* TableSectionModule.swift in Sources */,
 				B5DE1FCD1CE525F400939E7C /* FirstSectionModule.swift in Sources */,
-				B5E10EB21CE4DE7600A6DA26 /* ModulesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

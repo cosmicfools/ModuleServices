@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import FTMTableSectionModules
 
 class ViewController: ModulesViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
