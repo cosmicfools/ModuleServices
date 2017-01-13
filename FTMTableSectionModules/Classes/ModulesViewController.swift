@@ -92,171 +92,171 @@ extension ModulesViewController: TableSectionModuleSectionSource {
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
 extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
-    open func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         return self.modules[indexPath.section].tableView(tableView, willDisplayCell: cell, forRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    public func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         return self.modules[section].tableView(tableView, willDisplayHeaderView: view, forSection: section)
     }
     
-    open func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+    public func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
         return self.modules[section].tableView(tableView, willDisplayFooterView: view, forSection: section)
     }
 
-    open func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         return self.modules[indexPath.section].tableView(tableView, didEndDisplayingCell: cell, forRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {
+    public func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {
         return self.modules[section].tableView(tableView, didEndDisplayingHeaderView: view, forSection: section)
     }
     
-    open func tableView(_ tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int) {
+    public func tableView(_ tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int) {
         return self.modules[section].tableView(tableView, didEndDisplayingFooterView: view, forSection: section)
     }
     
-    open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return self.modules[indexPath.section].tableView(tableView, heightForRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return self.modules[section].tableView(tableView, heightForHeaderInSection: section)
     }
     
-    open func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return self.modules[section].tableView(tableView, heightForFooterInSection: section)
     }
     
-    open func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return self.modules[indexPath.section].tableView(tableView, estimatedHeightForRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+    public func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return self.modules[section].tableView(tableView, estimatedHeightForHeaderInSection: section)
     }
     
-    open func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
+    public func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
         return self.modules[section].tableView(tableView, estimatedHeightForFooterInSection: section)
     }
     
-    open func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return self.modules[section].tableView(tableView, viewForHeaderInSection: section)
     }
     
-    open func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+    public func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return self.modules[section].tableView(tableView, viewForFooterInSection: section)
     }
     
-    open func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         return self.modules[indexPath.section].tableView(tableView, accessoryButtonTappedForRowWithIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+    public func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
         return self.modules[indexPath.section].tableView(tableView, shouldHighlightRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
         return self.modules[indexPath.section].tableView(tableView, didHighlightRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
         return self.modules[indexPath.section].tableView(tableView, didUnhighlightRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         return self.modules[indexPath.section].tableView(tableView, willSelectRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, willDeselectRowAt indexPath: IndexPath) -> IndexPath? {
+    public func tableView(_ tableView: UITableView, willDeselectRowAt indexPath: IndexPath) -> IndexPath? {
         return self.modules[indexPath.section].tableView(tableView, willDeselectRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         return self.modules[indexPath.section].tableView(tableView, didSelectRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         return self.modules[indexPath.section].tableView(tableView, didDeselectRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
         return self.modules[indexPath.section].tableView(tableView, editingStyleForRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+    public func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
         return self.modules[indexPath.section].tableView(tableView, titleForDeleteConfirmationButtonForRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+    public func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         return self.modules[indexPath.section].tableView(tableView, editActionsForRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+    public func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
         return self.modules[indexPath.section].tableView(tableView, shouldIndentWhileEditingRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
         return self.modules[indexPath.section].tableView(tableView, willBeginEditingRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
+    public func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
         return self.modules[indexPath!.section].tableView(tableView, didEndEditingRowAtIndexPath: indexPath!)
     }
     
-    open func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+    public func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
         return proposedDestinationIndexPath
     }
     
-    open func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int {
+    public func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int {
         return self.modules[indexPath.section].tableView(tableView, indentationLevelForRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, shouldShowMenuForRowAt indexPath: IndexPath) -> Bool {
+    public func tableView(_ tableView: UITableView, shouldShowMenuForRowAt indexPath: IndexPath) -> Bool {
         return self.modules[indexPath.section].tableView(tableView, shouldShowMenuForRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, canPerformAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
+    public func tableView(_ tableView: UITableView, canPerformAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
         return false //FIXME: Redirect to the proper module
     }
     
-    open func tableView(_ tableView: UITableView, performAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) {
+    public func tableView(_ tableView: UITableView, performAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) {
         //FIXME: Redirect to the proper module
     }
     
-    open func tableView(_ tableView: UITableView, canFocusRowAt indexPath: IndexPath) -> Bool {
+    public func tableView(_ tableView: UITableView, canFocusRowAt indexPath: IndexPath) -> Bool {
         return self.modules[indexPath.section].tableView(tableView, canFocusRowAtIndexPath: indexPath)
     }
 
-    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.modules[section].rows.count
     }
     
-    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return self.modules[indexPath.section].tableView(tableView, cellForRowAtIndexPath: indexPath)
     }
     
-    open func numberOfSections(in tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         return self.modules.count
     }
     
-    open func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return self.modules[section].tableView(tableView, titleForHeaderInSection: section)
     }
     
-    open func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+    public func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return self.modules[section].tableView(tableView, titleForFooterInSection: section)
     }
     
-    open func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    public func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return self.modules[indexPath.section].tableView(tableView, canEditRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+    public func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return self.modules[indexPath.section].tableView(tableView, canMoveRowAtIndexPath: indexPath)
     }
     
-    open func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         return self.modules[indexPath.section].tableView(tableView, commitEditingStyle: editingStyle, forRowAtIndexPath: indexPath)
     }
 }
