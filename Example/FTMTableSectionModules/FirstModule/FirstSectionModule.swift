@@ -11,12 +11,13 @@ import FTMTableSectionModules
 
 class FirstSectionModule: TableSectionModule {
     override func registerNibsForCells() -> [AnyClass] {
-        return [Example1TableViewCell.classForCoder(),
-                Example2TableViewCell.classForCoder()]
+        return super.registerNibsForCells() +
+            [Example1TableViewCell.classForCoder(),
+            Example2TableViewCell.classForCoder()]
     }
     
     override func registerClassForCells() -> [AnyClass] {
-        return [UITableViewCell.classForCoder()]
+        return super.registerClassForCells() + [UITableViewCell.classForCoder()]
     }
     
     override func createRows() {
