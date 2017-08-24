@@ -16,7 +16,10 @@ class ViewController: ModulesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 44
         
+        self.tableView.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +32,7 @@ class ViewController: ModulesViewController {
         super.createModules()
         
         self.appendModule(FirstSectionModule(tableView: self.tableView!))
+        self.appendModule(SecondSectionModule(tableView: self.tableView))
     }
 
 }

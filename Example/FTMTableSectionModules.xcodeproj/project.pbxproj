@@ -16,6 +16,9 @@
 		690BCA101CE9DB42006C4381 /* TableSectionModuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BCA0F1CE9DB42006C4381 /* TableSectionModuleTest.swift */; };
 		690BCA121CE9EDCD006C4381 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BCA111CE9EDCD006C4381 /* TestHelpers.swift */; };
 		B5A18EF11CEA575C00536A04 /* ModulesViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A18EF01CEA575C00536A04 /* ModulesViewControllerTest.swift */; };
+		B5A7DE271F4F511100E082A5 /* SecondSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7DE261F4F511100E082A5 /* SecondSectionModule.swift */; };
+		B5A7DE2F1F4F521000E082A5 /* ConfigurableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7DE2D1F4F521000E082A5 /* ConfigurableTableViewCell.swift */; };
+		B5A7DE301F4F521000E082A5 /* ConfigurableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A7DE2E1F4F521000E082A5 /* ConfigurableTableViewCell.xib */; };
 		B5DE1FCD1CE525F400939E7C /* FirstSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1FCC1CE525F400939E7C /* FirstSectionModule.swift */; };
 		B5DE1FD11CE526BD00939E7C /* Example1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1FCF1CE526BD00939E7C /* Example1TableViewCell.swift */; };
 		B5DE1FD21CE526BD00939E7C /* Example1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */; };
@@ -55,6 +58,9 @@
 		AB86A5501DA8DD0A7E06B5A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B4D790F2B59F315D5D91BA8F /* Pods_FTMTableSectionModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A18EF01CEA575C00536A04 /* ModulesViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesViewControllerTest.swift; sourceTree = "<group>"; };
+		B5A7DE261F4F511100E082A5 /* SecondSectionModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSectionModule.swift; sourceTree = "<group>"; };
+		B5A7DE2D1F4F521000E082A5 /* ConfigurableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableTableViewCell.swift; sourceTree = "<group>"; };
+		B5A7DE2E1F4F521000E082A5 /* ConfigurableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigurableTableViewCell.xib; sourceTree = "<group>"; };
 		B5DE1FCC1CE525F400939E7C /* FirstSectionModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSectionModule.swift; sourceTree = "<group>"; };
 		B5DE1FCF1CE526BD00939E7C /* Example1TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example1TableViewCell.swift; sourceTree = "<group>"; };
 		B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Example1TableViewCell.xib; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 		607FACD21AFB9204008FA782 /* Example for FTMTableSectionModules */ = {
 			isa = PBXGroup;
 			children = (
+				B5A7DE251F4F50D700E082A5 /* SecondModule */,
 				B5DE1FCB1CE525C700939E7C /* FirstModule */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -166,6 +173,24 @@
 				B4D790F2B59F315D5D91BA8F /* Pods_FTMTableSectionModules_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5A7DE251F4F50D700E082A5 /* SecondModule */ = {
+			isa = PBXGroup;
+			children = (
+				B5A7DE2C1F4F519F00E082A5 /* Cells */,
+				B5A7DE261F4F511100E082A5 /* SecondSectionModule.swift */,
+			);
+			path = SecondModule;
+			sourceTree = "<group>";
+		};
+		B5A7DE2C1F4F519F00E082A5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B5A7DE2D1F4F521000E082A5 /* ConfigurableTableViewCell.swift */,
+				B5A7DE2E1F4F521000E082A5 /* ConfigurableTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		B5DE1FCB1CE525C700939E7C /* FirstModule */ = {
@@ -277,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A7DE301F4F521000E082A5 /* ConfigurableTableViewCell.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				B5DE1FD21CE526BD00939E7C /* Example1TableViewCell.xib in Resources */,
@@ -393,8 +419,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				B5A7DE271F4F511100E082A5 /* SecondSectionModule.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				B5DE1FD11CE526BD00939E7C /* Example1TableViewCell.swift in Sources */,
+				B5A7DE2F1F4F521000E082A5 /* ConfigurableTableViewCell.swift in Sources */,
 				B5DE1FD51CE5273C00939E7C /* Example2TableViewCell.swift in Sources */,
 				B5DE1FCD1CE525F400939E7C /* FirstSectionModule.swift in Sources */,
 			);
