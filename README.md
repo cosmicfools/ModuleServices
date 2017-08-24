@@ -1,6 +1,6 @@
 # FTMTableSectionModules
 
-[![CI Status](http://img.shields.io/travis/Francisco Javier Trujillo Mata/FTMTableSectionModules.svg?style=flat)](https://travis-ci.org/Francisco Javier Trujillo Mata/FTMTableSectionModules)
+[![Build Status](https://travis-ci.org/fjtrujy/FTMTableSectionModules.svg?branch=master)](https://travis-ci.org/fjtrujy/FTMTableSectionModules)
 [![Version](https://img.shields.io/cocoapods/v/FTMTableSectionModules.svg?style=flat)](http://cocoapods.org/pods/FTMTableSectionModules)
 [![License](https://img.shields.io/cocoapods/l/FTMTableSectionModules.svg?style=flat)](http://cocoapods.org/pods/FTMTableSectionModules)
 [![Platform](https://img.shields.io/cocoapods/p/FTMTableSectionModules.svg?style=flat)](http://cocoapods.org/pods/FTMTableSectionModules)
