@@ -108,7 +108,7 @@ extension TableSectionModule {
     fileprivate func autoRegisterNibsForCells() {
         for currentClass in self.registerNibsForCells() {
             let identifier = String(describing: currentClass)
-            let nib = UINib.init(nibName: identifier, bundle: nil)
+            let nib = UINib(nibName: identifier, bundle: nil)
             self.tableView.register(nib, forCellReuseIdentifier: identifier)
         }
     }
@@ -116,7 +116,7 @@ extension TableSectionModule {
     fileprivate func autoRegisterNibsForHeadersFooters() {
         for currentClass in self.registerNibsForHeadersFooters() {
             let identifier = String(describing: currentClass)
-            let nib = UINib.init(nibName: identifier, bundle: nil)
+            let nib = UINib(nibName: identifier, bundle: nil)
             self.tableView.register(nib, forHeaderFooterViewReuseIdentifier: identifier)
         }
     }
@@ -278,7 +278,7 @@ extension TableSectionModule {
     }
     
     open func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell.init()
+        return UITableViewCell()
     }
     
     open func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
