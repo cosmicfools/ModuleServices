@@ -11,7 +11,7 @@ import Foundation
 
 open class ModulesViewController: UIViewController {
 
-    @IBOutlet weak var tableView:UITableView?
+    @IBOutlet weak open var tableView:UITableView?
     fileprivate(set) internal var modules:[TableSectionModule] = []
     
     open override func viewDidLoad() {
