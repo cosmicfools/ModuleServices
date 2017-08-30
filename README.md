@@ -20,7 +20,7 @@ FTMTableSectionModules is available through [CocoaPods](http://cocoapods.org). T
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "FTMTableSectionModules"
+pod 'FTMTableSectionModules'
 ```
 
 ## How to use it
@@ -31,6 +31,18 @@ The main concept in this libary is, a Module means a Section in a UITableView, s
 A Module is a like and mini UIViewController, should be able to work it self.
 
 Basically a ModulesViewController has an array of TableSectionModules.
+
+Sometimes an example is easier to understand than 1000 words.. so, please to see the example use:
+
+```ruby
+pod  try 'FTMTableSectionModules'
+```
+
+If you don't have `pod try` installed go to https://github.com/CocoaPods/cocoapods-try to install it.
+
+Inside you will see an example of a ViewController with 2 differents modules and a couple of cells per module.
+
+Enjoy and be module!
 
 ## Author
 
