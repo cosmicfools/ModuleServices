@@ -1,15 +1,15 @@
 //
-//  ConfigurableTableViewCell.swift
+//  Example3TableViewCell.swift
 //  FTMTableSectionModules
 //
-//  Created by Francisco Javier Trujillo Mata on 24/08/2017.
+//  Created by Francisco Javier Trujillo Mata on 30/08/2017.
 //  Copyright © 2017 CocoaPods. All rights reserved.
 //
 
 import UIKit
 
-class ConfigurableTableViewCell: UITableViewCell {
-    @IBOutlet weak private var label : UILabel!
+class Example3TableViewCell: UITableViewCell {
+    @IBOutlet weak private var myImageView : UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,8 +22,8 @@ class ConfigurableTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    open func configureWithAttributedString(_ attributedString: NSAttributedString) {
-        self.label.attributedText = attributedString
+    open func configureWithImage(_ image: UIImage) {
+        self.myImageView.image = image
     }
     
 }

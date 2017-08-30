@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		690BCA101CE9DB42006C4381 /* TableSectionModuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BCA0F1CE9DB42006C4381 /* TableSectionModuleTest.swift */; };
 		690BCA121CE9EDCD006C4381 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BCA111CE9EDCD006C4381 /* TestHelpers.swift */; };
+		B502D5181F57396300FE8177 /* Example3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B502D5161F57396300FE8177 /* Example3TableViewCell.swift */; };
+		B502D5191F57396300FE8177 /* Example3TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B502D5171F57396300FE8177 /* Example3TableViewCell.xib */; };
 		B5A18EF11CEA575C00536A04 /* ModulesViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A18EF01CEA575C00536A04 /* ModulesViewControllerTest.swift */; };
 		B5A7DE271F4F511100E082A5 /* SecondSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7DE261F4F511100E082A5 /* SecondSectionModule.swift */; };
 		B5A7DE2F1F4F521000E082A5 /* ConfigurableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7DE2D1F4F521000E082A5 /* ConfigurableTableViewCell.swift */; };
@@ -57,6 +59,8 @@
 		840D9156D5639A255BDEED7A /* FTMTableSectionModules.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FTMTableSectionModules.podspec; path = ../FTMTableSectionModules.podspec; sourceTree = "<group>"; };
 		AB86A5501DA8DD0A7E06B5A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B4D790F2B59F315D5D91BA8F /* Pods_FTMTableSectionModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B502D5161F57396300FE8177 /* Example3TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example3TableViewCell.swift; sourceTree = "<group>"; };
+		B502D5171F57396300FE8177 /* Example3TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Example3TableViewCell.xib; sourceTree = "<group>"; };
 		B5A18EF01CEA575C00536A04 /* ModulesViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesViewControllerTest.swift; sourceTree = "<group>"; };
 		B5A7DE261F4F511100E082A5 /* SecondSectionModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSectionModule.swift; sourceTree = "<group>"; };
 		B5A7DE2D1F4F521000E082A5 /* ConfigurableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableTableViewCell.swift; sourceTree = "<group>"; };
@@ -209,6 +213,8 @@
 				B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */,
 				B5DE1FD31CE5273C00939E7C /* Example2TableViewCell.swift */,
 				B5DE1FD41CE5273C00939E7C /* Example2TableViewCell.xib */,
+				B502D5161F57396300FE8177 /* Example3TableViewCell.swift */,
+				B502D5171F57396300FE8177 /* Example3TableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -302,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B502D5191F57396300FE8177 /* Example3TableViewCell.xib in Resources */,
 				B5A7DE301F4F521000E082A5 /* ConfigurableTableViewCell.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
@@ -418,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B502D5181F57396300FE8177 /* Example3TableViewCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				B5A7DE271F4F511100E082A5 /* SecondSectionModule.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
