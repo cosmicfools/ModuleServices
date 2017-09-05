@@ -19,10 +19,6 @@ open class ModulesViewController: UIViewController {
         self.createModules()
     }
     
-    open override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     open override func viewWillAppear(_ animated: Bool) {
         for module in self.modules {
             module.willAppear()
