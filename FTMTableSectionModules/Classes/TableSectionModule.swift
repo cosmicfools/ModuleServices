@@ -75,18 +75,22 @@ extension TableSectionModule {
     }
     
     //Autoregistrion - Override those methods if the ReuseIdentifier is exactly the same that the Class and the Nib file (if exits)
+    @objc
     open func registerClassForCells() -> [AnyClass] {
         return []
     }
     
+    @objc
     open func registerClassForHeadersFooters() -> [AnyClass] {
         return []
     }
     
+    @objc
     open func registerNibsForCells() -> [AnyClass] {
         return []
     }
     
+    @objc
     open func registerNibsForHeadersFooters() -> [AnyClass] {
         return []
     }
@@ -165,22 +169,30 @@ public extension TableSectionModule {
 
 // MARK: - UITableViewDelegate
 extension TableSectionModule {
+    @objc
     open func tableView(_ tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: IndexPath) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: IndexPath) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
         return CGSize.zero.height
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         var height = CGSize.zero.height
         if (tableView.style == UITableViewStyle.grouped) {
@@ -189,6 +201,7 @@ extension TableSectionModule {
         return height
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         var height = CGSize.zero.height
         if (tableView.style == UITableViewStyle.grouped) {
@@ -197,108 +210,139 @@ extension TableSectionModule {
         return height
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
         return TableSectionModuleConstants.EstimatedHeight
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return CGSize.zero.height
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
         return CGSize.zero.height
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return nil
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return nil
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: IndexPath) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: IndexPath) -> Bool {
         return true
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, didHighlightRowAtIndexPath indexPath: IndexPath) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: IndexPath) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, willSelectRowAtIndexPath indexPath: IndexPath) -> IndexPath? {
         return indexPath
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, willDeselectRowAtIndexPath indexPath: IndexPath) -> IndexPath? {
         return indexPath
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, didDeselectRowAtIndexPath indexPath: IndexPath) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, editingStyleForRowAtIndexPath indexPath: IndexPath) -> UITableViewCellEditingStyle {
         return UITableViewCellEditingStyle.none
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: IndexPath) -> String? {
         return nil
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, editActionsForRowAtIndexPath indexPath: IndexPath) -> [UITableViewRowAction]? {
         return nil
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAtIndexPath indexPath: IndexPath) -> Bool {
         return true
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, willBeginEditingRowAtIndexPath indexPath: IndexPath) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, didEndEditingRowAtIndexPath indexPath: IndexPath) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, indentationLevelForRowAtIndexPath indexPath: IndexPath) -> Int {
         return Int.min
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, shouldShowMenuForRowAtIndexPath indexPath: IndexPath) -> Bool {
         return false
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, canPerformAction action: Selector, forRowAtIndexPath indexPath: IndexPath, withSender sender: AnyObject?) -> Bool {
         return false
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, performAction action: Selector, forRowAtIndexPath indexPath: IndexPath, withSender sender: AnyObject?) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, canFocusRowAtIndexPath indexPath: IndexPath) -> Bool {
         return true
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return nil
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return nil
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, canEditRowAtIndexPath indexPath: IndexPath) -> Bool {
         return false
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, canMoveRowAtIndexPath indexPath: IndexPath) -> Bool {
         return false
     }
     
+    @objc
     open func tableView(_ tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: IndexPath) {}
     
+    @objc
     open func tableView(_ tableView: UITableView, moveRowAtIndexPath sourceIndexPath: IndexPath, toIndexPath destinationIndexPath: IndexPath) {}
     
 }

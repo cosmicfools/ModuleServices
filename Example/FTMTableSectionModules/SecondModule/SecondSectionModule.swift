@@ -10,8 +10,8 @@ import FTMTableSectionModules
 
 class SecondSectionModule: TableSectionModule {
     private var infoToShow : Array<String>
-    private var boldAttributes : [String : Any]
-    private var italianAttributes : [String : Any]
+    private var boldAttributes : [NSAttributedStringKey : Any]
+    private var italianAttributes : [NSAttributedStringKey : Any]
     
     override init(tableView: UITableView) {
         self.infoToShow = [
@@ -22,13 +22,13 @@ class SecondSectionModule: TableSectionModule {
         ]
         
         self.boldAttributes = [
-            NSFontAttributeName : UIFont.boldSystemFont(ofSize:15),
-            NSForegroundColorAttributeName : UIColor.blue,
+            NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize:15),
+            NSAttributedStringKey.foregroundColor : UIColor.blue,
         ]
         
         self.italianAttributes = [
-            NSFontAttributeName : UIFont.italicSystemFont(ofSize:12),
-            NSForegroundColorAttributeName : UIColor.gray,
+            NSAttributedStringKey.font : UIFont.italicSystemFont(ofSize:12),
+            NSAttributedStringKey.foregroundColor : UIColor.gray,
         ]
         
         super.init(tableView: tableView)
