@@ -226,12 +226,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "FTMTableSectionModules_Example" */;
 			buildPhases = (
+				A115AF52A0E5346659D8EDFF /* [CP] Check Pods Manifest.lock */,
 				C625A4341918EE85621C6C15 /* 📦 Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				57023C46FF22B02F2180F518 /* 📦 Embed Pods Frameworks */,
 				8DC97D7C426942BA947B1D9E /* 📦 Copy Pods Resources */,
+				4E6CE311F767F2509D49D88F /* [CP] Embed Pods Frameworks */,
+				51E75EE52FE54B61F72D1C01 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,12 +249,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 690BCA0C1CE9DA86006C4381 /* Build configuration list for PBXNativeTarget "FTMTableSectionModules_Tests" */;
 			buildPhases = (
+				93BAE1694E4388A9B17064AD /* [CP] Check Pods Manifest.lock */,
 				D4D38F8488F5CEB5881BCF20 /* 📦 Check Pods Manifest.lock */,
 				690BCA011CE9DA86006C4381 /* Sources */,
 				690BCA021CE9DA86006C4381 /* Frameworks */,
 				690BCA031CE9DA86006C4381 /* Resources */,
 				B7609DCD71E82D522CB7EECB /* 📦 Embed Pods Frameworks */,
 				F2FA43F845B00D75C528BA7E /* 📦 Copy Pods Resources */,
+				AAB6149D31A282A506642AF8 /* [CP] Embed Pods Frameworks */,
+				6E3AA78BC83B639D77863EA2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,6 +334,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4E6CE311F767F2509D49D88F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FTMTableSectionModules/FTMTableSectionModules.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FTMTableSectionModules.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51E75EE52FE54B61F72D1C01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		57023C46FF22B02F2180F518 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,6 +382,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6E3AA78BC83B639D77863EA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8DC97D7C426942BA947B1D9E /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,6 +410,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93BAE1694E4388A9B17064AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FTMTableSectionModules_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A115AF52A0E5346659D8EDFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FTMTableSectionModules_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAB6149D31A282A506642AF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B7609DCD71E82D522CB7EECB /* 📦 Embed Pods Frameworks */ = {
@@ -583,10 +688,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 028E1D83355793DB27CB3EFA /* Pods-FTMTableSectionModules_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FTMTableSectionModules/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -600,10 +704,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E3537C5895588CAD611A11E /* Pods-FTMTableSectionModules_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FTMTableSectionModules/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
