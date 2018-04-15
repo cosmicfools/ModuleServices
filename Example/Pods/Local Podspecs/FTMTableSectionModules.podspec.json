@@ -12,8 +12,12 @@
     "git": "https://github.com/fjtrujy/FTMTableSectionModules.git",
     "tag": "0.1.7"
   },
+  "social_media_url": "https://twitter.com/fjtrujy",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
+  },
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "4.0"
   },
   "source_files": "FTMTableSectionModules/Classes/**/*"
 }

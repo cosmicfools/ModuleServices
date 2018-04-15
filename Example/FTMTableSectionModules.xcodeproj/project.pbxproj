@@ -232,7 +232,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				57023C46FF22B02F2180F518 /* 📦 Embed Pods Frameworks */,
-				8DC97D7C426942BA947B1D9E /* 📦 Copy Pods Resources */,
 				4E6CE311F767F2509D49D88F /* [CP] Embed Pods Frameworks */,
 				51E75EE52FE54B61F72D1C01 /* [CP] Copy Pods Resources */,
 			);
@@ -254,8 +253,6 @@
 				690BCA011CE9DA86006C4381 /* Sources */,
 				690BCA021CE9DA86006C4381 /* Frameworks */,
 				690BCA031CE9DA86006C4381 /* Resources */,
-				B7609DCD71E82D522CB7EECB /* 📦 Embed Pods Frameworks */,
-				F2FA43F845B00D75C528BA7E /* 📦 Copy Pods Resources */,
 				AAB6149D31A282A506642AF8 /* [CP] Embed Pods Frameworks */,
 				6E3AA78BC83B639D77863EA2 /* [CP] Copy Pods Resources */,
 			);
@@ -276,7 +273,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -397,21 +394,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8DC97D7C426942BA947B1D9E /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		93BAE1694E4388A9B17064AD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,21 +445,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B7609DCD71E82D522CB7EECB /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C625A4341918EE85621C6C15 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -506,21 +473,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F2FA43F845B00D75C528BA7E /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -593,12 +545,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -648,12 +602,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

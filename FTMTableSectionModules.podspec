@@ -14,21 +14,13 @@ Pod::Spec.new do |s|
   s.description      = "Reusable ViewController with TableView, splitted in Sections (called here modules) that help you to develop faster in Swift"
 
   s.homepage         = "https://github.com/fjtrujy/FTMTableSectionModules"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Francisco Javier Trujillo Mata" => "fjtrujy@gmail.com" }
   s.source           = { :git => "https://github.com/fjtrujy/FTMTableSectionModules.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/fjtrujy'
 
   s.ios.deployment_target = '9.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
   s.source_files = 'FTMTableSectionModules/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'FTMTableSectionModules' => ['FTMTableSectionModules/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
