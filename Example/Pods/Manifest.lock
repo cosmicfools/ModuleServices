@@ -1,5 +1,5 @@
 PODS:
-  - FTMTableSectionModules (0.1.7)
+  - FTMTableSectionModules (0.1.8)
 
 DEPENDENCIES:
   - FTMTableSectionModules (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FTMTableSectionModules: d83395887cf2c1965a1133246e2262973932430d
+  FTMTableSectionModules: 4bba89564e238b4e99868169cbe53d0f7ddf2569
 
 PODFILE CHECKSUM: cbafd63dc7a38834b43d3a34ea9b0360a940aa5b
 
