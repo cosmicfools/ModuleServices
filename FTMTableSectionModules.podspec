@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FTMTableSectionModules"
-  s.version          = "0.1.8"
+  s.version          = "0.1.9"
   s.summary          = "Reusable ViewController with TableView, splitted in Sections"
 
   s.description      = "Reusable ViewController with TableView, splitted in Sections (called here modules) that help you to develop faster in Swift"
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/fjtrujy'
 
   s.ios.deployment_target = '9.0'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
   s.source_files = 'FTMTableSectionModules/Classes/**/*'
 
 end

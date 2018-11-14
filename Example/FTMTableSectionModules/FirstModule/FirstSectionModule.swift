@@ -59,7 +59,7 @@ class FirstSectionModule: TableSectionModule {
         let className = self.rows[(indexPath as NSIndexPath).row] as! String
         switch className {
         case String(describing: Example3TableViewCell.self):
-            height = UITableViewAutomaticDimension
+            height = UITableView.automaticDimension
             break
         default:
             height = 44.0

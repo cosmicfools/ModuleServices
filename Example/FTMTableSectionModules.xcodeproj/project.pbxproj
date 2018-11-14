@@ -56,7 +56,7 @@
 		690BCA111CE9EDCD006C4381 /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		7AB9F441DC532B15E983932C /* Pods-FTMTableSectionModules_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTMTableSectionModules_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7E3537C5895588CAD611A11E /* Pods-FTMTableSectionModules_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTMTableSectionModules_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example.release.xcconfig"; sourceTree = "<group>"; };
-		840D9156D5639A255BDEED7A /* FTMTableSectionModules.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FTMTableSectionModules.podspec; path = ../FTMTableSectionModules.podspec; sourceTree = "<group>"; };
+		840D9156D5639A255BDEED7A /* FTMTableSectionModules.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FTMTableSectionModules.podspec; path = ../FTMTableSectionModules.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AB86A5501DA8DD0A7E06B5A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B4D790F2B59F315D5D91BA8F /* Pods_FTMTableSectionModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B502D5161F57396300FE8177 /* Example3TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example3TableViewCell.swift; sourceTree = "<group>"; };
@@ -273,11 +273,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 					};
 					690BCA041CE9DA86006C4381 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -383,7 +383,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FTMTableSectionModules/FTMTableSectionModules.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -392,7 +392,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -506,7 +506,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -555,7 +555,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -571,8 +571,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -587,8 +586,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -604,8 +602,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.FTMTableSectionModules-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTMTableSectionModules_Example.app/FTMTableSectionModules_Example";
 			};
 			name = Debug;
@@ -621,8 +618,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.FTMTableSectionModules-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTMTableSectionModules_Example.app/FTMTableSectionModules_Example";
 			};
 			name = Release;

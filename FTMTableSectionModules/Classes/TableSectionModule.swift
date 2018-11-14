@@ -19,7 +19,7 @@ open class TableSectionModule: NSObject {
     fileprivate(set) open var tableView:UITableView!
     fileprivate(set) open var section:NSInteger{
         get {
-            return (self.sectionSource?.sectionForModule(self))!
+            return (sectionSource?.sectionForModule(self))!
         }
         set { self.section = newValue }
     }
@@ -137,7 +137,7 @@ public extension TableSectionModule {
     
     public func removeSeparatorInsetForCell(_ cell : UITableViewCell, forIndexPath indexPath : IndexPath) {
         // Remove seperator inset
-        cell.separatorInset = UIEdgeInsetsMake(CGSize.zero.height, cell.bounds.size.width, CGSize.zero.width, CGSize.zero.height)
+        cell.separatorInset = UIEdgeInsets.init(top: CGSize.zero.height, left: cell.bounds.size.width, bottom: CGSize.zero.width, right: CGSize.zero.height)
         cell.preservesSuperviewLayoutMargins = true
         cell.layoutMargins = UIEdgeInsets.zero
     }
@@ -160,7 +160,7 @@ public extension TableSectionModule {
         sizingCell.setNeedsLayout()
         sizingCell.layoutIfNeeded()
     
-        let size : CGSize = sizingCell.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
+        let size : CGSize = sizingCell.contentView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
         let separator : CGFloat = TableSectionModuleConstants.SeparatorHeight / UIScreen.main.scale
         
         return size.height + separator // Add space for the cell separator height
@@ -195,7 +195,7 @@ extension TableSectionModule {
     @objc
     open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         var height = CGSize.zero.height
-        if (tableView.style == UITableViewStyle.grouped) {
+        if (tableView.style == UITableView.Style.grouped) {
             height = CGFloat.leastNormalMagnitude
         }
         return height
@@ -204,7 +204,7 @@ extension TableSectionModule {
     @objc
     open func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         var height = CGSize.zero.height
-        if (tableView.style == UITableViewStyle.grouped) {
+        if (tableView.style == UITableView.Style.grouped) {
             height = CGFloat.leastNormalMagnitude
         }
         return height
@@ -266,8 +266,8 @@ extension TableSectionModule {
     open func tableView(_ tableView: UITableView, didDeselectRowAtIndexPath indexPath: IndexPath) {}
     
     @objc
-    open func tableView(_ tableView: UITableView, editingStyleForRowAtIndexPath indexPath: IndexPath) -> UITableViewCellEditingStyle {
-        return UITableViewCellEditingStyle.none
+    open func tableView(_ tableView: UITableView, editingStyleForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return UITableViewCell.EditingStyle.none
     }
     
     @objc
@@ -340,7 +340,7 @@ extension TableSectionModule {
     }
     
     @objc
-    open func tableView(_ tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: IndexPath) {}
+    open func tableView(_ tableView: UITableView, commitEditingStyle editingStyle: UITableViewCell.EditingStyle, forRowAtIndexPath indexPath: IndexPath) {}
     
     @objc
     open func tableView(_ tableView: UITableView, moveRowAtIndexPath sourceIndexPath: IndexPath, toIndexPath destinationIndexPath: IndexPath) {}

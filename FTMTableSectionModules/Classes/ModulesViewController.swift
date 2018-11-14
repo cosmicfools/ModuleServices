@@ -176,7 +176,7 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
         return self.modules[indexPath.section].tableView(tableView, didDeselectRowAtIndexPath: indexPath)
     }
     
-    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return self.modules[indexPath.section].tableView(tableView, editingStyleForRowAtIndexPath: indexPath)
     }
     
@@ -252,7 +252,7 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
         return self.modules[indexPath.section].tableView(tableView, canMoveRowAtIndexPath: indexPath)
     }
     
-    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         return self.modules[indexPath.section].tableView(tableView, commitEditingStyle: editingStyle, forRowAtIndexPath: indexPath)
     }
 }

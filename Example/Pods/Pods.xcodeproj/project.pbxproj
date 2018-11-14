@@ -7,145 +7,153 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E2E5BE2C9E97D3C614F44047AF386B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		182447B45D590A2B9079E9A2A5D8A62D /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECF63C5358EE85352BF5C953EFAF1C6 /* ModulesViewController.swift */; };
-		1C08066056338B1DD03094101497951A /* TableSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF5F1DD241DF049AA89C7E87AD38D7 /* TableSectionModule.swift */; };
-		1C10FBA78B869A8F87F71331D53267B6 /* Pods-FTMTableSectionModules_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13041F68254D5435561ED44526CD598E /* Pods-FTMTableSectionModules_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CA57416237E0EC3370FBC1482E97A4D /* FTMTableSectionModules-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04382752319B14AEE103F91466945D64 /* FTMTableSectionModules-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29FBD071D975DDD970EF75B7E4F5C1B3 /* Pods-FTMTableSectionModules_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E4A9F72FE68C60CD05D2116CA723585 /* Pods-FTMTableSectionModules_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47D907D5942452D68FE0039877D3251D /* FTMTableSectionModules-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD67D1B7405D60F6588C28A8C9E35AC1 /* FTMTableSectionModules-dummy.m */; };
-		72657021AAA87C53D446CD051190211F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		D1CC4F5CE3A727492D98F950FE0E649C /* Pods-FTMTableSectionModules_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29583D28567C0AFDD4AD171B3506F100 /* Pods-FTMTableSectionModules_Example-dummy.m */; };
-		DE26F2CC3A9AF68FB58284A7595BB550 /* Pods-FTMTableSectionModules_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB8ADD52FFDDEF6B99F6C09BB3ACED7 /* Pods-FTMTableSectionModules_Tests-dummy.m */; };
-		E67200C84120072649FD1E5D8E6E1169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		12FB15BEE086155083E70B1FE5B2431D /* Pods-FTMTableSectionModules_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EF0068E45E0364A2BD9FCE8682E823 /* Pods-FTMTableSectionModules_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1448722AD0D72494C421F90C81DA4FCC /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECF63C5358EE85352BF5C953EFAF1C6 /* ModulesViewController.swift */; };
+		19FF3E7A98D79D271B2B79050C14437C /* Pods-FTMTableSectionModules_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA7694BBCABE8BEFA3A14FCC5B21462 /* Pods-FTMTableSectionModules_Example-dummy.m */; };
+		1AAAA28CB3458468751D46A66FC20A01 /* FTMTableSectionModules-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4EB37CB3BA02E3D3EAA84B331C8000 /* FTMTableSectionModules-dummy.m */; };
+		213CE5231B0BC79E250F979A1ABF7021 /* TableSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF5F1DD241DF049AA89C7E87AD38D7 /* TableSectionModule.swift */; };
+		80C2A00B7065139BBF1F1B8C580B601C /* Pods-FTMTableSectionModules_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C81BF2E81F100E002507C5507D54FB /* Pods-FTMTableSectionModules_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EAFD38336DE645E7D515FF1F3C3C004 /* Pods-FTMTableSectionModules_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CD27BDFCA66319624C69C97D8740FA /* Pods-FTMTableSectionModules_Tests-dummy.m */; };
+		B905B2021A853BE90E09431A2CF7BFE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		DADBC76C6CD0EBFD5B13727D5A6E6C19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		F2D28FA1425AEEF0CDFAEC60232B4CED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		F3C22BF0B7530B0F71BBE8F2B05CD043 /* FTMTableSectionModules-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA31B87FD4288E0982793A7D884D5F01 /* FTMTableSectionModules-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9C1216019561E17F62074A58A33C8191 /* PBXContainerItemProxy */ = {
+		0A50080045D617F5C46978304F9093FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 516346606C02B32A2A7B88CA19931618;
+			remoteGlobalIDString = 300F012C8630C6C56F9B6FBD6163DCCA;
 			remoteInfo = FTMTableSectionModules;
 		};
-		DEF9527B8C6CF3EBC325B1EF28AAB163 /* PBXContainerItemProxy */ = {
+		282680A8ADFE8A8EC9AEDB177CC66530 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4685577A56F9C26CE8CEFF1C6103786F;
+			remoteGlobalIDString = FF5732B97C18EC9E1AC9906F53875A81;
 			remoteInfo = "Pods-FTMTableSectionModules_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04382752319B14AEE103F91466945D64 /* FTMTableSectionModules-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTMTableSectionModules-umbrella.h"; sourceTree = "<group>"; };
 		0ECF63C5358EE85352BF5C953EFAF1C6 /* ModulesViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModulesViewController.swift; path = FTMTableSectionModules/Classes/ModulesViewController.swift; sourceTree = "<group>"; };
+		11C1D75361DC0A02FEE6DA7BBE785C2E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		12CF5F1DD241DF049AA89C7E87AD38D7 /* TableSectionModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableSectionModule.swift; path = FTMTableSectionModules/Classes/TableSectionModule.swift; sourceTree = "<group>"; };
-		13041F68254D5435561ED44526CD598E /* Pods-FTMTableSectionModules_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FTMTableSectionModules_Example-umbrella.h"; sourceTree = "<group>"; };
-		29583D28567C0AFDD4AD171B3506F100 /* Pods-FTMTableSectionModules_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FTMTableSectionModules_Example-dummy.m"; sourceTree = "<group>"; };
-		2E4A9F72FE68C60CD05D2116CA723585 /* Pods-FTMTableSectionModules_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FTMTableSectionModules_Tests-umbrella.h"; sourceTree = "<group>"; };
-		2ECCB23BEB19C7BECBCD33C0DA034DAF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3027E0FEA5792E44BF18F9646161784A /* FTMTableSectionModules.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTMTableSectionModules.xcconfig; sourceTree = "<group>"; };
+		324D34487E20B83FDA5137EBE54CA4E7 /* Pods-FTMTableSectionModules_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTMTableSectionModules_Example-Info.plist"; sourceTree = "<group>"; };
 		33D161A53330C7E4A40E8EDD239BF237 /* Pods_FTMTableSectionModules_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FTMTableSectionModules_Example.framework; path = "Pods-FTMTableSectionModules_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		340690441344D31BFA0DBF300624C808 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3538441BB818BB1330B91040D0AE702E /* Pods-FTMTableSectionModules_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTMTableSectionModules_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3B2F3951B61651BDF72073A831DB141A /* Pods-FTMTableSectionModules_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTMTableSectionModules_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		45A75B46A6E7D7E21F2B3F0FFC252195 /* Pods-FTMTableSectionModules_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FTMTableSectionModules_Tests.modulemap"; sourceTree = "<group>"; };
-		572DF301E3605F2380290660775EA3D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		66A53DAE44904CD4A374FB85DA5C080B /* Pods-FTMTableSectionModules_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTMTableSectionModules_Example-frameworks.sh"; sourceTree = "<group>"; };
-		6E618B26455BBB8D84D6AEF1672CFAF4 /* Pods-FTMTableSectionModules_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTMTableSectionModules_Example.release.xcconfig"; sourceTree = "<group>"; };
-		77F56BCF9BB6233809A842A52F112858 /* Pods-FTMTableSectionModules_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTMTableSectionModules_Example-resources.sh"; sourceTree = "<group>"; };
-		7D9D9E89ACC3D55EF968C70E21FDDCDF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		8ADC67ABBC06C7016220501F4D5D38EC /* Pods-FTMTableSectionModules_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FTMTableSectionModules_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		37EF0068E45E0364A2BD9FCE8682E823 /* Pods-FTMTableSectionModules_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FTMTableSectionModules_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4F15B63828D4A3BCF379D9A0F4C7973B /* FTMTableSectionModules.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FTMTableSectionModules.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5B1A8CE58DD5325B6CE9E266FBBA42F0 /* Pods-FTMTableSectionModules_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTMTableSectionModules_Tests-Info.plist"; sourceTree = "<group>"; };
+		69CD27BDFCA66319624C69C97D8740FA /* Pods-FTMTableSectionModules_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FTMTableSectionModules_Tests-dummy.m"; sourceTree = "<group>"; };
+		6C6ACF1EB4067F3C7339B59934B0D4AD /* Pods-FTMTableSectionModules_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FTMTableSectionModules_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		76F2E863B080B640C62307EA35ACD693 /* Pods-FTMTableSectionModules_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTMTableSectionModules_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8C2464B3085E9DC1560AB5E0D62425E0 /* Pods_FTMTableSectionModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FTMTableSectionModules_Tests.framework; path = "Pods-FTMTableSectionModules_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DB896B3487A45EAD8EDF59D9B0B2D6E /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTMTableSectionModules_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		996383E5D77AD77C6B05AB2C51CA9C16 /* FTMTableSectionModules.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTMTableSectionModules.modulemap; sourceTree = "<group>"; };
-		9CB74FC9F868701CDE0C8F7BBB3F2931 /* Pods-FTMTableSectionModules_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FTMTableSectionModules_Example.modulemap"; sourceTree = "<group>"; };
-		A064107E2F49BEA9255906655B2D8466 /* Pods-FTMTableSectionModules_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTMTableSectionModules_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B85182C4F581A040DE795D6483A436D9 /* FTMTableSectionModules.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = FTMTableSectionModules.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BC1B4F9CC8A8D8718DEDEB9EB9771D55 /* FTMTableSectionModules-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTMTableSectionModules-prefix.pch"; sourceTree = "<group>"; };
-		C02D66DE6EC72CF4C86D7849FE7C2729 /* Pods-FTMTableSectionModules_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FTMTableSectionModules_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C3FD12CED8A47E80125E31E8562FA0CA /* FTMTableSectionModules.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTMTableSectionModules.xcconfig; sourceTree = "<group>"; };
+		8C47836C80797B9C720103ED7370F308 /* Pods-FTMTableSectionModules_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTMTableSectionModules_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8D4EB37CB3BA02E3D3EAA84B331C8000 /* FTMTableSectionModules-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTMTableSectionModules-dummy.m"; sourceTree = "<group>"; };
+		9065C305AB9A9E4C7AAFFB41EED6EE98 /* FTMTableSectionModules.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTMTableSectionModules.modulemap; sourceTree = "<group>"; };
+		96C81BF2E81F100E002507C5507D54FB /* Pods-FTMTableSectionModules_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FTMTableSectionModules_Example-umbrella.h"; sourceTree = "<group>"; };
+		99093266338897FAF69729629A28E315 /* Pods-FTMTableSectionModules_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTMTableSectionModules_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9F83B6A400C03C5F821ED1B30D06D1EF /* Pods-FTMTableSectionModules_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FTMTableSectionModules_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A7BE9354EC7E3F15D217307B5D62BFE9 /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTMTableSectionModules_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B5F20152A390EAA83F29641EA2FD0E29 /* Pods-FTMTableSectionModules_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTMTableSectionModules_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BCA7694BBCABE8BEFA3A14FCC5B21462 /* Pods-FTMTableSectionModules_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FTMTableSectionModules_Example-dummy.m"; sourceTree = "<group>"; };
+		C3B2C0FE4F1A3A41DBF0B235B9F18459 /* FTMTableSectionModules-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTMTableSectionModules-prefix.pch"; sourceTree = "<group>"; };
+		CA31B87FD4288E0982793A7D884D5F01 /* FTMTableSectionModules-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTMTableSectionModules-umbrella.h"; sourceTree = "<group>"; };
 		D4AB2623D5D92A76577FF38EBEDDF178 /* FTMTableSectionModules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FTMTableSectionModules.framework; path = FTMTableSectionModules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D98256F84E50224F8AAB4C983D659BA4 /* Pods-FTMTableSectionModules_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTMTableSectionModules_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E04F98495E6772AF0514480D406F87FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC20F96AF1FD447DEDC1AB1597D8BE6E /* Pods-FTMTableSectionModules_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTMTableSectionModules_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		F63D02BFF4193067F9AD0B9C9022737A /* Pods-FTMTableSectionModules_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTMTableSectionModules_Tests-resources.sh"; sourceTree = "<group>"; };
-		FD67D1B7405D60F6588C28A8C9E35AC1 /* FTMTableSectionModules-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTMTableSectionModules-dummy.m"; sourceTree = "<group>"; };
-		FFB8ADD52FFDDEF6B99F6C09BB3ACED7 /* Pods-FTMTableSectionModules_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FTMTableSectionModules_Tests-dummy.m"; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D7B65FD2973700AFA328763A558A5BDC /* Pods-FTMTableSectionModules_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTMTableSectionModules_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EC065C4D8D2AA2E2928B34049CD57650 /* Pods-FTMTableSectionModules_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FTMTableSectionModules_Example.modulemap"; sourceTree = "<group>"; };
+		F0D15B9204BD9C91797712DD417B3740 /* Pods-FTMTableSectionModules_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTMTableSectionModules_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F6DAC362FA1EC624E1F488DC6B1A99D6 /* Pods-FTMTableSectionModules_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FTMTableSectionModules_Tests.modulemap"; sourceTree = "<group>"; };
+		F841DEBF6315256954C8CEC99EEB15D4 /* FTMTableSectionModules-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FTMTableSectionModules-Info.plist"; sourceTree = "<group>"; };
+		FE16E3099AD842203D35DD8BFF9F17EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		71FEB45423EFC449FB43E53B144C2D59 /* Frameworks */ = {
+		85BBBB7E7F578B0274B93A4A15D367E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72657021AAA87C53D446CD051190211F /* Foundation.framework in Frameworks */,
+				DADBC76C6CD0EBFD5B13727D5A6E6C19 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95BBECDAFEA77342648FCF6EB92B177C /* Frameworks */ = {
+		ABAEB55AD2B005A4DED385609E38615E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E67200C84120072649FD1E5D8E6E1169 /* Foundation.framework in Frameworks */,
+				B905B2021A853BE90E09431A2CF7BFE7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3B2339E3D56E6CD5AE6276D9F32287A /* Frameworks */ = {
+		C424354E9D2E7383F958A258D1936F1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E2E5BE2C9E97D3C614F44047AF386B9 /* Foundation.framework in Frameworks */,
+				F2D28FA1425AEEF0CDFAEC60232B4CED /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20AD42DECE13AF492C8C2EFDB8A70138 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4F15B63828D4A3BCF379D9A0F4C7973B /* FTMTableSectionModules.podspec */,
+				11C1D75361DC0A02FEE6DA7BBE785C2E /* LICENSE */,
+				FE16E3099AD842203D35DD8BFF9F17EF /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		21FFDB1828DFD5D6BB4C20BF9074A39B /* FTMTableSectionModules */ = {
 			isa = PBXGroup;
 			children = (
 				0ECF63C5358EE85352BF5C953EFAF1C6 /* ModulesViewController.swift */,
 				12CF5F1DD241DF049AA89C7E87AD38D7 /* TableSectionModule.swift */,
-				E70967D2A029C63140F6EA9E36783AFF /* Pod */,
-				37028F34E44E9D737F2344DC60509017 /* Support Files */,
+				20AD42DECE13AF492C8C2EFDB8A70138 /* Pod */,
+				793D3E577BB9E79120C5CC2B8527C965 /* Support Files */,
 			);
 			name = FTMTableSectionModules;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		26400779A948B00D02A5B844F52B7CEC /* Pods-FTMTableSectionModules_Example */ = {
+		2FFCF85178C638AEF6B35B7B58E1DD53 /* Pods-FTMTableSectionModules_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				340690441344D31BFA0DBF300624C808 /* Info.plist */,
-				9CB74FC9F868701CDE0C8F7BBB3F2931 /* Pods-FTMTableSectionModules_Example.modulemap */,
-				C02D66DE6EC72CF4C86D7849FE7C2729 /* Pods-FTMTableSectionModules_Example-acknowledgements.markdown */,
-				D98256F84E50224F8AAB4C983D659BA4 /* Pods-FTMTableSectionModules_Example-acknowledgements.plist */,
-				29583D28567C0AFDD4AD171B3506F100 /* Pods-FTMTableSectionModules_Example-dummy.m */,
-				66A53DAE44904CD4A374FB85DA5C080B /* Pods-FTMTableSectionModules_Example-frameworks.sh */,
-				77F56BCF9BB6233809A842A52F112858 /* Pods-FTMTableSectionModules_Example-resources.sh */,
-				13041F68254D5435561ED44526CD598E /* Pods-FTMTableSectionModules_Example-umbrella.h */,
-				A064107E2F49BEA9255906655B2D8466 /* Pods-FTMTableSectionModules_Example.debug.xcconfig */,
-				6E618B26455BBB8D84D6AEF1672CFAF4 /* Pods-FTMTableSectionModules_Example.release.xcconfig */,
+				F6DAC362FA1EC624E1F488DC6B1A99D6 /* Pods-FTMTableSectionModules_Tests.modulemap */,
+				9F83B6A400C03C5F821ED1B30D06D1EF /* Pods-FTMTableSectionModules_Tests-acknowledgements.markdown */,
+				D7B65FD2973700AFA328763A558A5BDC /* Pods-FTMTableSectionModules_Tests-acknowledgements.plist */,
+				69CD27BDFCA66319624C69C97D8740FA /* Pods-FTMTableSectionModules_Tests-dummy.m */,
+				5B1A8CE58DD5325B6CE9E266FBBA42F0 /* Pods-FTMTableSectionModules_Tests-Info.plist */,
+				37EF0068E45E0364A2BD9FCE8682E823 /* Pods-FTMTableSectionModules_Tests-umbrella.h */,
+				A7BE9354EC7E3F15D217307B5D62BFE9 /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */,
+				B5F20152A390EAA83F29641EA2FD0E29 /* Pods-FTMTableSectionModules_Tests.release.xcconfig */,
 			);
-			name = "Pods-FTMTableSectionModules_Example";
-			path = "Target Support Files/Pods-FTMTableSectionModules_Example";
+			name = "Pods-FTMTableSectionModules_Tests";
+			path = "Target Support Files/Pods-FTMTableSectionModules_Tests";
 			sourceTree = "<group>";
 		};
-		37028F34E44E9D737F2344DC60509017 /* Support Files */ = {
+		3D2175CBECD963C36809F6371A747771 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				996383E5D77AD77C6B05AB2C51CA9C16 /* FTMTableSectionModules.modulemap */,
-				C3FD12CED8A47E80125E31E8562FA0CA /* FTMTableSectionModules.xcconfig */,
-				FD67D1B7405D60F6588C28A8C9E35AC1 /* FTMTableSectionModules-dummy.m */,
-				BC1B4F9CC8A8D8718DEDEB9EB9771D55 /* FTMTableSectionModules-prefix.pch */,
-				04382752319B14AEE103F91466945D64 /* FTMTableSectionModules-umbrella.h */,
-				E04F98495E6772AF0514480D406F87FE /* Info.plist */,
+				ECB49C78918D3E7C9846E78B2BCE5469 /* Pods-FTMTableSectionModules_Example */,
+				2FFCF85178C638AEF6B35B7B58E1DD53 /* Pods-FTMTableSectionModules_Tests */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FTMTableSectionModules";
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		4963482F53E911EA689D91C11C8E8F87 /* Products */ = {
@@ -158,14 +166,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		793D3E577BB9E79120C5CC2B8527C965 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9065C305AB9A9E4C7AAFFB41EED6EE98 /* FTMTableSectionModules.modulemap */,
+				3027E0FEA5792E44BF18F9646161784A /* FTMTableSectionModules.xcconfig */,
+				8D4EB37CB3BA02E3D3EAA84B331C8000 /* FTMTableSectionModules-dummy.m */,
+				F841DEBF6315256954C8CEC99EEB15D4 /* FTMTableSectionModules-Info.plist */,
+				C3B2C0FE4F1A3A41DBF0B235B9F18459 /* FTMTableSectionModules-prefix.pch */,
+				CA31B87FD4288E0982793A7D884D5F01 /* FTMTableSectionModules-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FTMTableSectionModules";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
 				A7D4F54923DB1BD08039111098A37617 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				4963482F53E911EA689D91C11C8E8F87 /* Products */,
-				AC471E16D1D39D9CD42B9FC158043FE9 /* Targets Support Files */,
+				3D2175CBECD963C36809F6371A747771 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,132 +199,69 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		AC471E16D1D39D9CD42B9FC158043FE9 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				26400779A948B00D02A5B844F52B7CEC /* Pods-FTMTableSectionModules_Example */,
-				B17E66A727988154C96ED752B31A32F7 /* Pods-FTMTableSectionModules_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B17E66A727988154C96ED752B31A32F7 /* Pods-FTMTableSectionModules_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				572DF301E3605F2380290660775EA3D3 /* Info.plist */,
-				45A75B46A6E7D7E21F2B3F0FFC252195 /* Pods-FTMTableSectionModules_Tests.modulemap */,
-				8ADC67ABBC06C7016220501F4D5D38EC /* Pods-FTMTableSectionModules_Tests-acknowledgements.markdown */,
-				3B2F3951B61651BDF72073A831DB141A /* Pods-FTMTableSectionModules_Tests-acknowledgements.plist */,
-				FFB8ADD52FFDDEF6B99F6C09BB3ACED7 /* Pods-FTMTableSectionModules_Tests-dummy.m */,
-				EC20F96AF1FD447DEDC1AB1597D8BE6E /* Pods-FTMTableSectionModules_Tests-frameworks.sh */,
-				F63D02BFF4193067F9AD0B9C9022737A /* Pods-FTMTableSectionModules_Tests-resources.sh */,
-				2E4A9F72FE68C60CD05D2116CA723585 /* Pods-FTMTableSectionModules_Tests-umbrella.h */,
-				8DB896B3487A45EAD8EDF59D9B0B2D6E /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */,
-				3538441BB818BB1330B91040D0AE702E /* Pods-FTMTableSectionModules_Tests.release.xcconfig */,
-			);
-			name = "Pods-FTMTableSectionModules_Tests";
-			path = "Target Support Files/Pods-FTMTableSectionModules_Tests";
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				44D5347904CF754D6785B84253F2574A /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		ECB49C78918D3E7C9846E78B2BCE5469 /* Pods-FTMTableSectionModules_Example */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				EC065C4D8D2AA2E2928B34049CD57650 /* Pods-FTMTableSectionModules_Example.modulemap */,
+				6C6ACF1EB4067F3C7339B59934B0D4AD /* Pods-FTMTableSectionModules_Example-acknowledgements.markdown */,
+				76F2E863B080B640C62307EA35ACD693 /* Pods-FTMTableSectionModules_Example-acknowledgements.plist */,
+				BCA7694BBCABE8BEFA3A14FCC5B21462 /* Pods-FTMTableSectionModules_Example-dummy.m */,
+				99093266338897FAF69729629A28E315 /* Pods-FTMTableSectionModules_Example-frameworks.sh */,
+				324D34487E20B83FDA5137EBE54CA4E7 /* Pods-FTMTableSectionModules_Example-Info.plist */,
+				96C81BF2E81F100E002507C5507D54FB /* Pods-FTMTableSectionModules_Example-umbrella.h */,
+				F0D15B9204BD9C91797712DD417B3740 /* Pods-FTMTableSectionModules_Example.debug.xcconfig */,
+				8C47836C80797B9C720103ED7370F308 /* Pods-FTMTableSectionModules_Example.release.xcconfig */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		E70967D2A029C63140F6EA9E36783AFF /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B85182C4F581A040DE795D6483A436D9 /* FTMTableSectionModules.podspec */,
-				2ECCB23BEB19C7BECBCD33C0DA034DAF /* LICENSE */,
-				7D9D9E89ACC3D55EF968C70E21FDDCDF /* README.md */,
-			);
-			name = Pod;
+			name = "Pods-FTMTableSectionModules_Example";
+			path = "Target Support Files/Pods-FTMTableSectionModules_Example";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3BB391F482A37BAC4A580EECBAAB47F2 /* Headers */ = {
+		043A49DE1A1864B83AAED7987E451666 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CA57416237E0EC3370FBC1482E97A4D /* FTMTableSectionModules-umbrella.h in Headers */,
+				F3C22BF0B7530B0F71BBE8F2B05CD043 /* FTMTableSectionModules-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77710A81AB05447A26F4164BADEA0834 /* Headers */ = {
+		28DB57F7F025CCB861740961612AF2D7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29FBD071D975DDD970EF75B7E4F5C1B3 /* Pods-FTMTableSectionModules_Tests-umbrella.h in Headers */,
+				80C2A00B7065139BBF1F1B8C580B601C /* Pods-FTMTableSectionModules_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF51BFA9EBC8425BC5A47841199364EC /* Headers */ = {
+		B685E1FC23A5BA36015D1F7716587F4F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C10FBA78B869A8F87F71331D53267B6 /* Pods-FTMTableSectionModules_Example-umbrella.h in Headers */,
+				12FB15BEE086155083E70B1FE5B2431D /* Pods-FTMTableSectionModules_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		42A5C55405F604C4DE0E773E1CB62E82 /* Pods-FTMTableSectionModules_Tests */ = {
+		300F012C8630C6C56F9B6FBD6163DCCA /* FTMTableSectionModules */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 511A0700C79F23FA993D38224DBB729F /* Build configuration list for PBXNativeTarget "Pods-FTMTableSectionModules_Tests" */;
+			buildConfigurationList = 81A8583189CF8E0225C167752AC0804E /* Build configuration list for PBXNativeTarget "FTMTableSectionModules" */;
 			buildPhases = (
-				0D24C4DA84895CD7521D82342F5D5352 /* Sources */,
-				71FEB45423EFC449FB43E53B144C2D59 /* Frameworks */,
-				77710A81AB05447A26F4164BADEA0834 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				065C46543B3CEC24D6517808C75151F8 /* PBXTargetDependency */,
-			);
-			name = "Pods-FTMTableSectionModules_Tests";
-			productName = "Pods-FTMTableSectionModules_Tests";
-			productReference = 8C2464B3085E9DC1560AB5E0D62425E0 /* Pods_FTMTableSectionModules_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4685577A56F9C26CE8CEFF1C6103786F /* Pods-FTMTableSectionModules_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 95823EA3FB388946EB0311C144D4C491 /* Build configuration list for PBXNativeTarget "Pods-FTMTableSectionModules_Example" */;
-			buildPhases = (
-				3E658C96962E1503A1DE465339FC4077 /* Sources */,
-				95BBECDAFEA77342648FCF6EB92B177C /* Frameworks */,
-				AF51BFA9EBC8425BC5A47841199364EC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9C645A00192CBFEC674CFB113E9DDD6B /* PBXTargetDependency */,
-			);
-			name = "Pods-FTMTableSectionModules_Example";
-			productName = "Pods-FTMTableSectionModules_Example";
-			productReference = 33D161A53330C7E4A40E8EDD239BF237 /* Pods_FTMTableSectionModules_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		516346606C02B32A2A7B88CA19931618 /* FTMTableSectionModules */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2D020EB7479AE68CFCDD89F1ACC3A21F /* Build configuration list for PBXNativeTarget "FTMTableSectionModules" */;
-			buildPhases = (
-				83EC5E0E7B6ABF8AABA0D405ED46CA7C /* Sources */,
-				F3B2339E3D56E6CD5AE6276D9F32287A /* Frameworks */,
-				3BB391F482A37BAC4A580EECBAAB47F2 /* Headers */,
+				043A49DE1A1864B83AAED7987E451666 /* Headers */,
+				87A3CE17F15E284FED1F0672D2ED3886 /* Sources */,
+				85BBBB7E7F578B0274B93A4A15D367E9 /* Frameworks */,
+				E2A39E396D2A9225D8A5FADCB8AED06E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -311,6 +270,44 @@
 			name = FTMTableSectionModules;
 			productName = FTMTableSectionModules;
 			productReference = D4AB2623D5D92A76577FF38EBEDDF178 /* FTMTableSectionModules.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7EC8C1EEDC7393759FB8C7F1DCC7EF01 /* Pods-FTMTableSectionModules_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C93007D5B9C69D1949AB9EB10F9F4F5 /* Build configuration list for PBXNativeTarget "Pods-FTMTableSectionModules_Tests" */;
+			buildPhases = (
+				B685E1FC23A5BA36015D1F7716587F4F /* Headers */,
+				2670D18DC488BA3B593AABB20F52B09C /* Sources */,
+				ABAEB55AD2B005A4DED385609E38615E /* Frameworks */,
+				4D0B1EE9D86FDF0608E35377B7153622 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B41B72753E29E2FABA8E30DC5F07F956 /* PBXTargetDependency */,
+			);
+			name = "Pods-FTMTableSectionModules_Tests";
+			productName = "Pods-FTMTableSectionModules_Tests";
+			productReference = 8C2464B3085E9DC1560AB5E0D62425E0 /* Pods_FTMTableSectionModules_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF5732B97C18EC9E1AC9906F53875A81 /* Pods-FTMTableSectionModules_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F66C892AA9C9F45C2CEF2F1F1D77BFF /* Build configuration list for PBXNativeTarget "Pods-FTMTableSectionModules_Example" */;
+			buildPhases = (
+				28DB57F7F025CCB861740961612AF2D7 /* Headers */,
+				9EE0F6EA93578327A0109E8C1045710A /* Sources */,
+				C424354E9D2E7383F958A258D1936F1D /* Frameworks */,
+				74CAA952DCA48B0A649A33F7765873DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4645E208EDF09465230503B9587B1D61 /* PBXTargetDependency */,
+			);
+			name = "Pods-FTMTableSectionModules_Example";
+			productName = "Pods-FTMTableSectionModules_Example";
+			productReference = 33D161A53330C7E4A40E8EDD239BF237 /* Pods_FTMTableSectionModules_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -334,59 +331,83 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				516346606C02B32A2A7B88CA19931618 /* FTMTableSectionModules */,
-				4685577A56F9C26CE8CEFF1C6103786F /* Pods-FTMTableSectionModules_Example */,
-				42A5C55405F604C4DE0E773E1CB62E82 /* Pods-FTMTableSectionModules_Tests */,
+				300F012C8630C6C56F9B6FBD6163DCCA /* FTMTableSectionModules */,
+				FF5732B97C18EC9E1AC9906F53875A81 /* Pods-FTMTableSectionModules_Example */,
+				7EC8C1EEDC7393759FB8C7F1DCC7EF01 /* Pods-FTMTableSectionModules_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		4D0B1EE9D86FDF0608E35377B7153622 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CAA952DCA48B0A649A33F7765873DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A39E396D2A9225D8A5FADCB8AED06E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		0D24C4DA84895CD7521D82342F5D5352 /* Sources */ = {
+		2670D18DC488BA3B593AABB20F52B09C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE26F2CC3A9AF68FB58284A7595BB550 /* Pods-FTMTableSectionModules_Tests-dummy.m in Sources */,
+				8EAFD38336DE645E7D515FF1F3C3C004 /* Pods-FTMTableSectionModules_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E658C96962E1503A1DE465339FC4077 /* Sources */ = {
+		87A3CE17F15E284FED1F0672D2ED3886 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1CC4F5CE3A727492D98F950FE0E649C /* Pods-FTMTableSectionModules_Example-dummy.m in Sources */,
+				1AAAA28CB3458468751D46A66FC20A01 /* FTMTableSectionModules-dummy.m in Sources */,
+				1448722AD0D72494C421F90C81DA4FCC /* ModulesViewController.swift in Sources */,
+				213CE5231B0BC79E250F979A1ABF7021 /* TableSectionModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83EC5E0E7B6ABF8AABA0D405ED46CA7C /* Sources */ = {
+		9EE0F6EA93578327A0109E8C1045710A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D907D5942452D68FE0039877D3251D /* FTMTableSectionModules-dummy.m in Sources */,
-				182447B45D590A2B9079E9A2A5D8A62D /* ModulesViewController.swift in Sources */,
-				1C08066056338B1DD03094101497951A /* TableSectionModule.swift in Sources */,
+				19FF3E7A98D79D271B2B79050C14437C /* Pods-FTMTableSectionModules_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		065C46543B3CEC24D6517808C75151F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-FTMTableSectionModules_Example";
-			target = 4685577A56F9C26CE8CEFF1C6103786F /* Pods-FTMTableSectionModules_Example */;
-			targetProxy = DEF9527B8C6CF3EBC325B1EF28AAB163 /* PBXContainerItemProxy */;
-		};
-		9C645A00192CBFEC674CFB113E9DDD6B /* PBXTargetDependency */ = {
+		4645E208EDF09465230503B9587B1D61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FTMTableSectionModules;
-			target = 516346606C02B32A2A7B88CA19931618 /* FTMTableSectionModules */;
-			targetProxy = 9C1216019561E17F62074A58A33C8191 /* PBXContainerItemProxy */;
+			target = 300F012C8630C6C56F9B6FBD6163DCCA /* FTMTableSectionModules */;
+			targetProxy = 0A50080045D617F5C46978304F9093FD /* PBXContainerItemProxy */;
+		};
+		B41B72753E29E2FABA8E30DC5F07F956 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FTMTableSectionModules_Example";
+			target = FF5732B97C18EC9E1AC9906F53875A81 /* Pods-FTMTableSectionModules_Example */;
+			targetProxy = 282680A8ADFE8A8EC9AEDB177CC66530 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+		08B0394D5F17A9F046DC0719C25BA452 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -418,8 +439,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -440,18 +459,21 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		1EE603A422C4BB32E21C58C3E4D5998A /* Release */ = {
+		56972EF1010DA79A30266BA33ED34708 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3538441BB818BB1330B91040D0AE702E /* Pods-FTMTableSectionModules_Tests.release.xcconfig */;
+			baseConfigurationReference = F0D15B9204BD9C91797712DD417B3740 /* Pods-FTMTableSectionModules_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -463,7 +485,40 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FTMTableSectionModules_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		75C505BC9C6522E55661E99ECD1DDF2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F20152A390EAA83F29641EA2FD0E29 /* Pods-FTMTableSectionModules_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -483,9 +538,9 @@
 			};
 			name = Release;
 		};
-		26ED63DA2E32052714A6A75BA8E03B2D /* Release */ = {
+		ABEB9A13D3906AC3AE68AF9A6DEA5AEB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3FD12CED8A47E80125E31E8562FA0CA /* FTMTableSectionModules.xcconfig */;
+			baseConfigurationReference = 3027E0FEA5792E44BF18F9646161784A /* FTMTableSectionModules.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -497,7 +552,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FTMTableSectionModules/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -507,50 +562,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2ADCA4541BC3ACEAB12FB4CF1019D774 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3FD12CED8A47E80125E31E8562FA0CA /* FTMTableSectionModules.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FTMTableSectionModules/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules.modulemap";
-				PRODUCT_MODULE_NAME = FTMTableSectionModules;
-				PRODUCT_NAME = FTMTableSectionModules;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		33431D2256E3B5C1008ABFCD1D6D008A /* Debug */ = {
+		C36B98C4E71BC99D33346EA2494B573D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A064107E2F49BEA9255906655B2D8466 /* Pods-FTMTableSectionModules_Example.debug.xcconfig */;
+			baseConfigurationReference = 8C47836C80797B9C720103ED7370F308 /* Pods-FTMTableSectionModules_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -562,7 +583,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FTMTableSectionModules_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -575,42 +596,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		49B9B149DE8E28ACDFCFB6FB99C17D2A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E618B26455BBB8D84D6AEF1672CFAF4 /* Pods-FTMTableSectionModules_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FTMTableSectionModules_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -618,9 +603,9 @@
 			};
 			name = Release;
 		};
-		8A4C90AA842D4438B0656A28F929C9AC /* Debug */ = {
+		C68545962876B75A1510541CBDA52301 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DB896B3487A45EAD8EDF59D9B0B2D6E /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */;
+			baseConfigurationReference = A7BE9354EC7E3F15D217307B5D62BFE9 /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -632,7 +617,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FTMTableSectionModules_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -651,7 +636,39 @@
 			};
 			name = Debug;
 		};
-		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+		E11BFB5ECF62887BD43F15450BE04ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3027E0FEA5792E44BF18F9646161784A /* FTMTableSectionModules.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules.modulemap";
+				PRODUCT_MODULE_NAME = FTMTableSectionModules;
+				PRODUCT_NAME = FTMTableSectionModules;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E82C56363775B4EF468FF2AD9A2F5414 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -683,8 +700,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -703,8 +718,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -712,11 +731,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D020EB7479AE68CFCDD89F1ACC3A21F /* Build configuration list for PBXNativeTarget "FTMTableSectionModules" */ = {
+		1F66C892AA9C9F45C2CEF2F1F1D77BFF /* Build configuration list for PBXNativeTarget "Pods-FTMTableSectionModules_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2ADCA4541BC3ACEAB12FB4CF1019D774 /* Debug */,
-				26ED63DA2E32052714A6A75BA8E03B2D /* Release */,
+				56972EF1010DA79A30266BA33ED34708 /* Debug */,
+				C36B98C4E71BC99D33346EA2494B573D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -724,26 +743,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
-				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+				08B0394D5F17A9F046DC0719C25BA452 /* Debug */,
+				E82C56363775B4EF468FF2AD9A2F5414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		511A0700C79F23FA993D38224DBB729F /* Build configuration list for PBXNativeTarget "Pods-FTMTableSectionModules_Tests" */ = {
+		7C93007D5B9C69D1949AB9EB10F9F4F5 /* Build configuration list for PBXNativeTarget "Pods-FTMTableSectionModules_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A4C90AA842D4438B0656A28F929C9AC /* Debug */,
-				1EE603A422C4BB32E21C58C3E4D5998A /* Release */,
+				C68545962876B75A1510541CBDA52301 /* Debug */,
+				75C505BC9C6522E55661E99ECD1DDF2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95823EA3FB388946EB0311C144D4C491 /* Build configuration list for PBXNativeTarget "Pods-FTMTableSectionModules_Example" */ = {
+		81A8583189CF8E0225C167752AC0804E /* Build configuration list for PBXNativeTarget "FTMTableSectionModules" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33431D2256E3B5C1008ABFCD1D6D008A /* Debug */,
-				49B9B149DE8E28ACDFCFB6FB99C17D2A /* Release */,
+				ABEB9A13D3906AC3AE68AF9A6DEA5AEB /* Debug */,
+				E11BFB5ECF62887BD43F15450BE04ACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
