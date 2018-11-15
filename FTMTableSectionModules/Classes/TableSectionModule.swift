@@ -9,8 +9,9 @@
 import UIKit
 
 private struct TableSectionModuleConstants{
-    static let EstimatedHeight : CGFloat = 44
-    static let SeparatorHeight : CGFloat = 1
+    static let estimatedRowHeight : CGFloat = 44
+    static let estimatedHeaderFooterHeight : CGFloat = 30
+    static let separatorHeight : CGFloat = 1
 }
 
 open class TableSectionModule: NSObject {
@@ -161,7 +162,7 @@ public extension TableSectionModule {
         sizingCell.layoutIfNeeded()
     
         let size : CGSize = sizingCell.contentView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
-        let separator : CGFloat = TableSectionModuleConstants.SeparatorHeight / UIScreen.main.scale
+        let separator : CGFloat = TableSectionModuleConstants.separatorHeight / UIScreen.main.scale
         
         return size.height + separator // Add space for the cell separator height
     }
@@ -212,17 +213,17 @@ extension TableSectionModule {
     
     @objc
     open func tableView(_ tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
-        return TableSectionModuleConstants.EstimatedHeight
+        return TableSectionModuleConstants.estimatedRowHeight
     }
     
     @objc
     open func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-        return CGSize.zero.height
+        return TableSectionModuleConstants.estimatedHeaderFooterHeight
     }
     
     @objc
     open func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
-        return CGSize.zero.height
+        return TableSectionModuleConstants.estimatedHeaderFooterHeight
     }
     
     @objc
