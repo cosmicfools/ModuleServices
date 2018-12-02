@@ -144,6 +144,14 @@ public extension TableSectionModule {
     }
 }
 
+// MARK: - Mothod for Refresh the section
+public extension TableSectionModule {
+    public func refreshSection() {
+        createRows()
+        tableView.reloadSections(IndexSet(integer: section), with: UITableView.RowAnimation.automatic)
+    }
+}
+
 // MARK: - Autocalculate the needed height of a cells
 public extension TableSectionModule {
     public func dequeueDynamicHeightCellWithIdentifier(_ identifier: String) -> UITableViewCell {
