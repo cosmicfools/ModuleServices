@@ -3,7 +3,7 @@
 //  FTMTableSectionModules
 //
 //  Created by Francisco Javier Trujillo Mata on 24/08/2017.
-//  Copyright © 2017 CocoaPods. All rights reserved.
+//  Copyright © 2017 FJTRUJY. All rights reserved.
 //
 
 import UIKit

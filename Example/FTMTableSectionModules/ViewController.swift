@@ -21,6 +21,7 @@ class ViewController: ModulesViewController {
     override func createModules() {
         super.createModules()
         
+        self.appendModule(HelloWorldModule(tableView: self.tableView!))
         self.appendModule(FirstSectionModule(tableView: self.tableView!))
         self.appendModule(SecondSectionModule(tableView: self.tableView!))
     }
