@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "516346606C02B32A2A7B88CA19931618"
+               BlueprintIdentifier = "246333292C106D244B7E7648CEABC28A"
                BuildableName = "FTMTableSectionModules.framework"
                BlueprintName = "FTMTableSectionModules"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "516346606C02B32A2A7B88CA19931618"
+            BlueprintIdentifier = "246333292C106D244B7E7648CEABC28A"
             BuildableName = "FTMTableSectionModules.framework"
             BlueprintName = "FTMTableSectionModules"
             ReferencedContainer = "container:Pods.xcodeproj">

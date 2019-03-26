@@ -22,7 +22,9 @@ open class TableSectionModule: NSObject {
         get {
             return (sectionSource?.sectionForModule(self))!
         }
-        set { self.section = newValue }
+        set(newSection) {
+            self.section = newSection
+        }
     }
     fileprivate(set) open var isPresented:Bool = false
     fileprivate(set) open var isFetching:Bool = false
@@ -129,14 +131,14 @@ extension TableSectionModule {
 
 // MARK: - Methods for sepatartor of the Cells
 public extension TableSectionModule {
-    public func setupSeparatorInsetForCell(_ cell : UITableViewCell, forIndexPath indexPath : IndexPath) {
+    func setupSeparatorInsetForCell(_ cell : UITableViewCell, forIndexPath indexPath : IndexPath) {
         // Remove seperator inset
         cell.separatorInset = UIEdgeInsets.zero
         cell.preservesSuperviewLayoutMargins = false
         cell.layoutMargins = UIEdgeInsets.zero
     }
     
-    public func removeSeparatorInsetForCell(_ cell : UITableViewCell, forIndexPath indexPath : IndexPath) {
+    func removeSeparatorInsetForCell(_ cell : UITableViewCell, forIndexPath indexPath : IndexPath) {
         // Remove seperator inset
         cell.separatorInset = UIEdgeInsets.init(top: CGSize.zero.height, left: cell.bounds.size.width, bottom: CGSize.zero.width, right: CGSize.zero.height)
         cell.preservesSuperviewLayoutMargins = true
@@ -146,7 +148,7 @@ public extension TableSectionModule {
 
 // MARK: - Mothod for Refresh the section
 public extension TableSectionModule {
-    public func refreshSection() {
+    func refreshSection() {
         createRows()
         tableView.reloadSections(IndexSet(integer: section), with: UITableView.RowAnimation.automatic)
     }
@@ -154,7 +156,7 @@ public extension TableSectionModule {
 
 // MARK: - Autocalculate the needed height of a cells
 public extension TableSectionModule {
-    public func dequeueDynamicHeightCellWithIdentifier(_ identifier: String) -> UITableViewCell {
+    func dequeueDynamicHeightCellWithIdentifier(_ identifier: String) -> UITableViewCell {
         var sizingCell : UITableViewCell? = self.dynamicCells[identifier]
         if sizingCell == nil {
             sizingCell = self.tableView.dequeueReusableCell(withIdentifier: identifier)
@@ -164,7 +166,7 @@ public extension TableSectionModule {
         return sizingCell!
     }
     
-    public func calculateHeightForSizingCell(_ sizingCell: UITableViewCell) -> CGFloat {
+    func calculateHeightForSizingCell(_ sizingCell: UITableViewCell) -> CGFloat {
         sizingCell.bounds = CGRect(x: CGPoint.zero.x, y: CGPoint.zero.y, width: self.tableView.frame.width, height: sizingCell.bounds.height)
         sizingCell.setNeedsLayout()
         sizingCell.layoutIfNeeded()
