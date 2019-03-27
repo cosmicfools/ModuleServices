@@ -18,14 +18,9 @@ open class TableSectionModule: NSObject {
     open var rows:[AnyObject] = []
     weak internal var sectionSource: TableSectionModuleSectionSource?
     fileprivate(set) open var tableView:UITableView!
-    fileprivate(set) open var section:NSInteger{
-        get {
-            return (sectionSource?.sectionForModule(self))!
-        }
-        set(newSection) {
-            self.section = newSection
-        }
-    }
+    open var section: NSInteger {
+        return (sectionSource?.sectionForModule(self))!
+    }    
     fileprivate(set) open var isPresented:Bool = false
     fileprivate(set) open var isFetching:Bool = false
     fileprivate var dynamicCells = Dictionary<String, UITableViewCell>()
