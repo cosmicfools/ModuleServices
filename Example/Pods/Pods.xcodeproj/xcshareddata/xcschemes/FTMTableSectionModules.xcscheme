@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "246333292C106D244B7E7648CEABC28A"
+               BlueprintIdentifier = "07357CC0F5471BD0D367A16F7DCBFC05"
                BuildableName = "FTMTableSectionModules.framework"
                BlueprintName = "FTMTableSectionModules"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "246333292C106D244B7E7648CEABC28A"
+            BlueprintIdentifier = "07357CC0F5471BD0D367A16F7DCBFC05"
             BuildableName = "FTMTableSectionModules.framework"
             BlueprintName = "FTMTableSectionModules"
             ReferencedContainer = "container:Pods.xcodeproj">

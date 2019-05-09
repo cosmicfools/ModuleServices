@@ -64,6 +64,10 @@ extension ModulesViewController: TableSectionModuleSectionSource {
         self.modules.removeAll()
     }
     
+    public func removeModule(_ module: TableSectionModule) {
+        modules.removeAll{$0.isEqual(module)}
+    }
+    
     public func removeModuleAtIndex(_ atIndex: Int) {
         self.modules.remove(at: atIndex)
     }
@@ -82,7 +86,7 @@ extension ModulesViewController: TableSectionModuleSectionSource {
     }
     
     public func sectionForModule(_ module: TableSectionModule) -> NSInteger {
-        return (self.modules.firstIndex(of: module))!
+        return self.modules.firstIndex(of: module) ?? NSNotFound
     }
 }
 

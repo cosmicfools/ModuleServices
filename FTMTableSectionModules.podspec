@@ -21,6 +21,15 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
-  s.source_files = 'FTMTableSectionModules/Classes/**/*'
+  s.default_subspec = 'Core'
+  
+  s.subspec 'Core' do |ss|
+    ss.source_files = 'FTMTableSectionModules/Classes/Core/**/*'
+  end
+  
+  s.subspec 'Tests' do |ss|
+    ss.dependency 'FTMTableSectionModules/Core'
+    ss.source_files = 'FTMTableSectionModules/Classes/Test/**/*'
+  end
 
 end
