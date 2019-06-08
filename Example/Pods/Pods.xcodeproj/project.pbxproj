@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10E8E4573E6A44AD957DA02D72D441FA /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 078903AE75C1D7D5C61C8DE620D53A5A /* UIImage+Diff.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2B5360B16CA33F808118C3C95FADFB3B /* TableSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4968E2370DFE3F20E5C13945C5E0AA86 /* TableSectionModule.swift */; };
-		33D3D6BC2256D4F842D70042F998CC61 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3E11CFF525A7BE0F5090E39A8A725C /* FBSnapshotTestCasePlatform.m */; };
 		36A5665F0781BAE7B9F7BF3F6BBB8682 /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD54FBC707C522306409616608E03F7 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		370BD2862EF2F67C2B64CE9F98DED2C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */; };
+		3A76EE90E5616D1F747FC0CC16C40AC2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F5D23833B7C650DB2B9B5EA95B43F7 /* UIImage+Snapshot.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		43343D8FA551CC6ADD2FDDEFA30F8604 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */; };
+		458E934393B39D2A3C9DAD2A4CDABFA2 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3E11CFF525A7BE0F5090E39A8A725C /* FBSnapshotTestCasePlatform.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4F1EBF73CA49FCABCF33A4D1755654EC /* iOSSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58F4181C8833BE6DB86CDA8C805A00A9 /* iOSSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5113CD71C301DB717CF689D90A64FA69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
+		572E88DA89B56B831BE8AFB267AB4904 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2628B40D6A150C1ADD3875C92B9792 /* FBSnapshotTestController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5964CE434018600CB486D2AE14EC9CC9 /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2384A7DEC0DF3A444A00BF37716A2F7E /* ModulesViewController.swift */; };
 		5B72EC2F3411F704BB2E8E5CAB30DCB7 /* Pods-FTMTableSectionModules_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAFE0F29ED28FC253222AD4DBA559EC /* Pods-FTMTableSectionModules_Tests-dummy.m */; };
 		607D699FBFB44FC2A0AA26FD9D05A79C /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BF0D8E3529AAF9DD2F8B3378FD89216 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A2A41646D7026F5770514C0DD1A823A /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D328D5B1788520371534F0EC9AA67 /* SwiftSupport.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6E04171A83D39EB85E0F58A849E896EF /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = EB07CC184E97597B5EF96293FD8D6775 /* UIImage+Compare.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		724436CC982FDC1AA0A92A54B0B30C25 /* Pods-FTMTableSectionModules_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7A1E7BBF86BAB074DAF5779EA63FA3 /* Pods-FTMTableSectionModules_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73BB82ED3F095565B9F13F1C157D9CD0 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = DC37D45B91EAA34C1B307819F4FBFA48 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77FCE66771D31552009050B4EA412044 /* ModulesHelperTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1FAB3869CA0027FF88305FBA1384FE /* ModulesHelperTestsViewController.swift */; };
-		7A96298798764E22913DB2FACCFFD968 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 523B65C5434BF857787C7B495D48070A /* FBSnapshotTestCase.m */; };
 		7F6F6493C2852BDD8143F2D1B9CC9750 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
-		82E197D6093DA3848CAD69996567B040 /* iOSSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 796F28118D863DD7DDE14D1F6AC3DC9C /* iOSSnapshotTestCase-dummy.m */; };
-		8BFB09780574F9C9E391EDCF9EA1FCA4 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2628B40D6A150C1ADD3875C92B9792 /* FBSnapshotTestController.m */; };
 		8E30D6FA349A6AE79FCE0B753B320D2B /* Pods-FTMTableSectionModules_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA14B0DBF0E988FBDEC0A19AF87C51E0 /* Pods-FTMTableSectionModules_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E70D3A49FB2D0E18D843C3424E9F820 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = F98662B97F340866723F7EA90CF3D26C /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		973942DBCA95229EC13A9E66CBA9F835 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
@@ -34,11 +36,9 @@
 		B416DFA10A496A9A355C2A8D23FCE294 /* FTMTableSectionModules-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB154744C4221C634A3820442E610E7 /* FTMTableSectionModules-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B82E61D13507EAB7A85C0B5BFE18FC5E /* Pods-FTMTableSectionModules_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FA1017D4ED8951F92E090511BD71F0 /* Pods-FTMTableSectionModules_Example-dummy.m */; };
 		BDE16CBA7995325BC6F2B9B569518D78 /* FTMTableSectionModules-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9659E9F40F9093D3880C9D7398463158 /* FTMTableSectionModules-dummy.m */; };
-		C7889D46EBFB4EADD21DE8F3C8BB0274 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D328D5B1788520371534F0EC9AA67 /* SwiftSupport.swift */; };
-		E02B59FE019C1939E1E67A7554D3076D /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 078903AE75C1D7D5C61C8DE620D53A5A /* UIImage+Diff.m */; };
+		D345E7BDE3D4B288AFEA1EB948E42078 /* iOSSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 796F28118D863DD7DDE14D1F6AC3DC9C /* iOSSnapshotTestCase-dummy.m */; };
+		E3702EC42A690984756701AEA0A4D2C2 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 523B65C5434BF857787C7B495D48070A /* FBSnapshotTestCase.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E748527FFEE106BFFAA5D408A17F37FF /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EE0D8468132004B33C282270003A158 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F2E22422C1596EFB894D3B77A6CE4918 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = EB07CC184E97597B5EF96293FD8D6775 /* UIImage+Compare.m */; };
-		F932B01BFF90EDD8497D20A23652DF5B /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F5D23833B7C650DB2B9B5EA95B43F7 /* UIImage+Snapshot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -479,7 +479,7 @@
 			buildConfigurationList = EEB1DCFA8D23D738DB723872276F2402 /* Build configuration list for PBXNativeTarget "iOSSnapshotTestCase" */;
 			buildPhases = (
 				9FED8720701E2173DA55D4E09180FC57 /* Headers */,
-				C6AB89BE9F8DB61D11E41FC22E0C5AC9 /* Sources */,
+				680766B5259877F587BCA35D50AC28C1 /* Sources */,
 				892A08C214FEEBFFA7D504758107B6DF /* Frameworks */,
 				50D0972EB23D3950F66DCF37E3B0428E /* Resources */,
 			);
@@ -573,26 +573,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		680766B5259877F587BCA35D50AC28C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3702EC42A690984756701AEA0A4D2C2 /* FBSnapshotTestCase.m in Sources */,
+				458E934393B39D2A3C9DAD2A4CDABFA2 /* FBSnapshotTestCasePlatform.m in Sources */,
+				572E88DA89B56B831BE8AFB267AB4904 /* FBSnapshotTestController.m in Sources */,
+				D345E7BDE3D4B288AFEA1EB948E42078 /* iOSSnapshotTestCase-dummy.m in Sources */,
+				6A2A41646D7026F5770514C0DD1A823A /* SwiftSupport.swift in Sources */,
+				6E04171A83D39EB85E0F58A849E896EF /* UIImage+Compare.m in Sources */,
+				10E8E4573E6A44AD957DA02D72D441FA /* UIImage+Diff.m in Sources */,
+				3A76EE90E5616D1F747FC0CC16C40AC2 /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D33DE546A58E75DFAC4BCD1236EDB57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B82E61D13507EAB7A85C0B5BFE18FC5E /* Pods-FTMTableSectionModules_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6AB89BE9F8DB61D11E41FC22E0C5AC9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A96298798764E22913DB2FACCFFD968 /* FBSnapshotTestCase.m in Sources */,
-				33D3D6BC2256D4F842D70042F998CC61 /* FBSnapshotTestCasePlatform.m in Sources */,
-				8BFB09780574F9C9E391EDCF9EA1FCA4 /* FBSnapshotTestController.m in Sources */,
-				82E197D6093DA3848CAD69996567B040 /* iOSSnapshotTestCase-dummy.m in Sources */,
-				C7889D46EBFB4EADD21DE8F3C8BB0274 /* SwiftSupport.swift in Sources */,
-				F2E22422C1596EFB894D3B77A6CE4918 /* UIImage+Compare.m in Sources */,
-				E02B59FE019C1939E1E67A7554D3076D /* UIImage+Diff.m in Sources */,
-				F932B01BFF90EDD8497D20A23652DF5B /* UIImage+Snapshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

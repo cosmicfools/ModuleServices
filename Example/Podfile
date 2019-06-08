@@ -7,6 +7,6 @@ target 'FTMTableSectionModules_Example' do
   
   target 'FTMTableSectionModules_Tests' do
     inherit! :search_paths
-    pod 'iOSSnapshotTestCase'
+    pod 'iOSSnapshotTestCase', :inhibit_warnings => true
   end
 end
