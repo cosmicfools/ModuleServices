@@ -3,8 +3,10 @@ use_frameworks!
 
 target 'FTMTableSectionModules_Example' do
   pod 'FTMTableSectionModules', :path => '../'
+  pod 'FTMTableSectionModules/Tests', :path => '../'
   
   target 'FTMTableSectionModules_Tests' do
     inherit! :search_paths
+    pod 'iOSSnapshotTestCase'
   end
 end

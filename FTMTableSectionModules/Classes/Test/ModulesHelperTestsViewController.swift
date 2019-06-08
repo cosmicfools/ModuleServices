@@ -13,14 +13,9 @@ private struct Constants {
 }
 
 open class ModulesHelperTestsViewController: ModulesViewController {
-    weak var modulesDelegate: ModulesHelperTestsViewControllerDelegate?
+    public weak var modulesDelegate: ModulesHelperTestsViewControllerDelegate?
     
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-        createTableView()
-    }
-    
-    private func createTableView() {
+    open override func setupStyle() {
         let tableView = UITableView(frame: CGRect.zero)
         tableView.delegate = self
         tableView.dataSource = self
@@ -45,8 +40,8 @@ open class ModulesHelperTestsViewController: ModulesViewController {
         modulesDelegate?.helperTestViewControllerDidFinishToAddModules(modulesHelperTest: self, modules: modules)
     }
     
-    func adjustToFitScreen(orientation: UIInterfaceOrientation) {
-        let portrait = CGSize(width: 750, height: 1334)
+    open func adjustToFitScreen(orientation: UIInterfaceOrientation) {
+        let portrait = CGSize(width: 375, height: 667)
         let landscape = CGSize(width: portrait.height, height: portrait.width)
         var newFrame = CGRect.zero
         
@@ -74,14 +69,14 @@ open class ModulesHelperTestsViewController: ModulesViewController {
     }
 }
 
-protocol ModulesHelperTestsViewControllerDelegate: NSObjectProtocol {
+public protocol ModulesHelperTestsViewControllerDelegate: NSObjectProtocol {
     func helperTestViewController(modulesHelperTest: ModulesHelperTestsViewController, tableView: UITableView)
         -> Array<TableSectionModule>
     func helperTestViewControllerDidFinishToAddModules(modulesHelperTest : ModulesHelperTestsViewController, modules: Array<TableSectionModule>)
 }
 
 
-private extension ModulesHelperTestsViewControllerDelegate {
+public extension ModulesHelperTestsViewControllerDelegate {
     
     func helperTestViewControllerDidFinishToAddModules(modulesHelperTest : ModulesHelperTestsViewController, modules: Array<TableSectionModule>) {}
 }

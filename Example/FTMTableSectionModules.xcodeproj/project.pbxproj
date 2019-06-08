@@ -22,6 +22,9 @@
 		B5A7DE271F4F511100E082A5 /* SecondSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7DE261F4F511100E082A5 /* SecondSectionModule.swift */; };
 		B5A7DE2F1F4F521000E082A5 /* ConfigurableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7DE2D1F4F521000E082A5 /* ConfigurableTableViewCell.swift */; };
 		B5A7DE301F4F521000E082A5 /* ConfigurableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A7DE2E1F4F521000E082A5 /* ConfigurableTableViewCell.xib */; };
+		B5C7B56822AB3B71003D6D34 /* SecondModuleSnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7B56722AB3B71003D6D34 /* SecondModuleSnapshotTestCase.swift */; };
+		B5C7B56A22AB3BD2003D6D34 /* HelloWorldModuleSnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7B56922AB3BD2003D6D34 /* HelloWorldModuleSnapshotTestCase.swift */; };
+		B5C7B56C22AB3DDA003D6D34 /* FirstModuleSnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7B56B22AB3DDA003D6D34 /* FirstModuleSnapshotTestCase.swift */; };
 		B5DE1FCD1CE525F400939E7C /* FirstSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1FCC1CE525F400939E7C /* FirstSectionModule.swift */; };
 		B5DE1FD11CE526BD00939E7C /* Example1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1FCF1CE526BD00939E7C /* Example1TableViewCell.swift */; };
 		B5DE1FD21CE526BD00939E7C /* Example1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */; };
@@ -66,6 +69,9 @@
 		B5A7DE261F4F511100E082A5 /* SecondSectionModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSectionModule.swift; sourceTree = "<group>"; };
 		B5A7DE2D1F4F521000E082A5 /* ConfigurableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableTableViewCell.swift; sourceTree = "<group>"; };
 		B5A7DE2E1F4F521000E082A5 /* ConfigurableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigurableTableViewCell.xib; sourceTree = "<group>"; };
+		B5C7B56722AB3B71003D6D34 /* SecondModuleSnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModuleSnapshotTestCase.swift; sourceTree = "<group>"; };
+		B5C7B56922AB3BD2003D6D34 /* HelloWorldModuleSnapshotTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorldModuleSnapshotTestCase.swift; sourceTree = "<group>"; };
+		B5C7B56B22AB3DDA003D6D34 /* FirstModuleSnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstModuleSnapshotTestCase.swift; sourceTree = "<group>"; };
 		B5DE1FCC1CE525F400939E7C /* FirstSectionModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSectionModule.swift; sourceTree = "<group>"; };
 		B5DE1FCF1CE526BD00939E7C /* Example1TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example1TableViewCell.swift; sourceTree = "<group>"; };
 		B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Example1TableViewCell.xib; sourceTree = "<group>"; };
@@ -158,6 +164,9 @@
 				B5A18EF01CEA575C00536A04 /* ModulesViewControllerTest.swift */,
 				690BCA0F1CE9DB42006C4381 /* TableSectionModuleTest.swift */,
 				690BCA111CE9EDCD006C4381 /* TestHelpers.swift */,
+				B5C7B56922AB3BD2003D6D34 /* HelloWorldModuleSnapshotTestCase.swift */,
+				B5C7B56B22AB3DDA003D6D34 /* FirstModuleSnapshotTestCase.swift */,
+				B5C7B56722AB3B71003D6D34 /* SecondModuleSnapshotTestCase.swift */,
 				690BCA091CE9DA86006C4381 /* Info.plist */,
 			);
 			path = FTMTableSectionModules_Tests;
@@ -219,7 +228,6 @@
 				96952DBF0B7976C60F5F2926 /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */,
 				0A573B80166A1AB9A05E81D2 /* Pods-FTMTableSectionModules_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -263,6 +271,7 @@
 				690BCA011CE9DA86006C4381 /* Sources */,
 				690BCA021CE9DA86006C4381 /* Frameworks */,
 				690BCA031CE9DA86006C4381 /* Resources */,
+				B02E1B1DBC69F05BBB315CC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,6 +367,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B02E1B1DBC69F05BBB315CC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ED44158F1D4E6A6B63C016B3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,8 +448,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C7B56A22AB3BD2003D6D34 /* HelloWorldModuleSnapshotTestCase.swift in Sources */,
 				B5A18EF11CEA575C00536A04 /* ModulesViewControllerTest.swift in Sources */,
 				690BCA101CE9DB42006C4381 /* TableSectionModuleTest.swift in Sources */,
+				B5C7B56822AB3B71003D6D34 /* SecondModuleSnapshotTestCase.swift in Sources */,
+				B5C7B56C22AB3DDA003D6D34 /* FirstModuleSnapshotTestCase.swift in Sources */,
 				690BCA121CE9EDCD006C4381 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

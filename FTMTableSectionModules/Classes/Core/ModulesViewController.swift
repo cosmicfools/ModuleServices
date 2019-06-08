@@ -16,6 +16,7 @@ open class ModulesViewController: UIViewController {
     
     open override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupStyle()
         self.createModules()
     }
     
@@ -30,7 +31,10 @@ open class ModulesViewController: UIViewController {
             module.willDissappear()
         }
     }
-
+    
+    open func setupStyle() {
+    }
+    
     open func createModules() {
         self.modules = []
     }
