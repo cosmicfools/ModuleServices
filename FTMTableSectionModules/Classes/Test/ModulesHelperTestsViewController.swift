@@ -41,7 +41,7 @@ open class ModulesHelperTestsViewController: ModulesViewController {
     }
     
     open func adjustToFitScreen(orientation: UIInterfaceOrientation) {
-        let portrait = CGSize(width: 375, height: 667)
+        let portrait = SnapshotTestDeviceInfo().deviceSize
         let landscape = CGSize(width: portrait.height, height: portrait.width)
         var newFrame = CGRect.zero
         
