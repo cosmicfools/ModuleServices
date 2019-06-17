@@ -29,32 +29,32 @@ open class TableSectionModule: NSObject {
         super.init()
         self.tableView = tableView
         
-        self.registerViews()
-        self.createRows()
+        registerViews()
+        createRows()
     }
     
     open func registerViews() {
-        self.autoRegisterViews()
+        autoRegisterViews()
     }
     
     open func createRows() {
-        self.rows = []
+        rows = []
     }
     
     open func startFetch() {
-        self.isFetching = true
+        isFetching = true
     }
     
     open func stopFetch() {
-        self.isFetching = false
+        isFetching = false
     }
     
     internal func willAppear() {
-        self.isPresented = true
+        isPresented = true
     }
     
     internal func willDissappear() {
-        self.isPresented = false
+        isPresented = false
     }
 }
 
@@ -66,10 +66,10 @@ internal protocol TableSectionModuleSectionSource : NSObjectProtocol {
 // MARK: - Autoregistration of Cells, Header and Footer methods
 extension TableSectionModule {
     fileprivate func autoRegisterViews() {
-        self.autoRegisterClassForCells()
-        self.autoRegisterClassForHeadersFooters()
-        self.autoRegisterNibsForCells()
-        self.autoRegisterNibsForHeadersFooters()
+        autoRegisterClassForCells()
+        autoRegisterClassForHeadersFooters()
+        autoRegisterNibsForCells()
+        autoRegisterNibsForHeadersFooters()
     }
     
     //Autoregistrion - Override those methods if the ReuseIdentifier is exactly the same that the Class and the Nib file (if exits)
@@ -94,32 +94,32 @@ extension TableSectionModule {
     }
     
     fileprivate func autoRegisterClassForCells() {
-        for currentClass in self.registerClassForCells() {
+        for currentClass in registerClassForCells() {
             let identifier = String(describing: currentClass)
-            self.tableView.register(currentClass, forCellReuseIdentifier: identifier)
+            tableView.register(currentClass, forCellReuseIdentifier: identifier)
         }
     }
     
     fileprivate func autoRegisterClassForHeadersFooters() {
-        for currentClass in self.registerClassForHeadersFooters() {
+        for currentClass in registerClassForHeadersFooters() {
             let identifier = String(describing: currentClass)
-            self.tableView.register(currentClass, forHeaderFooterViewReuseIdentifier: identifier)
+            tableView.register(currentClass, forHeaderFooterViewReuseIdentifier: identifier)
         }
     }
     
     fileprivate func autoRegisterNibsForCells() {
-        for currentClass in self.registerNibsForCells() {
+        for currentClass in registerNibsForCells() {
             let identifier = String(describing: currentClass)
             let nib = UINib(nibName: identifier, bundle: nil)
-            self.tableView.register(nib, forCellReuseIdentifier: identifier)
+            tableView.register(nib, forCellReuseIdentifier: identifier)
         }
     }
     
     fileprivate func autoRegisterNibsForHeadersFooters() {
-        for currentClass in self.registerNibsForHeadersFooters() {
+        for currentClass in registerNibsForHeadersFooters() {
             let identifier = String(describing: currentClass)
             let nib = UINib(nibName: identifier, bundle: nil)
-            self.tableView.register(nib, forHeaderFooterViewReuseIdentifier: identifier)
+            tableView.register(nib, forHeaderFooterViewReuseIdentifier: identifier)
         }
     }
 }
@@ -128,16 +128,16 @@ extension TableSectionModule {
 public extension TableSectionModule {
     func setupSeparatorInsetForCell(_ cell : UITableViewCell, forIndexPath indexPath : IndexPath) {
         // Remove seperator inset
-        cell.separatorInset = UIEdgeInsets.zero
+        cell.separatorInset = .zero
         cell.preservesSuperviewLayoutMargins = false
-        cell.layoutMargins = UIEdgeInsets.zero
+        cell.layoutMargins = .zero
     }
     
     func removeSeparatorInsetForCell(_ cell : UITableViewCell, forIndexPath indexPath : IndexPath) {
         // Remove seperator inset
-        cell.separatorInset = UIEdgeInsets.init(top: CGSize.zero.height, left: cell.bounds.size.width, bottom: CGSize.zero.width, right: CGSize.zero.height)
+        cell.separatorInset = UIEdgeInsets.init(top: .zero, left: cell.bounds.size.width, bottom: .zero, right: .zero)
         cell.preservesSuperviewLayoutMargins = true
-        cell.layoutMargins = UIEdgeInsets.zero
+        cell.layoutMargins = .zero
     }
 }
 
@@ -145,28 +145,30 @@ public extension TableSectionModule {
 public extension TableSectionModule {
     func refreshSection() {
         createRows()
-        tableView.reloadSections(IndexSet(integer: section), with: UITableView.RowAnimation.automatic)
+        tableView.reloadSections(IndexSet(integer: section), with: .automatic)
     }
 }
 
 // MARK: - Autocalculate the needed height of a cells
 public extension TableSectionModule {
     func dequeueDynamicHeightCellWithIdentifier(_ identifier: String) -> UITableViewCell {
-        var sizingCell : UITableViewCell? = self.dynamicCells[identifier]
+        var sizingCell : UITableViewCell? = dynamicCells[identifier]
         if sizingCell == nil {
-            sizingCell = self.tableView.dequeueReusableCell(withIdentifier: identifier)
-            self.dynamicCells[identifier] = sizingCell
+            sizingCell = tableView.dequeueReusableCell(withIdentifier: identifier)
+            dynamicCells[identifier] = sizingCell
         }
         
         return sizingCell!
     }
     
     func calculateHeightForSizingCell(_ sizingCell: UITableViewCell) -> CGFloat {
-        sizingCell.bounds = CGRect(x: CGPoint.zero.x, y: CGPoint.zero.y, width: self.tableView.frame.width, height: sizingCell.bounds.height)
+        sizingCell.bounds = CGRect(origin: .zero, size: CGSize(width: tableView.frame.width, height: sizingCell.bounds.height))
         sizingCell.setNeedsLayout()
         sizingCell.layoutIfNeeded()
     
-        let size : CGSize = sizingCell.contentView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+        let size : CGSize = sizingCell.contentView.systemLayoutSizeFitting(sizingCell.bounds.size,
+                                                                           withHorizontalFittingPriority: .required,
+                                                                           verticalFittingPriority: .fittingSizeLevel)
         let separator : CGFloat = TableSectionModuleConstants.separatorHeight / UIScreen.main.scale
         
         return size.height + separator // Add space for the cell separator height
@@ -201,8 +203,8 @@ extension TableSectionModule {
     @objc
     open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         var height = CGSize.zero.height
-        if (tableView.style == UITableView.Style.grouped) {
-            height = CGFloat.leastNormalMagnitude
+        if (tableView.style == .grouped) {
+            height = .leastNormalMagnitude
         }
         return height
     }
@@ -210,8 +212,8 @@ extension TableSectionModule {
     @objc
     open func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         var height = CGSize.zero.height
-        if (tableView.style == UITableView.Style.grouped) {
-            height = CGFloat.leastNormalMagnitude
+        if (tableView.style == .grouped) {
+            height = .leastNormalMagnitude
         }
         return height
     }
@@ -273,7 +275,7 @@ extension TableSectionModule {
     
     @objc
     open func tableView(_ tableView: UITableView, editingStyleForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell.EditingStyle {
-        return UITableViewCell.EditingStyle.none
+        return .none
     }
     
     @objc

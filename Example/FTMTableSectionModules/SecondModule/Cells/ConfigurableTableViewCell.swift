@@ -23,7 +23,7 @@ class ConfigurableTableViewCell: UITableViewCell {
     }
     
     open func configureWithAttributedString(_ attributedString: NSAttributedString) {
-        self.label.attributedText = attributedString
+        label.attributedText = attributedString
     }
     
 }

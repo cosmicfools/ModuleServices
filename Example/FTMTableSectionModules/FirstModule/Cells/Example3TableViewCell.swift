@@ -23,7 +23,7 @@ class Example3TableViewCell: UITableViewCell {
     }
     
     open func configureWithImage(_ image: UIImage) {
-        self.myImageView.image = image
+        myImageView.image = image
     }
     
 }

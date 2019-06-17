@@ -10,12 +10,11 @@ import UIKit
 extension UIView {
     
     func fitSubView(view: UIView) {
-        let zeroPadding = UIEdgeInsets.zero
         fitSubView(view: view,
-                   leading: zeroPadding.left,
-                   top: zeroPadding.top,
-                   traling: zeroPadding.right,
-                   bottom: zeroPadding.bottom)
+                   leading: .zero,
+                   top: .zero,
+                   traling: .zero,
+                   bottom: .zero)
     }
     
     func fitSubView(view: UIView, leading: CGFloat, top: CGFloat, traling: CGFloat, bottom: CGFloat ) {
@@ -24,31 +23,31 @@ extension UIView {
         
         let multiplier = CGFloat(truncating: NSDecimalNumber.one)
         addConstraint(NSLayoutConstraint(item: view,
-                                         attribute: NSLayoutConstraint.Attribute.top,
-                                         relatedBy: NSLayoutConstraint.Relation.equal,
+                                         attribute: .top,
+                                         relatedBy: .equal,
                                          toItem: self,
-                                         attribute: NSLayoutConstraint.Attribute.top,
+                                         attribute: .top,
                                          multiplier: multiplier,
                                          constant: top))
         addConstraint(NSLayoutConstraint(item: view,
-                                         attribute: NSLayoutConstraint.Attribute.bottom,
-                                         relatedBy: NSLayoutConstraint.Relation.equal,
+                                         attribute: .bottom,
+                                         relatedBy: .equal,
                                          toItem: self,
-                                         attribute: NSLayoutConstraint.Attribute.bottom,
+                                         attribute: .bottom,
                                          multiplier: multiplier,
                                          constant: bottom))
         addConstraint(NSLayoutConstraint(item: view,
-                                         attribute: NSLayoutConstraint.Attribute.leading,
-                                         relatedBy: NSLayoutConstraint.Relation.equal,
+                                         attribute: .leading,
+                                         relatedBy: .equal,
                                          toItem: self,
-                                         attribute: NSLayoutConstraint.Attribute.leading,
+                                         attribute: .leading,
                                          multiplier: multiplier,
                                          constant: leading))
         addConstraint(NSLayoutConstraint(item: view,
-                                         attribute: NSLayoutConstraint.Attribute.trailing,
-                                         relatedBy: NSLayoutConstraint.Relation.equal,
+                                         attribute: .trailing,
+                                         relatedBy: .equal,
                                          toItem: self,
-                                         attribute: NSLayoutConstraint.Attribute.trailing,
+                                         attribute: .trailing,
                                          multiplier: multiplier,
                                          constant: traling))
     }

@@ -24,14 +24,14 @@ class FirstSectionModule: TableSectionModule {
     override func createRows() {
         super.createRows()
         
-        self.rows.append(String(describing: Example1TableViewCell.self) as AnyObject)
-        self.rows.append(String(describing: UITableViewCell.self) as AnyObject)
-        self.rows.append(String(describing: Example2TableViewCell.self) as AnyObject)
-        self.rows.append(String(describing: Example3TableViewCell.self) as AnyObject)
+        rows.append(String(describing: Example1TableViewCell.self) as AnyObject)
+        rows.append(String(describing: UITableViewCell.self) as AnyObject)
+        rows.append(String(describing: Example2TableViewCell.self) as AnyObject)
+        rows.append(String(describing: Example3TableViewCell.self) as AnyObject)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
-        let className = self.rows[(indexPath as NSIndexPath).row] as! String
+        let className = rows[(indexPath as NSIndexPath).row] as! String
         let cell = tableView.dequeueReusableCell(withIdentifier: className, for: indexPath)
         
         //Addtional configuration for the cell
@@ -56,7 +56,7 @@ class FirstSectionModule: TableSectionModule {
     override func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
         var height = super.tableView(tableView, heightForRowAtIndexPath: indexPath);
         
-        let className = self.rows[(indexPath as NSIndexPath).row] as! String
+        let className = rows[(indexPath as NSIndexPath).row] as! String
         switch className {
         case String(describing: Example3TableViewCell.self):
             height = UITableView.automaticDimension

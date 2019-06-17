@@ -12,18 +12,18 @@ class ViewController: ModulesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.tableView?.rowHeight = UITableView.automaticDimension
-        self.tableView?.estimatedRowHeight = 44
+        tableView?.rowHeight = UITableView.automaticDimension
+        tableView?.estimatedRowHeight = 44
         
-        self.tableView?.tableFooterView = UIView()
+        tableView?.tableFooterView = UIView()
     }
     
     override func createModules() {
         super.createModules()
         
-        self.appendModule(HelloWorldModule(tableView: self.tableView!))
-        self.appendModule(FirstSectionModule(tableView: self.tableView!))
-        self.appendModule(SecondSectionModule(tableView: self.tableView!))
+        appendModule(HelloWorldModule(tableView: tableView!))
+        appendModule(FirstSectionModule(tableView: tableView!))
+        appendModule(SecondSectionModule(tableView: tableView!))
     }
 
 }

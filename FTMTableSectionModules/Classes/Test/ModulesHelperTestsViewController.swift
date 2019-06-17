@@ -33,7 +33,7 @@ open class ModulesHelperTestsViewController: ModulesViewController {
     open override func createModules() {
         super.createModules()
         
-        for module in (modulesDelegate?.helperTestViewController(modulesHelperTest: self, tableView: self.tableView!))! {
+        for module in (modulesDelegate?.helperTestViewController(modulesHelperTest: self, tableView: tableView!))! {
             appendModule(module)
         }
         
@@ -46,12 +46,10 @@ open class ModulesHelperTestsViewController: ModulesViewController {
         var newFrame = CGRect.zero
         
         switch orientation {
-        case UIInterfaceOrientation.portrait,
-             UIInterfaceOrientation.portraitUpsideDown:
+        case .portrait, .portraitUpsideDown:
             newFrame.size = portrait
             break
-        case UIInterfaceOrientation.landscapeLeft,
-             UIInterfaceOrientation.landscapeRight:
+        case .landscapeLeft, .landscapeRight:
             newFrame.size = landscape
             break
         default:

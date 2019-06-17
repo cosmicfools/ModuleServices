@@ -99,14 +99,14 @@ class FirstSectionModule: TableSectionModule {
     override func createRows() {
         super.createRows()
         
-        self.rows.append(String(describing: Example1TableViewCell.self) as AnyObject)
-        self.rows.append(String(describing: UITableViewCell.self) as AnyObject)
+        rows.append(String(describing: Example1TableViewCell.self) as AnyObject)
+        rows.append(String(describing: UITableViewCell.self) as AnyObject)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: className, for: indexPath)
         
-        let className = self.rows[(indexPath as NSIndexPath).row] as! String
+        let className = rows[(indexPath as NSIndexPath).row] as! String
         //Addtional configuration for the cell
         switch className {
         case String(describing: UITableViewCell.self):
@@ -143,7 +143,7 @@ This method will add all the modules that the view controller could have. Like t
 override func createModules() {
         super.createModules()
         
-        self.appendModule(FirstSectionModule(tableView: self.tableView!))
+        appendModule(FirstSectionModule(tableView: tableView!))
     }
 ```
 
@@ -159,16 +159,16 @@ class MyViewController: ModulesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.tableView?.rowHeight = UITableViewAutomaticDimension
-        self.tableView?.estimatedRowHeight = 44
+        tableView?.rowHeight = UITableViewAutomaticDimension
+        tableView?.estimatedRowHeight = 44
         
-        self.tableView?.tableFooterView = UIView()
+        tableView?.tableFooterView = UIView()
     }
 
     override func createModules() {
         super.createModules()
         
-        self.appendModule(FirstSectionModule(tableView: self.tableView!))
+        appendModule(FirstSectionModule(tableView: tableView!))
     }
 
 }

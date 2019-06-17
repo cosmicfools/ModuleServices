@@ -14,21 +14,21 @@ class SecondSectionModule: TableSectionModule {
     private var italianAttributes : [NSAttributedString.Key : Any]
     
     override init(tableView: UITableView) {
-        self.infoToShow = [
+        infoToShow = [
             "Lorem fistrum condemor papaar papaar torpedo mamaar pecador.",
             "Pupita al ataquerl a wan quietooor.",
             "Pupita sexuarl fistro condemor papaar papaar benemeritaar se calle ustée a peich.",
             "Está la cosa muy malar se calle ustée ahorarr diodeno benemeritaar hasta luego Lucas jarl diodeno caballo blanco caballo negroorl fistro tiene musho peligro.",
         ]
         
-        self.boldAttributes = [
-            NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize:15),
-            NSAttributedString.Key.foregroundColor : UIColor.blue,
+        boldAttributes = [
+            .font : UIFont.boldSystemFont(ofSize:15),
+            .foregroundColor : UIColor.blue,
         ]
         
-        self.italianAttributes = [
-            NSAttributedString.Key.font : UIFont.italicSystemFont(ofSize:12),
-            NSAttributedString.Key.foregroundColor : UIColor.gray,
+        italianAttributes = [
+            .font : UIFont.italicSystemFont(ofSize:12),
+            .foregroundColor : UIColor.gray,
         ]
         
         super.init(tableView: tableView)
@@ -37,8 +37,8 @@ class SecondSectionModule: TableSectionModule {
     override func createRows() {
         super.createRows()
         
-        for _ : String in self.infoToShow {
-            self.rows.append(String(describing: ConfigurableTableViewCell.self) as AnyObject)
+        for _ : String in infoToShow {
+            rows.append(String(describing: ConfigurableTableViewCell.self) as AnyObject)
         }
     }
     
@@ -49,13 +49,13 @@ class SecondSectionModule: TableSectionModule {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
-        let identifier : String = self.rows[indexPath.row] as! String
+        let identifier : String = rows[indexPath.row] as! String
         let cell : ConfigurableTableViewCell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! ConfigurableTableViewCell
         
         let attr : NSMutableAttributedString = NSMutableAttributedString()
         
-        attr.append(NSAttributedString(string: String(indexPath.row) + " ", attributes: self.boldAttributes));
-        attr.append(NSAttributedString(string: self.infoToShow[indexPath.row], attributes: italianAttributes));
+        attr.append(NSAttributedString(string: String(indexPath.row) + " ", attributes: boldAttributes));
+        attr.append(NSAttributedString(string: infoToShow[indexPath.row], attributes: italianAttributes));
         
         cell.configureWithAttributedString(attr.copy() as! NSAttributedString)
         
