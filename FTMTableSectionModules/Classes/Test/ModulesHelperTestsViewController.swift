@@ -32,8 +32,8 @@ open class ModulesHelperTestsViewController: ModulesViewController {
     
     open override func createModules() {
         super.createModules()
-        
-        for module in (modulesDelegate?.helperTestViewController(modulesHelperTest: self, tableView: tableView!))! {
+        let delegateModules = (modulesDelegate?.helperTestViewController(modulesHelperTest: self, tableView: tableView!))!
+        delegateModules.forEach { module in
             appendModule(module)
         }
         

@@ -94,21 +94,21 @@ extension TableSectionModule {
     }
     
     fileprivate func autoRegisterClassForCells() {
-        for currentClass in registerClassForCells() {
+        registerClassForCells().forEach { currentClass in
             let identifier = String(describing: currentClass)
             tableView.register(currentClass, forCellReuseIdentifier: identifier)
         }
     }
     
     fileprivate func autoRegisterClassForHeadersFooters() {
-        for currentClass in registerClassForHeadersFooters() {
+        registerClassForHeadersFooters().forEach { currentClass in
             let identifier = String(describing: currentClass)
             tableView.register(currentClass, forHeaderFooterViewReuseIdentifier: identifier)
         }
     }
     
     fileprivate func autoRegisterNibsForCells() {
-        for currentClass in registerNibsForCells() {
+        registerNibsForCells().forEach { currentClass in
             let identifier = String(describing: currentClass)
             let nib = UINib(nibName: identifier, bundle: nil)
             tableView.register(nib, forCellReuseIdentifier: identifier)
@@ -116,7 +116,7 @@ extension TableSectionModule {
     }
     
     fileprivate func autoRegisterNibsForHeadersFooters() {
-        for currentClass in registerNibsForHeadersFooters() {
+        registerNibsForHeadersFooters().forEach { currentClass in
             let identifier = String(describing: currentClass)
             let nib = UINib(nibName: identifier, bundle: nil)
             tableView.register(nib, forHeaderFooterViewReuseIdentifier: identifier)

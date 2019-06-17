@@ -21,15 +21,11 @@ open class ModulesViewController: UIViewController {
     }
     
     open override func viewWillAppear(_ animated: Bool) {
-        for module in modules {
-            module.willAppear()
-        }
+        modules.forEach { module in module.willAppear() }
     }
     
     open override func viewWillDisappear(_ animated: Bool) {
-        for module in modules {
-            module.willDissappear()
-        }
+        modules.forEach { module in module.willDissappear() }
     }
     
     open func setupStyle() {
@@ -40,15 +36,11 @@ open class ModulesViewController: UIViewController {
     }
     
     open func startFecthModules() {
-        for module in modules {
-            module.startFetch()
-        }
+       modules.forEach { module in module.startFetch() }
     }
     
     open func stopFetchModules() {
-        for module in modules {
-            module.stopFetch()
-        }
+        modules.forEach { module in module.stopFetch() }
     }
 }
 

@@ -37,7 +37,7 @@ class SecondSectionModule: TableSectionModule {
     override func createRows() {
         super.createRows()
         
-        for _ : String in infoToShow {
+        infoToShow.forEach { _ in
             rows.append(String(describing: ConfigurableTableViewCell.self) as AnyObject)
         }
     }
