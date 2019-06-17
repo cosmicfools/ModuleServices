@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02BA5FBFE7B861E3603E63339CAF6164 /* ModulesViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A917C62052D9D7C0F607C9A970444 /* ModulesViewAdditions.swift */; };
+		01BC6FD85208FADF2B3BA4D1B524A101 /* SnapshotTestingCellAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930D525A6683B750DE95350077434D0 /* SnapshotTestingCellAdditions.swift */; };
+		100A35DBCEE8DA1749A2BD5AB4AEDBAC /* SnapshotTestDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58A00F5117D97260AAAF202439813D4 /* SnapshotTestDeviceInfo.swift */; };
 		10E8E4573E6A44AD957DA02D72D441FA /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 078903AE75C1D7D5C61C8DE620D53A5A /* UIImage+Diff.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		30FEB1B956050BD59222944D9AA96D29 /* ModulesHelperTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58682364727CC4F91BD6EBB1AC78586B /* ModulesHelperTestsViewController.swift */; };
+		1BC3FE341C0154865D07675C5D15A7DA /* ModulesHelperTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F282B794DFB3A1D3354F18B0D13A2EF4 /* ModulesHelperTestsViewController.swift */; };
 		36A5665F0781BAE7B9F7BF3F6BBB8682 /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD54FBC707C522306409616608E03F7 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		370BD2862EF2F67C2B64CE9F98DED2C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */; };
 		3A76EE90E5616D1F747FC0CC16C40AC2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F5D23833B7C650DB2B9B5EA95B43F7 /* UIImage+Snapshot.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3BF9DE5BFDD1E2306DB651C708C6518C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		43343D8FA551CC6ADD2FDDEFA30F8604 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */; };
 		458E934393B39D2A3C9DAD2A4CDABFA2 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3E11CFF525A7BE0F5090E39A8A725C /* FBSnapshotTestCasePlatform.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4F1EBF73CA49FCABCF33A4D1755654EC /* iOSSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58F4181C8833BE6DB86CDA8C805A00A9 /* iOSSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50893CA3584A4BBD24F43E81D0671015 /* SnapshotTestDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8F0C305635FC962AF892F51EA814F /* SnapshotTestDeviceInfo.swift */; };
+		4FC85983D76258EE6AE89450691EC95A /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2AE0DACBE8B1D975BCAFCB187F38A /* ModulesViewController.swift */; };
 		5113CD71C301DB717CF689D90A64FA69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		572E88DA89B56B831BE8AFB267AB4904 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2628B40D6A150C1ADD3875C92B9792 /* FBSnapshotTestController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5B72EC2F3411F704BB2E8E5CAB30DCB7 /* Pods-FTMTableSectionModules_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAFE0F29ED28FC253222AD4DBA559EC /* Pods-FTMTableSectionModules_Tests-dummy.m */; };
@@ -26,20 +28,18 @@
 		724436CC982FDC1AA0A92A54B0B30C25 /* Pods-FTMTableSectionModules_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7A1E7BBF86BAB074DAF5779EA63FA3 /* Pods-FTMTableSectionModules_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73BB82ED3F095565B9F13F1C157D9CD0 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = DC37D45B91EAA34C1B307819F4FBFA48 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F6F6493C2852BDD8143F2D1B9CC9750 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
+		84A1D3476404E30B003B36556387EE0C /* FTMTableSectionModules-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E4A128BAF0F1A5CAA4F113D17A5053 /* FTMTableSectionModules-dummy.m */; };
 		8E30D6FA349A6AE79FCE0B753B320D2B /* Pods-FTMTableSectionModules_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA14B0DBF0E988FBDEC0A19AF87C51E0 /* Pods-FTMTableSectionModules_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E70D3A49FB2D0E18D843C3424E9F820 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = F98662B97F340866723F7EA90CF3D26C /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		99BC7BBAE18E2057B700DC1D7A90185D /* FTMTableSectionModules-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82EDF50E65A0DA6C234B8426C7B80A98 /* FTMTableSectionModules-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A7AB7347B23D54BC46ADEF6FF656C8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		9DFB256C616C3815125395866CE5ED8A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BFB7DE40547F6148458C28227213A42 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A05AB0C7B26AA2ED49172808DA1360E9 /* SnapshotTestingViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB192EC34CD0D35D76A618B8D4BAE9 /* SnapshotTestingViewAdditions.swift */; };
 		A25E5C5CB4E4BC55FA8D5E329923DC9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
-		ACB1462125316ABE4836BC5E04AB3668 /* SnapshotTestingCellAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082E34265487F88E80236AD6BE36478 /* SnapshotTestingCellAdditions.swift */; };
-		B566F7CE22B1B8170044CDD6 /* SnapshotTestingViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B566F7CD22B1B8160044CDD6 /* SnapshotTestingViewAdditions.swift */; };
+		AA9FDD0D7ADEAFA7A73D1763D7EF2F74 /* ModulesViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622DB22CDFD6AB01FC31E7A2D428BCC /* ModulesViewAdditions.swift */; };
 		B82E61D13507EAB7A85C0B5BFE18FC5E /* Pods-FTMTableSectionModules_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FA1017D4ED8951F92E090511BD71F0 /* Pods-FTMTableSectionModules_Example-dummy.m */; };
-		BFA8309A9E2416B40BDCE8F0685835F2 /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDD34C9AE0567FCA21FD3CF98582D9 /* ModulesViewController.swift */; };
-		D238FD9C2BFE3413536E45876593BDE7 /* FTMTableSectionModules-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F95EE38A17B14A8061EAD945A34416A4 /* FTMTableSectionModules-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D30C5B28F3550C801102E8B5E41577EE /* FTMTableSectionModules-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5579E0504F792BF3A8379FB19F7479C9 /* FTMTableSectionModules-dummy.m */; };
+		BF58DCCC6FDD7CE9099DFCB883586B7A /* TableSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E905939CC1EA6286395383425D635E /* TableSectionModule.swift */; };
 		D345E7BDE3D4B288AFEA1EB948E42078 /* iOSSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 796F28118D863DD7DDE14D1F6AC3DC9C /* iOSSnapshotTestCase-dummy.m */; };
-		E27545CD517DB85627A5E26AF6578384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
-		E35C12BA8BB37FF126D9908F5AA80854 /* TableSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9270C2218B0B7C8BDA0E6B525D8BB9E /* TableSectionModule.swift */; };
 		E3702EC42A690984756701AEA0A4D2C2 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 523B65C5434BF857787C7B495D48070A /* FBSnapshotTestCase.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E748527FFEE106BFFAA5D408A17F37FF /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EE0D8468132004B33C282270003A158 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
@@ -74,71 +74,71 @@
 		094D5F47C929B7B19B654D28BAE2B262 /* Pods-FTMTableSectionModules_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTMTableSectionModules_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0BFB7DE40547F6148458C28227213A42 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		0F2628B40D6A150C1ADD3875C92B9792 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
-		1D08D78FADD77947137C1C1B29D29DF8 /* FTMTableSectionModules.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FTMTableSectionModules.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1F360D717F03BF99D2595D414D3F9340 /* FTMTableSectionModules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTMTableSectionModules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		210A917C62052D9D7C0F607C9A970444 /* ModulesViewAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModulesViewAdditions.swift; path = FTMTableSectionModules/Classes/Test/ModulesViewAdditions.swift; sourceTree = "<group>"; };
+		13E3376BDC0DAB5EAFF69E44D6BE6E92 /* FTMTableSectionModules-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTMTableSectionModules-prefix.pch"; sourceTree = "<group>"; };
+		1F360D717F03BF99D2595D414D3F9340 /* FTMTableSectionModules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FTMTableSectionModules.framework; path = FTMTableSectionModules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		270BBE2ECE31FE0954AABD8F86CA1176 /* Pods-FTMTableSectionModules_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTMTableSectionModules_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2CB8F0C305635FC962AF892F51EA814F /* SnapshotTestDeviceInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapshotTestDeviceInfo.swift; path = FTMTableSectionModules/Classes/Test/SnapshotTestDeviceInfo.swift; sourceTree = "<group>"; };
 		2EE0D8468132004B33C282270003A158 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		33F2AE0DACBE8B1D975BCAFCB187F38A /* ModulesViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModulesViewController.swift; path = FTMTableSectionModules/Classes/Core/ModulesViewController.swift; sourceTree = "<group>"; };
+		35FA7833EE952470F61BBD5F2C2233AB /* FTMTableSectionModules.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTMTableSectionModules.modulemap; sourceTree = "<group>"; };
 		3BF0D8E3529AAF9DD2F8B3378FD89216 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		3C52AFC12A7AE91C00C071F95A02FF78 /* Pods_FTMTableSectionModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C552BC6D654CBEC3384B8050FC4DAD3 /* Pods_FTMTableSectionModules_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41D6547701BECC0BA493B9152D018C15 /* FTMTableSectionModules-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTMTableSectionModules-prefix.pch"; sourceTree = "<group>"; };
+		3C52AFC12A7AE91C00C071F95A02FF78 /* Pods_FTMTableSectionModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FTMTableSectionModules_Tests.framework; path = "Pods-FTMTableSectionModules_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C552BC6D654CBEC3384B8050FC4DAD3 /* Pods_FTMTableSectionModules_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FTMTableSectionModules_Example.framework; path = "Pods-FTMTableSectionModules_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		432D328D5B1788520371534F0EC9AA67 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		463EDEF36537409F2967F7B749B3A7C7 /* Pods-FTMTableSectionModules_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTMTableSectionModules_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5069A3FAA385B1F702DF6F5C83461EF2 /* iOSSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		514DFD4B3DD1E5E0BB5F40F5CBE4987A /* Pods-FTMTableSectionModules_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTMTableSectionModules_Tests-Info.plist"; sourceTree = "<group>"; };
 		523B65C5434BF857787C7B495D48070A /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		5579E0504F792BF3A8379FB19F7479C9 /* FTMTableSectionModules-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTMTableSectionModules-dummy.m"; sourceTree = "<group>"; };
 		57BB914A6FB910D3D1A6FA54767EBD20 /* Pods-FTMTableSectionModules_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTMTableSectionModules_Example-frameworks.sh"; sourceTree = "<group>"; };
-		58682364727CC4F91BD6EBB1AC78586B /* ModulesHelperTestsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModulesHelperTestsViewController.swift; path = FTMTableSectionModules/Classes/Test/ModulesHelperTestsViewController.swift; sourceTree = "<group>"; };
 		58F4181C8833BE6DB86CDA8C805A00A9 /* iOSSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		64860ED4D1469506201CA2ECB2F54AF9 /* iOSSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "iOSSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		6B43EB6E666886121CB07723EB3DC278 /* FTMTableSectionModules.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FTMTableSectionModules.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		796F28118D863DD7DDE14D1F6AC3DC9C /* iOSSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		82EDF50E65A0DA6C234B8426C7B80A98 /* FTMTableSectionModules-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTMTableSectionModules-umbrella.h"; sourceTree = "<group>"; };
 		85F5D23833B7C650DB2B9B5EA95B43F7 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		8930D525A6683B750DE95350077434D0 /* SnapshotTestingCellAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapshotTestingCellAdditions.swift; path = FTMTableSectionModules/Classes/Test/SnapshotTestingCellAdditions.swift; sourceTree = "<group>"; };
 		8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8E559F59BC43583823E8A7FB330AC327 /* Pods-FTMTableSectionModules_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FTMTableSectionModules_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8F56BFD96827700849389F6FA1B3497D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9007AF1EC8C8A89A7F3F7C4B3A854CA4 /* FTMTableSectionModules.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTMTableSectionModules.modulemap; sourceTree = "<group>"; };
+		8F0A765A6D45BEF977CE065EBB42C6FC /* FTMTableSectionModules.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTMTableSectionModules.xcconfig; sourceTree = "<group>"; };
 		900C95C1DE73EA90A623D23D95C912B0 /* iOSSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iOSSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		90D005CE8C69867D86CFCBFACE0C51D2 /* FTMTableSectionModules.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTMTableSectionModules.xcconfig; sourceTree = "<group>"; };
 		94C6454BAA3DC1AE8058F7291020F423 /* Pods-FTMTableSectionModules_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FTMTableSectionModules_Tests.modulemap"; sourceTree = "<group>"; };
 		94FA1017D4ED8951F92E090511BD71F0 /* Pods-FTMTableSectionModules_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FTMTableSectionModules_Example-dummy.m"; sourceTree = "<group>"; };
-		9AFDD34C9AE0567FCA21FD3CF98582D9 /* ModulesViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModulesViewController.swift; path = FTMTableSectionModules/Classes/Core/ModulesViewController.swift; sourceTree = "<group>"; };
 		9C615353E56F68F4702016DC5190671B /* Pods-FTMTableSectionModules_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTMTableSectionModules_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0EAE03A9515DE0E53FEEB718B741523 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A58A00F5117D97260AAAF202439813D4 /* SnapshotTestDeviceInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapshotTestDeviceInfo.swift; path = FTMTableSectionModules/Classes/Test/SnapshotTestDeviceInfo.swift; sourceTree = "<group>"; };
 		A9AA1B2B5C1569BBC8CDB660C0FBB26E /* Pods-FTMTableSectionModules_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FTMTableSectionModules_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AF7A1E7BBF86BAB074DAF5779EA63FA3 /* Pods-FTMTableSectionModules_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FTMTableSectionModules_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B566F7CD22B1B8160044CDD6 /* SnapshotTestingViewAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotTestingViewAdditions.swift; path = FTMTableSectionModules/Classes/Test/SnapshotTestingViewAdditions.swift; sourceTree = "<group>"; };
+		B2AB192EC34CD0D35D76A618B8D4BAE9 /* SnapshotTestingViewAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapshotTestingViewAdditions.swift; path = FTMTableSectionModules/Classes/Test/SnapshotTestingViewAdditions.swift; sourceTree = "<group>"; };
 		B6B41B41E799F049D58880DFECE497D5 /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTMTableSectionModules_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B75A47899E602A5CA9E833F7D136622D /* iOSSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
-		B91B00F8BE943329D633234BD67AE0AC /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC93478DA894B140360D07FE20AC3632 /* FTMTableSectionModules-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FTMTableSectionModules-Info.plist"; sourceTree = "<group>"; };
+		B7D2399D262B220F7BE227AE6BCC28F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B91B00F8BE943329D633234BD67AE0AC /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = iOSSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCAFE0F29ED28FC253222AD4DBA559EC /* Pods-FTMTableSectionModules_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FTMTableSectionModules_Tests-dummy.m"; sourceTree = "<group>"; };
 		BD3E11CFF525A7BE0F5090E39A8A725C /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		CC1B1C27C52F68FF8B219FA184F7BF43 /* Pods-FTMTableSectionModules_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTMTableSectionModules_Example-Info.plist"; sourceTree = "<group>"; };
-		D082E34265487F88E80236AD6BE36478 /* SnapshotTestingCellAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapshotTestingCellAdditions.swift; path = FTMTableSectionModules/Classes/Test/SnapshotTestingCellAdditions.swift; sourceTree = "<group>"; };
+		CC4CA8596BD7A07D829C02F9FE1DF827 /* FTMTableSectionModules-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FTMTableSectionModules-Info.plist"; sourceTree = "<group>"; };
 		D36DBCC501B0C0D644B0ED8AF9BE9762 /* Pods-FTMTableSectionModules_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTMTableSectionModules_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D9CBE6761979A1F0B4C18F34817A5EC0 /* Pods-FTMTableSectionModules_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTMTableSectionModules_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DC37D45B91EAA34C1B307819F4FBFA48 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		E2B08E5ABF21E59EC385BF71E0C99E00 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E7E4A128BAF0F1A5CAA4F113D17A5053 /* FTMTableSectionModules-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTMTableSectionModules-dummy.m"; sourceTree = "<group>"; };
 		EB07CC184E97597B5EF96293FD8D6775 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		EBD54FBC707C522306409616608E03F7 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		F9270C2218B0B7C8BDA0E6B525D8BB9E /* TableSectionModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableSectionModule.swift; path = FTMTableSectionModules/Classes/Core/TableSectionModule.swift; sourceTree = "<group>"; };
-		F95EE38A17B14A8061EAD945A34416A4 /* FTMTableSectionModules-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTMTableSectionModules-umbrella.h"; sourceTree = "<group>"; };
+		F282B794DFB3A1D3354F18B0D13A2EF4 /* ModulesHelperTestsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModulesHelperTestsViewController.swift; path = FTMTableSectionModules/Classes/Test/ModulesHelperTestsViewController.swift; sourceTree = "<group>"; };
+		F4E905939CC1EA6286395383425D635E /* TableSectionModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableSectionModule.swift; path = FTMTableSectionModules/Classes/Core/TableSectionModule.swift; sourceTree = "<group>"; };
+		F622DB22CDFD6AB01FC31E7A2D428BCC /* ModulesViewAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModulesViewAdditions.swift; path = FTMTableSectionModules/Classes/Test/ModulesViewAdditions.swift; sourceTree = "<group>"; };
 		F98662B97F340866723F7EA90CF3D26C /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		FA14B0DBF0E988FBDEC0A19AF87C51E0 /* Pods-FTMTableSectionModules_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FTMTableSectionModules_Example-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		41D3E8A96DCD1BEFB8B8971E1C3895C7 /* Frameworks */ = {
+		65502765A99585E07D74C8996C21B1EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E27545CD517DB85627A5E26AF6578384 /* Foundation.framework in Frameworks */,
+				3BF9DE5BFDD1E2306DB651C708C6518C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,23 +172,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1077D1155C8DEB234882453A5DC8636F /* Core */ = {
+		110B6A5332307833E65F2501CC6A4DFA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9AFDD34C9AE0567FCA21FD3CF98582D9 /* ModulesViewController.swift */,
-				F9270C2218B0B7C8BDA0E6B525D8BB9E /* TableSectionModule.swift */,
+				F282B794DFB3A1D3354F18B0D13A2EF4 /* ModulesHelperTestsViewController.swift */,
+				F622DB22CDFD6AB01FC31E7A2D428BCC /* ModulesViewAdditions.swift */,
+				A58A00F5117D97260AAAF202439813D4 /* SnapshotTestDeviceInfo.swift */,
+				8930D525A6683B750DE95350077434D0 /* SnapshotTestingCellAdditions.swift */,
+				B2AB192EC34CD0D35D76A618B8D4BAE9 /* SnapshotTestingViewAdditions.swift */,
 			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		16DA71B71DE6333501F48613E54FE597 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				1D08D78FADD77947137C1C1B29D29DF8 /* FTMTableSectionModules.podspec */,
-				A0EAE03A9515DE0E53FEEB718B741523 /* LICENSE */,
-				8F56BFD96827700849389F6FA1B3497D /* README.md */,
-			);
-			name = Pod;
+			name = Tests;
 			sourceTree = "<group>";
 		};
 		22F3ECA726DE45D34B3ADFE5F42DC86C /* Core */ = {
@@ -210,6 +203,18 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		3AC83BC7AFE071017E2D3A02372B6DD5 /* FTMTableSectionModules */ = {
+			isa = PBXGroup;
+			children = (
+				5658C0C0D45F6B2828BD8995B89AA2C5 /* Core */,
+				5A9A28033CFDE153CEE7BD584F796415 /* Pod */,
+				FA5678885A1C7F1836989C2E067DE1B8 /* Support Files */,
+				110B6A5332307833E65F2501CC6A4DFA /* Tests */,
+			);
+			name = FTMTableSectionModules;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		3CFAB88290B89F3822C4FCA493716AEB /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,36 +232,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		45CC0458469FA82C326C4019B6F8970E /* Support Files */ = {
+		5658C0C0D45F6B2828BD8995B89AA2C5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				9007AF1EC8C8A89A7F3F7C4B3A854CA4 /* FTMTableSectionModules.modulemap */,
-				90D005CE8C69867D86CFCBFACE0C51D2 /* FTMTableSectionModules.xcconfig */,
-				5579E0504F792BF3A8379FB19F7479C9 /* FTMTableSectionModules-dummy.m */,
-				BC93478DA894B140360D07FE20AC3632 /* FTMTableSectionModules-Info.plist */,
-				41D6547701BECC0BA493B9152D018C15 /* FTMTableSectionModules-prefix.pch */,
-				F95EE38A17B14A8061EAD945A34416A4 /* FTMTableSectionModules-umbrella.h */,
+				33F2AE0DACBE8B1D975BCAFCB187F38A /* ModulesViewController.swift */,
+				F4E905939CC1EA6286395383425D635E /* TableSectionModule.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FTMTableSectionModules";
+			name = Core;
 			sourceTree = "<group>";
 		};
-		598080FEF6873949BF12C85D2FD73B4B /* FTMTableSectionModules */ = {
+		5A9A28033CFDE153CEE7BD584F796415 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				1077D1155C8DEB234882453A5DC8636F /* Core */,
-				16DA71B71DE6333501F48613E54FE597 /* Pod */,
-				45CC0458469FA82C326C4019B6F8970E /* Support Files */,
-				B3A3B244A03AA24784EE950352929468 /* Tests */,
+				6B43EB6E666886121CB07723EB3DC278 /* FTMTableSectionModules.podspec */,
+				B7D2399D262B220F7BE227AE6BCC28F5 /* LICENSE */,
+				E2B08E5ABF21E59EC385BF71E0C99E00 /* README.md */,
 			);
-			name = FTMTableSectionModules;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		5F92A95D197E31F467B35FC4B129A3E4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				598080FEF6873949BF12C85D2FD73B4B /* FTMTableSectionModules */,
+				3AC83BC7AFE071017E2D3A02372B6DD5 /* FTMTableSectionModules */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -306,18 +304,6 @@
 				432D328D5B1788520371534F0EC9AA67 /* SwiftSupport.swift */,
 			);
 			name = SwiftSupport;
-			sourceTree = "<group>";
-		};
-		B3A3B244A03AA24784EE950352929468 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				58682364727CC4F91BD6EBB1AC78586B /* ModulesHelperTestsViewController.swift */,
-				210A917C62052D9D7C0F607C9A970444 /* ModulesViewAdditions.swift */,
-				2CB8F0C305635FC962AF892F51EA814F /* SnapshotTestDeviceInfo.swift */,
-				D082E34265487F88E80236AD6BE36478 /* SnapshotTestingCellAdditions.swift */,
-				B566F7CD22B1B8160044CDD6 /* SnapshotTestingViewAdditions.swift */,
-			);
-			name = Tests;
 			sourceTree = "<group>";
 		};
 		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
@@ -378,12 +364,35 @@
 				E8F185C38F4D0FECED758E1073BF7128 /* Support Files */,
 				A222A9C1427FEE47EF8DE5C03195EBC3 /* SwiftSupport */,
 			);
+			name = iOSSnapshotTestCase;
 			path = iOSSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		FA5678885A1C7F1836989C2E067DE1B8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35FA7833EE952470F61BBD5F2C2233AB /* FTMTableSectionModules.modulemap */,
+				8F0A765A6D45BEF977CE065EBB42C6FC /* FTMTableSectionModules.xcconfig */,
+				E7E4A128BAF0F1A5CAA4F113D17A5053 /* FTMTableSectionModules-dummy.m */,
+				CC4CA8596BD7A07D829C02F9FE1DF827 /* FTMTableSectionModules-Info.plist */,
+				13E3376BDC0DAB5EAFF69E44D6BE6E92 /* FTMTableSectionModules-prefix.pch */,
+				82EDF50E65A0DA6C234B8426C7B80A98 /* FTMTableSectionModules-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FTMTableSectionModules";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		10CDFF6C3D039CB87C17ABFCCCE896F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99BC7BBAE18E2057B700DC1D7A90185D /* FTMTableSectionModules-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		687DA41063BE7B40D286F2FEFA6E5942 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,14 +406,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E30D6FA349A6AE79FCE0B753B320D2B /* Pods-FTMTableSectionModules_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A960EA1B5904C44A4BAED106F4C4702 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D238FD9C2BFE3413536E45876593BDE7 /* FTMTableSectionModules-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,12 +447,12 @@
 		};
 		380F0FF9EAA9A6E070C35058485A4495 /* FTMTableSectionModules */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66272BE636FE8069A3DEDFFB90D62394 /* Build configuration list for PBXNativeTarget "FTMTableSectionModules" */;
+			buildConfigurationList = 95CD266E5219B69BA18FB6067E750186 /* Build configuration list for PBXNativeTarget "FTMTableSectionModules" */;
 			buildPhases = (
-				9A960EA1B5904C44A4BAED106F4C4702 /* Headers */,
-				2A13F79C2FA3504CDE880E816DF93611 /* Sources */,
-				41D3E8A96DCD1BEFB8B8971E1C3895C7 /* Frameworks */,
-				366AA4EBDFFDCC07A4090DA1AA1D8DCF /* Resources */,
+				10CDFF6C3D039CB87C17ABFCCCE896F0 /* Headers */,
+				74ED9FD58B873D809C895B0F88D951B5 /* Sources */,
+				65502765A99585E07D74C8996C21B1EB /* Frameworks */,
+				EBE11E2C86ADEBF9634376E8EB691929 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -530,13 +531,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		366AA4EBDFFDCC07A4090DA1AA1D8DCF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		50D0972EB23D3950F66DCF37E3B0428E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -558,24 +552,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		2A13F79C2FA3504CDE880E816DF93611 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		EBE11E2C86ADEBF9634376E8EB691929 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D30C5B28F3550C801102E8B5E41577EE /* FTMTableSectionModules-dummy.m in Sources */,
-				B566F7CE22B1B8170044CDD6 /* SnapshotTestingViewAdditions.swift in Sources */,
-				30FEB1B956050BD59222944D9AA96D29 /* ModulesHelperTestsViewController.swift in Sources */,
-				02BA5FBFE7B861E3603E63339CAF6164 /* ModulesViewAdditions.swift in Sources */,
-				BFA8309A9E2416B40BDCE8F0685835F2 /* ModulesViewController.swift in Sources */,
-				50893CA3584A4BBD24F43E81D0671015 /* SnapshotTestDeviceInfo.swift in Sources */,
-				ACB1462125316ABE4836BC5E04AB3668 /* SnapshotTestingCellAdditions.swift in Sources */,
-				E35C12BA8BB37FF126D9908F5AA80854 /* TableSectionModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		3A311F14FCCE9EFCC4121359C4339290 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -596,6 +582,21 @@
 				6E04171A83D39EB85E0F58A849E896EF /* UIImage+Compare.m in Sources */,
 				10E8E4573E6A44AD957DA02D72D441FA /* UIImage+Diff.m in Sources */,
 				3A76EE90E5616D1F747FC0CC16C40AC2 /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74ED9FD58B873D809C895B0F88D951B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A1D3476404E30B003B36556387EE0C /* FTMTableSectionModules-dummy.m in Sources */,
+				1BC3FE341C0154865D07675C5D15A7DA /* ModulesHelperTestsViewController.swift in Sources */,
+				AA9FDD0D7ADEAFA7A73D1763D7EF2F74 /* ModulesViewAdditions.swift in Sources */,
+				4FC85983D76258EE6AE89450691EC95A /* ModulesViewController.swift in Sources */,
+				100A35DBCEE8DA1749A2BD5AB4AEDBAC /* SnapshotTestDeviceInfo.swift in Sources */,
+				01BC6FD85208FADF2B3BA4D1B524A101 /* SnapshotTestingCellAdditions.swift in Sources */,
+				A05AB0C7B26AA2ED49172808DA1360E9 /* SnapshotTestingViewAdditions.swift in Sources */,
+				BF58DCCC6FDD7CE9099DFCB883586B7A /* TableSectionModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +663,36 @@
 			};
 			name = Debug;
 		};
+		30A9EBDA75E2AB4A15896BDD22A72E67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F0A765A6D45BEF977CE065EBB42C6FC /* FTMTableSectionModules.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules.modulemap";
+				PRODUCT_MODULE_NAME = FTMTableSectionModules;
+				PRODUCT_NAME = FTMTableSectionModules;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		4A01B2FCC4C7FE3C75184DC085FF5CA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D36DBCC501B0C0D644B0ED8AF9BE9762 /* Pods-FTMTableSectionModules_Example.debug.xcconfig */;
@@ -694,6 +725,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		4A9089DE18B687071A73D3BE85B7C38A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F0A765A6D45BEF977CE065EBB42C6FC /* FTMTableSectionModules.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules.modulemap";
+				PRODUCT_MODULE_NAME = FTMTableSectionModules;
+				PRODUCT_NAME = FTMTableSectionModules;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		4C602CE08ED2B2A78C9198CB93E99AA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -813,7 +875,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -917,36 +980,6 @@
 			};
 			name = Release;
 		};
-		CF393755015A2A54950C6D3D112BC6EE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90D005CE8C69867D86CFCBFACE0C51D2 /* FTMTableSectionModules.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules.modulemap";
-				PRODUCT_MODULE_NAME = FTMTableSectionModules;
-				PRODUCT_NAME = FTMTableSectionModules;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		D31A89744388742B831EEC6EDE033941 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 270BBE2ECE31FE0954AABD8F86CA1176 /* Pods-FTMTableSectionModules_Tests.release.xcconfig */;
@@ -981,37 +1014,6 @@
 			};
 			name = Release;
 		};
-		DBC8D5B93347ADBEC3544D00BCD4F5EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90D005CE8C69867D86CFCBFACE0C51D2 /* FTMTableSectionModules.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FTMTableSectionModules/FTMTableSectionModules.modulemap";
-				PRODUCT_MODULE_NAME = FTMTableSectionModules;
-				PRODUCT_NAME = FTMTableSectionModules;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1024,20 +1026,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66272BE636FE8069A3DEDFFB90D62394 /* Build configuration list for PBXNativeTarget "FTMTableSectionModules" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CF393755015A2A54950C6D3D112BC6EE /* Debug */,
-				DBC8D5B93347ADBEC3544D00BCD4F5EC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8E7F32A379700B49A9D7630CECFB7EF1 /* Build configuration list for PBXNativeTarget "Pods-FTMTableSectionModules_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A01B2FCC4C7FE3C75184DC085FF5CA7 /* Debug */,
 				AE26EF7F7733257AFAAF661EFC3879BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95CD266E5219B69BA18FB6067E750186 /* Build configuration list for PBXNativeTarget "FTMTableSectionModules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30A9EBDA75E2AB4A15896BDD22A72E67 /* Debug */,
+				4A9089DE18B687071A73D3BE85B7C38A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
