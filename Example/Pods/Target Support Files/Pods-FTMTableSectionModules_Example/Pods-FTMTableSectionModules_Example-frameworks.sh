@@ -161,10 +161,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CRuntime/CRuntime.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CombinationGenerator/CombinationGenerator.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FTMTableSectionModules/FTMTableSectionModules.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Runtime/Runtime.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CRuntime/CRuntime.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CombinationGenerator/CombinationGenerator.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FTMTableSectionModules/FTMTableSectionModules.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Runtime/Runtime.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

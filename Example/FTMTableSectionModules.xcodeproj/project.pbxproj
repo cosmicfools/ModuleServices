@@ -417,11 +417,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CRuntime/CRuntime.framework",
+				"${BUILT_PRODUCTS_DIR}/CombinationGenerator/CombinationGenerator.framework",
 				"${BUILT_PRODUCTS_DIR}/FTMTableSectionModules/FTMTableSectionModules.framework",
+				"${BUILT_PRODUCTS_DIR}/Runtime/Runtime.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CRuntime.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CombinationGenerator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FTMTableSectionModules.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Runtime.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -30,6 +30,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'Tests' do |ss|
     ss.dependency 'FTMTableSectionModules/Core'
+    ss.dependency 'CombinationGenerator', '~> 0.1'
     ss.source_files = 'FTMTableSectionModules/Classes/Test/**/*'
   end
 

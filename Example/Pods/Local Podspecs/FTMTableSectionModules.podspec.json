@@ -19,6 +19,7 @@
   "pod_target_xcconfig": {
     "SWIFT_VERSION": "5.0"
   },
+  "swift_versions": "5.0",
   "default_subspecs": "Core",
   "subspecs": [
     {
@@ -30,9 +31,13 @@
       "dependencies": {
         "FTMTableSectionModules/Core": [
 
+        ],
+        "CombinationGenerator": [
+          "~> 0.1"
         ]
       },
       "source_files": "FTMTableSectionModules/Classes/Test/**/*"
     }
-  ]
+  ],
+  "swift_version": "5.0"
 }
