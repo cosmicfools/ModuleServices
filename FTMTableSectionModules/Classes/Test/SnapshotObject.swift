@@ -7,6 +7,6 @@
 
 import UIKit
 
-class SnapshotObject: NSObject {
-    var orientation: UIDeviceOrientation?
+open class SnapshotObject: NSObject {
+    open var orientation: UIInterfaceOrientation?
 }

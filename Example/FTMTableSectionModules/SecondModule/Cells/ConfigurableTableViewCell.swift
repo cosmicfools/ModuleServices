@@ -13,6 +13,7 @@ class ConfigurableTableViewCell: UITableViewCell {
     
     open func configureWithAttributedString(_ attributedString: NSAttributedString) {
         label.attributedText = attributedString
+        backgroundColor = .white
     }
     
 }

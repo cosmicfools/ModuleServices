@@ -20,6 +20,8 @@
 		B5253BEB21B5A98100003820 /* HelloWorldModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5253BEA21B5A98100003820 /* HelloWorldModule.swift */; };
 		B566F7D222B1BE5A0044CDD6 /* Example3CellSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B566F7D122B1BE5A0044CDD6 /* Example3CellSnapshotTests.swift */; };
 		B5A18EF11CEA575C00536A04 /* ModulesViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A18EF01CEA575C00536A04 /* ModulesViewControllerTest.swift */; };
+		B5A5210C22BD6EAE00370446 /* ConfigurableCellSnaphotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5210B22BD6EAE00370446 /* ConfigurableCellSnaphotTests.swift */; };
+		B5A5211022BF920A00370446 /* ConfigurableSnapshotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5210F22BF920A00370446 /* ConfigurableSnapshotModel.swift */; };
 		B5A7DE271F4F511100E082A5 /* SecondSectionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7DE261F4F511100E082A5 /* SecondSectionModule.swift */; };
 		B5A7DE2F1F4F521000E082A5 /* ConfigurableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7DE2D1F4F521000E082A5 /* ConfigurableTableViewCell.swift */; };
 		B5A7DE301F4F521000E082A5 /* ConfigurableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A7DE2E1F4F521000E082A5 /* ConfigurableTableViewCell.xib */; };
@@ -68,6 +70,8 @@
 		B5253BEA21B5A98100003820 /* HelloWorldModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldModule.swift; sourceTree = "<group>"; };
 		B566F7D122B1BE5A0044CDD6 /* Example3CellSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example3CellSnapshotTests.swift; sourceTree = "<group>"; };
 		B5A18EF01CEA575C00536A04 /* ModulesViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesViewControllerTest.swift; sourceTree = "<group>"; };
+		B5A5210B22BD6EAE00370446 /* ConfigurableCellSnaphotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCellSnaphotTests.swift; sourceTree = "<group>"; };
+		B5A5210F22BF920A00370446 /* ConfigurableSnapshotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableSnapshotModel.swift; sourceTree = "<group>"; };
 		B5A7DE261F4F511100E082A5 /* SecondSectionModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSectionModule.swift; sourceTree = "<group>"; };
 		B5A7DE2D1F4F521000E082A5 /* ConfigurableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableTableViewCell.swift; sourceTree = "<group>"; };
 		B5A7DE2E1F4F521000E082A5 /* ConfigurableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigurableTableViewCell.xib; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				B5C7B56922AB3BD2003D6D34 /* HelloWorldModuleSnapshotTestCase.swift */,
 				B5C7B56B22AB3DDA003D6D34 /* FirstModuleSnapshotTestCase.swift */,
 				B5C7B56722AB3B71003D6D34 /* SecondModuleSnapshotTestCase.swift */,
+				B5A5210B22BD6EAE00370446 /* ConfigurableCellSnaphotTests.swift */,
+				B5A5210F22BF920A00370446 /* ConfigurableSnapshotModel.swift */,
 				690BCA091CE9DA86006C4381 /* Info.plist */,
 			);
 			path = FTMTableSectionModules_Tests;
@@ -460,9 +466,11 @@
 				B5C7B56A22AB3BD2003D6D34 /* HelloWorldModuleSnapshotTestCase.swift in Sources */,
 				B5A18EF11CEA575C00536A04 /* ModulesViewControllerTest.swift in Sources */,
 				690BCA101CE9DB42006C4381 /* TableSectionModuleTest.swift in Sources */,
+				B5A5211022BF920A00370446 /* ConfigurableSnapshotModel.swift in Sources */,
 				B566F7D222B1BE5A0044CDD6 /* Example3CellSnapshotTests.swift in Sources */,
 				B5C7B56822AB3B71003D6D34 /* SecondModuleSnapshotTestCase.swift in Sources */,
 				B5C7B56C22AB3DDA003D6D34 /* FirstModuleSnapshotTestCase.swift in Sources */,
+				B5A5210C22BD6EAE00370446 /* ConfigurableCellSnaphotTests.swift in Sources */,
 				690BCA121CE9EDCD006C4381 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

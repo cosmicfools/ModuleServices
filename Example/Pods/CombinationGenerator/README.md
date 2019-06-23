@@ -6,6 +6,10 @@
 [![Platform](https://img.shields.io/cocoapods/p/CombinationGenerator.svg?style=flat)](http://cocoapods.org/pods/CombinationGenerator)
 [![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/fjtrujy/CombinationGenerator)](http://clayallsopp.github.io/readme-score?url=https://github.com/fjtrujy/CombinationGenerator)
 
+## Overview
+
+CombinationGenerator basically is a helper that use brute-force to generate all possibilities for a concrete DataModel given a list of possible values per property
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -26,9 +30,7 @@ pod 'CombinationGenerator'
 
 ## How to use it
 
-CombinationGenerator basically is a helper that use brute-force to generate all possibilities for a concrete DataModel given a list of possible values per property
-
-An example use to be easier to understand than 1000 words.. so, please to see the example use:
+You can just use `pod try` and inside you will see an example of a ViewController that generate all possbility for the typical UserInfo data model.
 
 ```ruby
 pod  try 'CombinationGenerator'
@@ -36,9 +38,10 @@ pod  try 'CombinationGenerator'
 
 If you don't have `pod try` installed go to https://github.com/CocoaPods/cocoapods-try to install it.
 
-Inside you will see an example of a ViewController that generate all possbility for the typical UserInfo data model.
 
-In case that you still want to see here the examples, let's give a try.
+In case that you still want to see here how it works, keep reading :)
+
+An example used to be easier to understand than 1000 words.. so:
 
 #### 1. Import CombinationGenerator
 
@@ -56,7 +59,7 @@ class UserInfo: NSObject {
 }
 ```
 
-#### 3. Instanciate, addCombination and generate Results
+#### 3. Instanciate, add combination and generate all the possibilities
 
 ```swift
 let generator = Generator(baseClass: UserInfo.self)
@@ -70,7 +73,7 @@ let possibilities = generator.generateCombinations() as! [UserInfo]
 
 #### 4. Results:
 
-In the previous example if we wan't to see the generated output we can do:
+In the previous example if we want to see the generated object we can do:
 
 ```swift
 possibilities.forEach { userInfo in

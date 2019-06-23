@@ -41,7 +41,7 @@ open class Generator: NSObject {
     }
     
     private func nextProperty(property: PropertyInfo?) -> PropertyInfo? {
-        let keys = Array(combinations.keys)
+        let keys = Array(combinations.keys.sorted())
         var currentKey: String? = nil
         var nextProp: PropertyInfo? = nil
         var index: NSInteger = -1
@@ -92,6 +92,8 @@ open class Generator: NSObject {
                 generated.append(option as! NSObject)
             } catch {}
         }
+        
+        objectCombinations = [Dictionary<String, Any>]()
         
         return generated
     }

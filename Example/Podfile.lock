@@ -1,5 +1,5 @@
 PODS:
-  - CombinationGenerator (0.1.1):
+  - CombinationGenerator (0.1.2):
     - Runtime (~> 2.1)
   - CRuntime (2.1.2)
   - FTMTableSectionModules (0.3):
@@ -33,7 +33,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CombinationGenerator: 94cd57a20c534e38568a59eea269e56fadecca0f
+  CombinationGenerator: b14534387396780072be3f471e087b214d33a2e0
   CRuntime: d7ae373e07ab36e92ad273259557e3817e0c214b
   FTMTableSectionModules: 8d4f3f8c52596924ebea8c12cecf27aca595f5a8
   iOSSnapshotTestCase: 2d51aa06775e95cecb0a1fb9c5c159ccd1dd4596
