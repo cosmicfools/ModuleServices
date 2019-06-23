@@ -58,6 +58,8 @@ class ConfigurableCellSnaphotTests: FBSnapshotTestCase {
         cell?.configureWithAttributedString(((model?.attrText())!))
         cell?.adjustToFitScreen(orientation: model!.orientation!)
         
+        model?.snapshotIdentifier()
+        
         FBSnapshotVerifyView(cell!, identifier: identifier!)
     }
     

@@ -15,7 +15,17 @@ open class SnapshotObject: NSObject {
         let mirror = Mirror(reflecting: self)
         
         for child in mirror.children {
-            identififer += (child.label! + (child.value as! String))
+            let identifierMethod = child.label! + "Identifier"
+            let aSel : Selector = NSSelectorFromString(identifierMethod)
+            var value: String = ""
+            
+            if self.responds(to: aSel) {
+                value = self.perform(aSel)?.takeRetainedValue() as! String
+            } else {
+                value = child.value as! String
+            }
+            
+            identififer += (child.label! + value)
         }
         
         return identififer

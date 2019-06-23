@@ -17,7 +17,7 @@ class ConfigurableSnapshotModel: SnapshotObject {
         return NSAttributedString.init(string: text!, attributes: attributes)
     }
     
-    func attributesIdentifier() -> String {
+    @objc func attributesIdentifier() -> String {
         return (attributes?.values.reduce("") {text, attrValue in "\(String(describing: text)),\(attrValue)"})!
     }
 }
