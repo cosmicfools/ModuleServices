@@ -31,6 +31,7 @@ open class TableSectionModule: NSObject {
         
         registerViews()
         createRows()
+        setupNotifications()
     }
     
     open func registerViews() {
@@ -172,6 +173,18 @@ public extension TableSectionModule {
         let separator : CGFloat = TableSectionModuleConstants.separatorHeight / UIScreen.main.scale
         
         return size.height + separator // Add space for the cell separator height
+    }
+}
+
+// MARK: - Notifications for CodeInjection
+extension TableSectionModule {
+    private func setupNotifications() {
+        let notification = Notification.Name("INJECTION_BUNDLE_NOTIFICATION")
+        NotificationCenter.default.addObserver(self, selector: #selector(injectedCode(_:)), name: notification, object: nil)
+    }
+    
+    @objc private func injectedCode(_ notification: Notification) {
+        refreshSection()
     }
 }
 
