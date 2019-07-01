@@ -9,7 +9,7 @@
 import FTMTableSectionModules
 
 class SecondSectionModule: TableSectionModule {
-    private var infoToShow : Array<String>
+    private var infoToShow : [String]
     private var boldAttributes : [NSAttributedString.Key : Any]
     private var italianAttributes : [NSAttributedString.Key : Any]
     

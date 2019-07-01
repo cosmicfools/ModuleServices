@@ -20,10 +20,11 @@ class ViewController: ModulesViewController {
     
     override func createModules() {
         super.createModules()
-        
-        appendModule(HelloWorldModule(tableView: tableView!))
-        appendModule(FirstSectionModule(tableView: tableView!))
-        appendModule(SecondSectionModule(tableView: tableView!))
+        if let tableV = tableView {
+            appendModule(HelloWorldModule(tableView: tableV))
+            appendModule(FirstSectionModule(tableView: tableV))
+            appendModule(SecondSectionModule(tableView: tableV))
+        }
     }
 
 }

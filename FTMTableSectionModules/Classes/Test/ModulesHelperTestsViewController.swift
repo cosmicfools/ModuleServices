@@ -32,9 +32,12 @@ open class ModulesHelperTestsViewController: ModulesViewController {
     
     open override func createModules() {
         super.createModules()
-        let delegateModules = (modulesDelegate?.helperTestViewController(modulesHelperTest: self, tableView: tableView!))!
-        delegateModules.forEach { module in
-            appendModule(module)
+        
+        if let tableV = tableView,
+           let delegateModules = (modulesDelegate?.helperTestViewController(modulesHelperTest: self, tableView: tableV)) {
+            delegateModules.forEach { module in
+                appendModule(module)
+            }
         }
         
         modulesDelegate?.helperTestViewControllerDidFinishToAddModules(modulesHelperTest: self, modules: modules)
@@ -62,19 +65,22 @@ open class ModulesHelperTestsViewController: ModulesViewController {
         view.setNeedsLayout()
         view.layoutIfNeeded()
         
-        newFrame.size = tableView!.contentSize
+        if let tableV = tableView {
+            newFrame.size = tableV.contentSize
+        }
         view.frame = newFrame
     }
 }
 
 public protocol ModulesHelperTestsViewControllerDelegate: NSObjectProtocol {
     func helperTestViewController(modulesHelperTest: ModulesHelperTestsViewController, tableView: UITableView)
-        -> Array<TableSectionModule>
-    func helperTestViewControllerDidFinishToAddModules(modulesHelperTest : ModulesHelperTestsViewController, modules: Array<TableSectionModule>)
+        -> [TableSectionModule]
+    func helperTestViewControllerDidFinishToAddModules(modulesHelperTest : ModulesHelperTestsViewController,
+                                                       modules: [TableSectionModule])
 }
 
 
 public extension ModulesHelperTestsViewControllerDelegate {
     
-    func helperTestViewControllerDidFinishToAddModules(modulesHelperTest : ModulesHelperTestsViewController, modules: Array<TableSectionModule>) {}
+    func helperTestViewControllerDidFinishToAddModules(modulesHelperTest : ModulesHelperTestsViewController, modules: [TableSectionModule]) {}
 }

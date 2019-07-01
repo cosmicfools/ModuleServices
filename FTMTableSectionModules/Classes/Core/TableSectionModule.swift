@@ -17,17 +17,18 @@ private struct TableSectionModuleConstants{
 open class TableSectionModule: NSObject {
     open var rows:[AnyObject] = []
     weak internal var sectionSource: TableSectionModuleSectionSource?
-    fileprivate(set) open var tableView:UITableView!
+    fileprivate(set) open var tableView:UITableView
     open var section: NSInteger {
-        return (sectionSource?.sectionForModule(self))!
-    }    
+        return (sectionSource?.sectionForModule(self) ?? NSNotFound)
+    }
     fileprivate(set) open var isPresented:Bool = false
     fileprivate(set) open var isFetching:Bool = false
     fileprivate var dynamicCells = Dictionary<String, UITableViewCell>()
     
     public init(tableView:UITableView) {
-        super.init()
         self.tableView = tableView
+        
+        super.init()
         
         registerViews()
         createRows()
@@ -152,14 +153,14 @@ public extension TableSectionModule {
 
 // MARK: - Autocalculate the needed height of a cells
 public extension TableSectionModule {
-    func dequeueDynamicHeightCellWithIdentifier(_ identifier: String) -> UITableViewCell {
+    func dequeueDynamicHeightCellWithIdentifier(_ identifier: String) -> UITableViewCell? {
         var sizingCell : UITableViewCell? = dynamicCells[identifier]
         if sizingCell == nil {
             sizingCell = tableView.dequeueReusableCell(withIdentifier: identifier)
             dynamicCells[identifier] = sizingCell
         }
         
-        return sizingCell!
+        return sizingCell
     }
     
     func calculateHeightForSizingCell(_ sizingCell: UITableViewCell) -> CGFloat {

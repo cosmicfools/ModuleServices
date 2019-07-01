@@ -36,7 +36,8 @@ class FirstModuleSnapshotTestCase: FBSnapshotTestCase, ModulesHelperTestsViewCon
 
 // Mark - ModulesHelperTestsViewControllerDelegate
 extension FirstModuleSnapshotTestCase {
-    func helperTestViewController(modulesHelperTest: ModulesHelperTestsViewController, tableView: UITableView) -> Array<TableSectionModule> {
+    func helperTestViewController(modulesHelperTest: ModulesHelperTestsViewController,
+                                  tableView: UITableView) -> [TableSectionModule] {
         return [
             FirstSectionModule(tableView: tableView)
         ]

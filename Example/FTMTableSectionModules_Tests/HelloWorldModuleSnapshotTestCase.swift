@@ -35,7 +35,8 @@ class HelloWorldModuleSnapshotTestCase: FBSnapshotTestCase, ModulesHelperTestsVi
 
 // Mark - ModulesHelperTestsViewControllerDelegate
 extension HelloWorldModuleSnapshotTestCase {
-    func helperTestViewController(modulesHelperTest: ModulesHelperTestsViewController, tableView: UITableView) -> Array<TableSectionModule> {
+    func helperTestViewController(modulesHelperTest: ModulesHelperTestsViewController,
+                                  tableView: UITableView) -> [TableSectionModule] {
         return [
             HelloWorldModule(tableView: tableView)
         ]
