@@ -89,27 +89,27 @@ extension ModulesViewController: TableSectionModuleSectionSource {
 // MARK: - UITableViewDelegate, UITableViewDataSource
 extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        return modules[indexPath.section].tableView(tableView, willDisplayCell: cell, forRowAtIndexPath: indexPath)
+        modules[indexPath.section].tableView(tableView, willDisplayCell: cell, forRowAtIndexPath: indexPath)
     }
     
     public func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        return modules[section].tableView(tableView, willDisplayHeaderView: view, forSection: section)
+        modules[section].tableView(tableView, willDisplayHeaderView: view, forSection: section)
     }
     
     public func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
-        return modules[section].tableView(tableView, willDisplayFooterView: view, forSection: section)
+        modules[section].tableView(tableView, willDisplayFooterView: view, forSection: section)
     }
 
     public func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        return modules[indexPath.section].tableView(tableView, didEndDisplayingCell: cell, forRowAtIndexPath: indexPath)
+        modules[indexPath.section].tableView(tableView, didEndDisplayingCell: cell, forRowAtIndexPath: indexPath)
     }
     
     public func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {
-        return modules[section].tableView(tableView, didEndDisplayingHeaderView: view, forSection: section)
+        modules[section].tableView(tableView, didEndDisplayingHeaderView: view, forSection: section)
     }
     
     public func tableView(_ tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int) {
-        return modules[section].tableView(tableView, didEndDisplayingFooterView: view, forSection: section)
+        modules[section].tableView(tableView, didEndDisplayingFooterView: view, forSection: section)
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -145,7 +145,7 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
-        return modules[indexPath.section].tableView(tableView, accessoryButtonTappedForRowWithIndexPath: indexPath)
+        modules[indexPath.section].tableView(tableView, accessoryButtonTappedForRowWithIndexPath: indexPath)
     }
     
     public func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
@@ -153,11 +153,11 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-        return modules[indexPath.section].tableView(tableView, didHighlightRowAtIndexPath: indexPath)
+        modules[indexPath.section].tableView(tableView, didHighlightRowAtIndexPath: indexPath)
     }
     
     public func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
-        return modules[indexPath.section].tableView(tableView, didUnhighlightRowAtIndexPath: indexPath)
+        modules[indexPath.section].tableView(tableView, didUnhighlightRowAtIndexPath: indexPath)
     }
     
     public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
@@ -169,11 +169,11 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        return modules[indexPath.section].tableView(tableView, didSelectRowAtIndexPath: indexPath)
+        modules[indexPath.section].tableView(tableView, didSelectRowAtIndexPath: indexPath)
     }
     
     public func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        return modules[indexPath.section].tableView(tableView, didDeselectRowAtIndexPath: indexPath)
+        modules[indexPath.section].tableView(tableView, didDeselectRowAtIndexPath: indexPath)
     }
     
     public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
@@ -193,11 +193,13 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
-        return modules[indexPath.section].tableView(tableView, willBeginEditingRowAtIndexPath: indexPath)
+        modules[indexPath.section].tableView(tableView, willBeginEditingRowAtIndexPath: indexPath)
     }
     
     public func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
-        return modules[indexPath!.section].tableView(tableView, didEndEditingRowAtIndexPath: indexPath!)
+        if let validIndexPath = indexPath {
+            modules[validIndexPath.section].tableView(tableView, didEndEditingRowAtIndexPath: validIndexPath)
+        }
     }
     
     public func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
@@ -253,6 +255,6 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        return modules[indexPath.section].tableView(tableView, commitEditingStyle: editingStyle, forRowAtIndexPath: indexPath)
+        modules[indexPath.section].tableView(tableView, commitEditingStyle: editingStyle, forRowAtIndexPath: indexPath)
     }
 }
