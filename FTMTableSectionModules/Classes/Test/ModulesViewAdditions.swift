@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     
     func fitSubView(view: UIView) {
         fitSubView(view: view,
