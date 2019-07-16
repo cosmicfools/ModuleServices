@@ -46,6 +46,10 @@ open class ModulesViewController: UIViewController {
 
 // MARK: - TableSectionModuleSectionSource
 extension ModulesViewController: TableSectionModuleSectionSource {
+    public func allModules() -> [TableSectionModule] {
+        return modules
+    }
+    
     public func appendModule(_ module: TableSectionModule) {
         module.sectionSource = self;
         modules.append(module)
