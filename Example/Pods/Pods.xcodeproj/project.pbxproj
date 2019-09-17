@@ -10,7 +10,6 @@
 		029023C7EA5E63A497B1A06EE6C5969F /* ClassTypeDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71E6A3EBC828325973F60586E16DFA9 /* ClassTypeDescriptor.swift */; };
 		03D15F768F52F166703EDA6910F52DE9 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CB78911C54C76206E1E6AA4946B77 /* Errors.swift */; };
 		04E3F6E8C8B6B9B214C038366E63FB33 /* RetainCounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE77FB9855E448BE38256C86D32E84 /* RetainCounts.swift */; };
-		0671D77C459B41DB336FBDA80DC26394 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F3ABA85445836F0CE9ABDD85CC017 /* UIImage+Snapshot.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0695F5352982C3A7AD439F39C6ABF5B8 /* SnapshotTestingViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37730A0E5E0F48812EED9F9A1DB0DFBA /* SnapshotTestingViewAdditions.swift */; };
 		07B5E12A20C27332ED0816743C4F90E5 /* Runtime-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8D4389420FBED727F71606C935A517 /* Runtime-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0805ED8BAF3AA2D9DB9403343C5DD25A /* DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7D757DC4509CAAED6BAB67BFBD952 /* DefaultValue.swift */; };
@@ -22,17 +21,18 @@
 		0FA60A6F9F34CF6B26CFEF6E79CC8055 /* TypeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4675318864E903555B7B9BE96805E5B /* TypeInfo.swift */; };
 		115B9F2A343D1880D138F41B9491C125 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0477B4D00C1CE4C83BCEB37775EF2F /* Foundation.framework */; };
 		1352AB59BFAD999AB05C19BF451F2976 /* SnapshotTestingCellAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA05BC4751A4449029B51395128B2B /* SnapshotTestingCellAdditions.swift */; };
+		144F29212101A4D03109E989BE0A4F92 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0A46B7D0CC6FAEF9F3DFADE95A0F40 /* FBSnapshotTestController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1DBEE0938A190C41CA86BF78DBCCD78A /* SnapshotObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ACD6A4340407FDC98F165C16995AB9 /* SnapshotObject.swift */; };
 		2113E7B2E70EE34B57C51CB0CD83693E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0477B4D00C1CE4C83BCEB37775EF2F /* Foundation.framework */; };
 		23395A2F44E184F05F064DC33594D087 /* FieldDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16065C11CBBC0DC441A30B25C1081472 /* FieldDescriptor.swift */; };
 		23E24FD27F05F785372A1F2A89A486C0 /* Pointers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62103F8150C6B4F877E603E35EC0B01C /* Pointers.swift */; };
-		250B48F0B771D365E3871A07B3CB55CB /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0A46B7D0CC6FAEF9F3DFADE95A0F40 /* FBSnapshotTestController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2643963F8600F16366AF89ABF6D91F82 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F842A1A088C271CCB0B46FF2F4C836 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		273646606F5D7AFCADAD6149C1A089C9 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D376910BB3B60BBCFEB7607847F77 /* FBSnapshotTestCase.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2959E4C1E2B2587A1303CDF95F75C17C /* CRuntime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8C9920AC8B0F74EDA3A94CBB24D395 /* CRuntime-dummy.m */; };
 		2A8F11153802D12729D1B1A1B630F557 /* RelativePointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87B1A5E12B320165774511EBCCADBD /* RelativePointer.swift */; };
+		2CA412DDC41031745F66213AD86238FE /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B701CF48DE6055C6B14B7984E39F71F /* SwiftSupport.swift */; };
 		2CF8C7249237D9B52DE6AC371DE85F24 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD0619BC0438FF0335EE8D495425554 /* String+Extensions.swift */; };
 		313B6D2F055344AB86A6FCC8E9D2F34E /* StructMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858E930D4E66C6035B3AB87218BD7EE0 /* StructMetadata.swift */; };
+		338DD760BB611C08829BEC825B2BB816 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F3ABA85445836F0CE9ABDD85CC017 /* UIImage+Snapshot.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3B540469AF7772C156A3AD0CC6184734 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 485F4218EA098589A78F230229609E60 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CE95FD1D722818A524677118DF557BA /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = D7EEAC1955B7C3545EA23C58F4CA4150 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3EF01D702BDAF35E551C21F4D230D129 /* RelativeVectorPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D7F6CA892C943CCD0E5681ECF7B84 /* RelativeVectorPointer.swift */; };
@@ -52,7 +52,6 @@
 		660E98406EEA3DF10345236E163FFA46 /* Union.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38C76FD59CBB27DF2097B1146E1BBF5 /* Union.swift */; };
 		661163365912BA795F54FC2579CE5263 /* MetadataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E1D64E4688216DA2AC6A925FCCBB6F /* MetadataType.swift */; };
 		6A59A30A19D2C2FAC01EBF789712D9FA /* Runtime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C4F578550D3571434A7B2DB980DED0 /* Runtime-dummy.m */; };
-		70CC2FAC1B3960077612883A24036444 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC4314264A264F52964B664F39B020 /* UIImage+Diff.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7743746CFB23A877FFFB1C39B17399F7 /* CRuntime-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1A90FCF48922E4177C19D6E8B07B025 /* CRuntime-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		796D4CB4F4AB8ECBBD931B099A74E833 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA6637866EA9AB16F2572248026D89B /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79F8BFF6009EA55D6555A5046F6A44FB /* ProtocolDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F314DE8DFD4D09BFDA5070FD8EDC0 /* ProtocolDescriptor.swift */; };
@@ -62,22 +61,22 @@
 		81DE11683E5B212E1A4B52CA9A6A2AB3 /* Kind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422899C39E6FDC93B89DA3EAAD6A8AEC /* Kind.swift */; };
 		82CE8E0DC98452F08E1A03D3CA91B763 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63BE99FC89B41B22F4196F3F563BF64 /* UIKit.framework */; };
 		86BC25FD2CC085B17A374500C747062D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FCCADFA61A81884B08EF015DF87B8C /* QuartzCore.framework */; };
-		8D8FD9718B05D399C45171E53AE2C235 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4307648A5305BE316876ACD0BA60E0 /* FBSnapshotTestCasePlatform.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		91607B1A954A50A3DA71D360CCE336A5 /* Pods-FTMTableSectionModules_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7A1E7BBF86BAB074DAF5779EA63FA3 /* Pods-FTMTableSectionModules_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93769542F02DF4D7F608C66B4EBB3E75 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B701CF48DE6055C6B14B7984E39F71F /* SwiftSupport.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		968B5318A745263F0D3A72023217CD12 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC9815E727A3BD796745AE71C930870 /* XCTest.framework */; };
+		97F75B96103369BE6F6040DFD8BC2910 /* iOSSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72CC488315DD40D2530E57537878262B /* iOSSnapshotTestCase-dummy.m */; };
 		999CFE2C169B035B2EBDF13FB031B428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0477B4D00C1CE4C83BCEB37775EF2F /* Foundation.framework */; };
 		9AD4172B75B8C85971D51A9DD2582092 /* ClassHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B87988B94B483250CBABB8C786BE545 /* ClassHeader.swift */; };
 		9EA496E49D41901C79C50555F702EBD6 /* CombinationGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459CF2991A2A4C21A889173098C8FFE3 /* CombinationGenerator.framework */; };
 		9FB9C73C2DE8DBB36FD06CD9434B6D76 /* Pointer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7CC89533B6D793452436DA1A2C1EA /* Pointer+Extensions.swift */; };
 		9FE1E8E4594D103EB6545E8AAE79B7F3 /* GettersSetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D80079E740E552C8CBBE727070CC53 /* GettersSetters.swift */; };
+		A2DF2053A890C10FE0B6ADA21A5A0FED /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = A078CF071D61429861E1BF6EE23A98D1 /* UIImage+Compare.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A9DF8C5A4E0475578452EC9593AFA1D3 /* ClassMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC21ED2034F62AE583769362FDDF5F36 /* ClassMetadata.swift */; };
+		AA2A80FACDE8BCA52EFF8948A50C070B /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC4314264A264F52964B664F39B020 /* UIImage+Diff.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AD9F210AFC07346AFB3D40085F82C9A0 /* ProtocolMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808D80EB2A83CE9687D2DCA2BDFBB5B9 /* ProtocolMetadataLayout.swift */; };
 		B0D3A5CAF14140B11C2ED0E537B2309A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0477B4D00C1CE4C83BCEB37775EF2F /* Foundation.framework */; };
 		B418D0EE309C5F5307DE2E537EA3711D /* ExistentialContainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E171FD95D29D7777C8BF02AF8680A9C /* ExistentialContainter.swift */; };
 		B4BF02B4D063CBF5D833D3F49DB8B4A0 /* FunctionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A63E978CF42F49389B3810024876663 /* FunctionInfo.swift */; };
 		BA3F41872B591126DA44DB8BC250A5D0 /* TargetTypeGenericContextDescriptorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637C3CEC27A3995587748674F789A32 /* TargetTypeGenericContextDescriptorHeader.swift */; };
-		BBF68369541AD3FBA59DA32A3E27DAC5 /* iOSSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72CC488315DD40D2530E57537878262B /* iOSSnapshotTestCase-dummy.m */; };
 		C0FF4F31F29D44FC6DA6A7C4C768E24B /* TupleMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9E95CD1F5122B4069D4245050F58C /* TupleMetadataLayout.swift */; };
 		C191718831DB34AF754794CC07890F3D /* EnumMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E173FBC0D63C0A951402ADABE12644 /* EnumMetadata.swift */; };
 		C3F414FF3353F1AF259B57BDAE928446 /* PropertyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57BBC9441B8666657BBB7365803B32 /* PropertyInfo.swift */; };
@@ -85,6 +84,7 @@
 		C7274F82AF1DEADD0060E902EB243D01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0477B4D00C1CE4C83BCEB37775EF2F /* Foundation.framework */; };
 		C8B89BD8F3F1E8D3964F44E30178C6AF /* FuntionMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475659604FBA3E468CCB15C4BB8A4AD /* FuntionMetadata.swift */; };
 		C930BCB1B395E19ABBE9D4D491867353 /* iOSSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7101AB98EA4EEAF045A80AB4505E9F99 /* iOSSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9E1F1A48507326B8AF0EFDBE3C0EC75 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D376910BB3B60BBCFEB7607847F77 /* FBSnapshotTestCase.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CB080C968A44D0736222F7DE367600F8 /* ValueWitnessTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976181AFC16B50EE583BE5EA74E45FC /* ValueWitnessTable.swift */; };
 		CCD820167EC56109C28E6B33AEB90897 /* Pods-FTMTableSectionModules_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA14B0DBF0E988FBDEC0A19AF87C51E0 /* Pods-FTMTableSectionModules_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D10012C5A5CB57E79343748266CF5FDD /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1686CCB17BCDF467D10D8A1A1D9481 /* Case.swift */; };
@@ -95,6 +95,7 @@
 		D6B3A2E8C3CA99182F7738366074A571 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF3C1BB275FFA3771E30E3DAFC71F5F /* Generator.swift */; };
 		D8CDFE1DBB8807490410AA7069D33C22 /* NominalMetadataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39199FEC432E696E670F42FD9909BF /* NominalMetadataType.swift */; };
 		DF63F1196DCBB60B1D769A7F245655F5 /* SnapshotGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA669074D90F4DA6E11575DA0856AD6 /* SnapshotGenerator.swift */; };
+		EAC1544AADA392F95DEF08C5C89DAA93 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4307648A5305BE316876ACD0BA60E0 /* FBSnapshotTestCasePlatform.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EC8594B6E2892C5EC6A970F3CDB35288 /* FTMTableSectionModules-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 402BA95C4765597B6EEE311566DFF007 /* FTMTableSectionModules-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECF008528DD76B66D8A4E88C641D50C6 /* FunctionMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6295C19A5BF95E66113C6DD8C2CCC1DF /* FunctionMetadataLayout.swift */; };
 		ED7DEF6AA25C131B18D45EC0D766E13D /* EnumTypeDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD982665B439B8113000FB91E8C6BAB /* EnumTypeDescriptor.swift */; };
@@ -102,7 +103,6 @@
 		F375CA31B4716E5EADDB6E47299759F2 /* CombinationGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C887BF34B823D53B9F0F0806DEC8361C /* CombinationGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4BDB706F47A26F8A790AA71DAAC2DDF /* TypeDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55D748DD69E5228B2AA070388C75C84 /* TypeDescriptor.swift */; };
 		F558BF34DB224FFE65784BB2A8E5CDB6 /* ProtocolTypeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A372EA1AA0106561D95CEC2E27133EE /* ProtocolTypeContainer.swift */; };
-		F603DE786BEBA769E8EB3E4263724C3C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = A078CF071D61429861E1BF6EE23A98D1 /* UIImage+Compare.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F77BA2C1319DF257AEE3009379CADAE8 /* Runtime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2FE28D97F60A4DEAE5A23BB50CEC63 /* Runtime.framework */; };
 		FC1CE03FBE56E5857251BA7154D82A07 /* StructMetadataLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9B8D81CC05A734AA313A6D086E069 /* StructMetadataLayout.swift */; };
 /* End PBXBuildFile section */
@@ -872,7 +872,7 @@
 			buildConfigurationList = A2580343E01EF46F4A1E600895C7753A /* Build configuration list for PBXNativeTarget "iOSSnapshotTestCase" */;
 			buildPhases = (
 				A1F0BF3267CFE49DA92D818F3B3A46DA /* Headers */,
-				8EF20DC8D9AFA7061D4C6A6AA0EC57CA /* Sources */,
+				81064F7606D6A421CDB262423B7A682F /* Sources */,
 				FDD1A2F6F0C7CD64F79B3E79FC562312 /* Frameworks */,
 				B8848E61F4166ABF3DCCE39D45C21A1B /* Resources */,
 			);
@@ -1077,18 +1077,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EF20DC8D9AFA7061D4C6A6AA0EC57CA /* Sources */ = {
+		81064F7606D6A421CDB262423B7A682F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				273646606F5D7AFCADAD6149C1A089C9 /* FBSnapshotTestCase.m in Sources */,
-				8D8FD9718B05D399C45171E53AE2C235 /* FBSnapshotTestCasePlatform.m in Sources */,
-				250B48F0B771D365E3871A07B3CB55CB /* FBSnapshotTestController.m in Sources */,
-				BBF68369541AD3FBA59DA32A3E27DAC5 /* iOSSnapshotTestCase-dummy.m in Sources */,
-				93769542F02DF4D7F608C66B4EBB3E75 /* SwiftSupport.swift in Sources */,
-				F603DE786BEBA769E8EB3E4263724C3C /* UIImage+Compare.m in Sources */,
-				70CC2FAC1B3960077612883A24036444 /* UIImage+Diff.m in Sources */,
-				0671D77C459B41DB336FBDA80DC26394 /* UIImage+Snapshot.m in Sources */,
+				C9E1F1A48507326B8AF0EFDBE3C0EC75 /* FBSnapshotTestCase.m in Sources */,
+				EAC1544AADA392F95DEF08C5C89DAA93 /* FBSnapshotTestCasePlatform.m in Sources */,
+				144F29212101A4D03109E989BE0A4F92 /* FBSnapshotTestController.m in Sources */,
+				97F75B96103369BE6F6040DFD8BC2910 /* iOSSnapshotTestCase-dummy.m in Sources */,
+				2CA412DDC41031745F66213AD86238FE /* SwiftSupport.swift in Sources */,
+				A2DF2053A890C10FE0B6ADA21A5A0FED /* UIImage+Compare.m in Sources */,
+				AA2A80FACDE8BCA52EFF8948A50C070B /* UIImage+Diff.m in Sources */,
+				338DD760BB611C08829BEC825B2BB816 /* UIImage+Snapshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
