@@ -51,11 +51,11 @@ open class TableSectionModule: NSObject {
         isFetching = false
     }
     
-    internal func willAppear() {
+    open func willAppear() {
         isPresented = true
     }
     
-    internal func willDissappear() {
+    open func willDissappear() {
         isPresented = false
     }
 }
