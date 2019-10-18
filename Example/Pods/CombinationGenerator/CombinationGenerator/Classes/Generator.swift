@@ -8,92 +8,77 @@
 import UIKit
 import Runtime
 
-open class Generator: NSObject {
-    private var baseClass: NSObject.Type
-    private var info: TypeInfo?
-    private var combinations: Dictionary<String, [Any]>
-    private var objectCombinations: [Dictionary<String, Any>]
+open class Generator<T: Any> {
+    private var info = try? typeInfo(of: T.self)
+    private var combinations: [String: [Any]] = [:]
+    private var objectCombinations: [[String: Any]] = []
     
-    public init(baseClass: NSObject.Type) {
-        self.baseClass = baseClass
-        self.combinations = Dictionary<String, [Any]>()
-        self.objectCombinations = [Dictionary<String, Any>]()
-        
-        do {
-            self.info = try typeInfo(of: baseClass)
-        } catch {}
-        
-        super.init()
-    }
+    public init() {} // Needed to be accesible outside
     
     open func addCombination(propertyKey: String, values: [Any])  {
         combinations[propertyKey] = values
     }
     
-    open func generateCombinations() -> [NSObject] {
-        
-        let nextProp = nextProperty(property: nil)  ?? nil
-        if nextProp != nil {
-            populateCombinations(currentCombinations: Dictionary<String, Any>(), property: nextProp!)
+    open func generateCombinations() -> [T] {
+        if let nextProp = nextProperty(property: nil) {
+            populateCombinations(currentCombinations: [String: Any](), property: nextProp)
         }
         
         return generateObjectsCombinations()
     }
-    
-    private func nextProperty(property: PropertyInfo?) -> PropertyInfo? {
-        let keys = Array(combinations.keys.sorted())
-        var currentKey: String? = nil
-        var nextProp: PropertyInfo? = nil
+}
+
+private extension Generator {
+    func nextProperty(property: PropertyInfo?) -> PropertyInfo? {
+        let keys = combinations.keys.sorted()
+        var currentKey: String?
+        var nextProp: PropertyInfo?
         var index: NSInteger = -1
         
-        if (property != nil) {
-            index = keys.firstIndex(of: property!.name)!
+        if  let property = property,
+            let newIndex = keys.firstIndex(of: property.name) {
+            index = newIndex
             currentKey = keys[index]
         }
         
         if (currentKey != keys.last) {
             let nextPropName = keys[index+1]
-            do {
-                nextProp = try info!.property(named: nextPropName)
-            } catch {}
+            nextProp = try? info?.property(named: nextPropName)
         }
         
         return nextProp
     }
     
-    private func populateCombinations(currentCombinations: Dictionary<String, Any>, property: PropertyInfo) {
+    func populateCombinations(currentCombinations: [String: Any], property: PropertyInfo) {
         let valuesForProperty: [Any] = combinations[property.name] ?? []
         let nextProp = nextProperty(property: property)
         for value in valuesForProperty {
             var newCombinations = currentCombinations
             newCombinations[property.name] = value
             
-            if (nextProp != nil) {
-                populateCombinations(currentCombinations: newCombinations, property: nextProp!)
+            if let nextProp = nextProp {
+                populateCombinations(currentCombinations: newCombinations, property: nextProp)
             } else {
                 objectCombinations.append(newCombinations)
             }
         }
     }
     
-    private func generateObjectsCombinations() -> [NSObject] {
-        var generated = [NSObject]()
+    func generateObjectsCombinations() -> [T] {
+        var generated = [T]()
         
         for singleCombination in objectCombinations {
-            do {
-                var option = try createInstance(of: baseClass)
-                
-                for (key, value) in singleCombination {
-                    let property = try info!.property(named: key)
-                    try property.set(value: value, on: &option)
-                    
-                }
-                
-                generated.append(option as! NSObject)
-            } catch {}
+            guard var option = try? createInstance(of: T.self) as? T else { continue }
+            
+            for (key, value) in singleCombination {
+                let property = try? info?.property(named: key)
+                try? property?.set(value: value, on: &option)
+            }
+            
+            generated.append(option)
         }
         
-        objectCombinations = [Dictionary<String, Any>]()
+        objectCombinations = [] // Clean  array to save memoery space
         
         return generated
     }

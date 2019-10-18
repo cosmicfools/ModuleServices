@@ -14,7 +14,7 @@ import FTMTableSectionModules
 fileprivate var combinations: [ConfigurableSnapshotModel]?
 
 func prepareGenerator() {
-    let generator = SnapshotGenerator(baseClass: ConfigurableSnapshotModel.self)
+    let generator = SnapshotGenerator<ConfigurableSnapshotModel>()
     
     let texts = [
         "Lorem fistrum condemor papaar papaar torpedo mamaar pecador.",
@@ -37,7 +37,7 @@ func prepareGenerator() {
     generator.addCombination(propertyKey: "text", values: texts)
     generator.addCombination(propertyKey: "attributes", values: [italianAttributes, boldAttributes])
     
-    combinations = generator.generateCombinations() as? [ConfigurableSnapshotModel]
+    combinations = generator.generateCombinations()
 }
 
 

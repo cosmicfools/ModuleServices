@@ -8,7 +8,7 @@
 
 ## Overview
 
-CombinationGenerator basically is a helper that use brute-force to generate all possibilities for a concrete DataModel given a list of possible values per property
+CombinationGenerator basically is a helper that use brute-force to generate all possibilities for a concrete DataModel given a list of possible values per property. CombinationGenerator use Generics, so it makes your life even easier.
 
 ## Example
 
@@ -52,7 +52,7 @@ import CombinationGenerator
 #### 2. Create your Data model
 
 ```swift
-class UserInfo: NSObject {
+class UserInfo {
     var name: String?
     var surname: String?
     var age: Int?
@@ -62,13 +62,13 @@ class UserInfo: NSObject {
 #### 3. Instanciate, add combination and generate all the possibilities
 
 ```swift
-let generator = Generator(baseClass: UserInfo.self)
+let generator = Generator<UserInfo>()
 generator.addCombination(propertyKey: "name", values: ["Tete", "MadMoc", "Pableras", "Trujy"])
 generator.addCombination(propertyKey: "surname", values: ["Molon", "Singular", "Friendly"])
 generator.addCombination(propertyKey: "age", values: [18, 33, 40])
 
 
-let possibilities = generator.generateCombinations() as! [UserInfo]
+let possibilities = generator.generateCombinations()
 ```
 
 #### 4. Results:
@@ -85,40 +85,40 @@ And the received output:
 
 ```swift
 Tete Molon 18
-MadMoc Molon 18
-Pableras Molon 18
-Trujy Molon 18
-Tete Molon 33
-MadMoc Molon 33
-Pableras Molon 33
-Trujy Molon 33
-Tete Molon 40
-MadMoc Molon 40
-Pableras Molon 40
-Trujy Molon 40
 Tete Singular 18
-MadMoc Singular 18
-Pableras Singular 18
-Trujy Singular 18
-Tete Singular 33
-MadMoc Singular 33
-Pableras Singular 33
-Trujy Singular 33
-Tete Singular 40
-MadMoc Singular 40
-Pableras Singular 40
-Trujy Singular 40
 Tete Friendly 18
+MadMoc Molon 18
+MadMoc Singular 18
 MadMoc Friendly 18
+Pableras Molon 18
+Pableras Singular 18
 Pableras Friendly 18
+Trujy Molon 18
+Trujy Singular 18
 Trujy Friendly 18
+Tete Molon 33
+Tete Singular 33
 Tete Friendly 33
+MadMoc Molon 33
+MadMoc Singular 33
 MadMoc Friendly 33
+Pableras Molon 33
+Pableras Singular 33
 Pableras Friendly 33
+Trujy Molon 33
+Trujy Singular 33
 Trujy Friendly 33
+Tete Molon 40
+Tete Singular 40
 Tete Friendly 40
+MadMoc Molon 40
+MadMoc Singular 40
 MadMoc Friendly 40
+Pableras Molon 40
+Pableras Singular 40
 Pableras Friendly 40
+Trujy Molon 40
+Trujy Singular 40
 Trujy Friendly 40
 ```
 

@@ -7,10 +7,10 @@
 
 import CombinationGenerator
 
-open class SnapshotGenerator: Generator {
+open class SnapshotGenerator<T: Any>: Generator<T> {
 
-    public override init(baseClass: NSObject.Type) {
-        super.init(baseClass: baseClass)
+    public override init() {
+        super.init()
         
         addCombination(propertyKey: "orientation", values: [UIInterfaceOrientation.portrait, UIInterfaceOrientation.landscapeLeft])
     }
