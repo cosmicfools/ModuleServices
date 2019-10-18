@@ -1,6 +1,6 @@
 
 language: objective-c
-osx_image: xcode10.2
+osx_image: xcode11.1
 
 env:
   global:
@@ -30,9 +30,9 @@ script:
     - xcodebuild clean build -workspace Example/FTMTableSectionModules.xcworkspace -scheme 'FTMTableSectionModules' -sdk iphonesimulator PLATFORM_NAME=iphonesimulator -configuration Debug | xcpretty -c
 
     - echo Build the Demo apps
-    - xcodebuild clean build -workspace Example/FTMTableSectionModules.xcworkspace -scheme 'FTMTableSectionModules-Example' -configuration Debug -destination 'name=iPhone 6s' | xcpretty -c
+    - xcodebuild clean build -workspace Example/FTMTableSectionModules.xcworkspace -scheme 'FTMTableSectionModules-Example' -configuration Debug -destination 'name=iPhone 8' | xcpretty -c
 
     - echo Run the tests
-    - xcodebuild test -workspace Example/FTMTableSectionModules.xcworkspace -scheme 'FTMTableSectionModules-Example' -configuration Debug -destination 'name=iPhone 6s' | xcpretty -c
+    - xcodebuild test -workspace Example/FTMTableSectionModules.xcworkspace -scheme 'FTMTableSectionModules-Example' -configuration Debug -destination 'name=iPhone 8' | xcpretty -c
 
 after_success:
