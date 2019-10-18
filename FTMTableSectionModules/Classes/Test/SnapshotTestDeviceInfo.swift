@@ -13,6 +13,7 @@ private struct Constants {
 }
 
 public struct SnapshotTestDeviceInfo {
+    public init () {} // Needed to be accesible
     public let deviceSize : CGSize = CGSize(width: Constants.deviceSize.width/Constants.scale,
                                      height:Constants.deviceSize.height/Constants.scale)
     public let scale : CGFloat = Constants.scale

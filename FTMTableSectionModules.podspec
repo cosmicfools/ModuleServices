@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FTMTableSectionModules"
-  s.version          = "0.6.4"
+  s.version          = "0.6.5"
   s.summary          = "Reusable ViewController with TableView, splitted in Sections"
 
   s.description      = "Reusable ViewController with TableView, split in Sections (called here modules) that help you to develop faster in Swift"
