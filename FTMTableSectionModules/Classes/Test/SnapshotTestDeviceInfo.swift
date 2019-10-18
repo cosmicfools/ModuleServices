@@ -12,8 +12,8 @@ private struct Constants {
     static let scale: CGFloat  = 2.0
 }
 
-open class SnapshotTestDeviceInfo: NSObject {
-    let deviceSize : CGSize = CGSize(width: Constants.deviceSize.width/Constants.scale,
+public struct SnapshotTestDeviceInfo {
+    public let deviceSize : CGSize = CGSize(width: Constants.deviceSize.width/Constants.scale,
                                      height:Constants.deviceSize.height/Constants.scale)
-    let scale : CGFloat = Constants.scale
+    public let scale : CGFloat = Constants.scale
 }
