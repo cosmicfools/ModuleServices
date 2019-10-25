@@ -15,7 +15,7 @@ private struct TableSectionModuleConstants{
 }
 
 open class TableSectionModule: NSObject {
-    open var rows:[AnyObject] = []
+    open var rows:[Any] = []
     weak internal var sectionSource: TableSectionModuleSectionSource?
     fileprivate(set) open var tableView:UITableView
     open var section: NSInteger {
