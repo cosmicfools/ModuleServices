@@ -2,10 +2,10 @@ PODS:
   - CombinationGenerator (0.2.0):
     - Runtime (~> 2.1)
   - CRuntime (2.1.2)
-  - FTMTableSectionModules (0.6.6):
-    - FTMTableSectionModules/Core (= 0.6.6)
-  - FTMTableSectionModules/Core (0.6.6)
-  - FTMTableSectionModules/Tests (0.6.6):
+  - FTMTableSectionModules (0.7.0):
+    - FTMTableSectionModules/Core (= 0.7.0)
+  - FTMTableSectionModules/Core (0.7.0)
+  - FTMTableSectionModules/Tests (0.7.0):
     - CombinationGenerator (~> 0.1)
     - FTMTableSectionModules/Core
   - iOSSnapshotTestCase (5.0.2):
@@ -35,7 +35,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   CombinationGenerator: 7a492b5e2f9beb650c138671fc49605d05b1d428
   CRuntime: d7ae373e07ab36e92ad273259557e3817e0c214b
-  FTMTableSectionModules: b6cda9738f0f7ff2263da85055f4b0407c22ea32
+  FTMTableSectionModules: 64c2cf2ad25f3ed251ed68ab3b5d2704f909cfce
   iOSSnapshotTestCase: 2d51aa06775e95cecb0a1fb9c5c159ccd1dd4596
   Runtime: 2b0e7604e598b52c698c64f0b961640c074ed75e
 

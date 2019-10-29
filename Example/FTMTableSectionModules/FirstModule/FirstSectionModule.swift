@@ -24,10 +24,10 @@ class FirstSectionModule: TableSectionModule {
     override func createRows() {
         super.createRows()
         
-        rows.append(String(describing: Example1TableViewCell.self) as AnyObject)
-        rows.append(String(describing: UITableViewCell.self) as AnyObject)
-        rows.append(String(describing: Example2TableViewCell.self) as AnyObject)
-        rows.append(String(describing: Example3TableViewCell.self) as AnyObject)
+        rows.append(String(describing: Example1TableViewCell.self))
+        rows.append(String(describing: UITableViewCell.self))
+        rows.append(String(describing: Example2TableViewCell.self))
+        rows.append(String(describing: Example3TableViewCell.self))
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {

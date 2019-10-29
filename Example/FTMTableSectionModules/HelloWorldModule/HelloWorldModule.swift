@@ -19,7 +19,7 @@ class HelloWorldModule: TableSectionModule {
     override func createRows() {
         super.createRows()
         
-        rows.append(String(describing: UITableViewCell.self) as AnyObject)
+        rows.append(String(describing: UITableViewCell.self))
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {

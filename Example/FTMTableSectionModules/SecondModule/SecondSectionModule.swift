@@ -38,7 +38,7 @@ class SecondSectionModule: TableSectionModule {
         super.createRows()
         
         infoToShow.forEach { _ in
-            rows.append(String(describing: ConfigurableTableViewCell.self) as AnyObject)
+            rows.append(String(describing: ConfigurableTableViewCell.self))
         }
     }
     
