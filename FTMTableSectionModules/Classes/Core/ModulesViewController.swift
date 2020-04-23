@@ -201,7 +201,7 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
-        if let validIndexPath = indexPath {
+        if let validIndexPath = indexPath, validIndexPath.section < modules.count {
             modules[validIndexPath.section].tableView(tableView, didEndEditingRowAtIndexPath: validIndexPath)
         }
     }
