@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03CE4A80929BF766B8CE4E7D /* Pods_FTMTableSectionModules_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DCDF5039E2B4F95DB7CDC6 /* Pods_FTMTableSectionModules_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		64FB34E223EB35FF8E4D569D /* Pods_FTMTableSectionModules_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AFD33139BD7C007F3CDED3 /* Pods_FTMTableSectionModules_Tests.framework */; };
 		690BCA101CE9DB42006C4381 /* TableSectionModuleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BCA0F1CE9DB42006C4381 /* TableSectionModuleTest.swift */; };
 		690BCA121CE9EDCD006C4381 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BCA111CE9EDCD006C4381 /* TestHelpers.swift */; };
 		B502D5181F57396300FE8177 /* Example3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B502D5161F57396300FE8177 /* Example3TableViewCell.swift */; };
 		B502D5191F57396300FE8177 /* Example3TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B502D5171F57396300FE8177 /* Example3TableViewCell.xib */; };
+		B5196163E438114B0E370DB2 /* Pods_FTMTableSectionModules_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD65F85C345EEDFE00158B08 /* Pods_FTMTableSectionModules_Tests.framework */; };
 		B5253BEB21B5A98100003820 /* HelloWorldModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5253BEA21B5A98100003820 /* HelloWorldModule.swift */; };
 		B566F7D222B1BE5A0044CDD6 /* Example3CellSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B566F7D122B1BE5A0044CDD6 /* Example3CellSnapshotTests.swift */; };
 		B5A18EF11CEA575C00536A04 /* ModulesViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A18EF01CEA575C00536A04 /* ModulesViewControllerTest.swift */; };
@@ -33,7 +34,6 @@
 		B5DE1FD21CE526BD00939E7C /* Example1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */; };
 		B5DE1FD51CE5273C00939E7C /* Example2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1FD31CE5273C00939E7C /* Example2TableViewCell.swift */; };
 		B5DE1FD61CE5273C00939E7C /* Example2TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE1FD41CE5273C00939E7C /* Example2TableViewCell.xib */; };
-		BEADEF1F20FB792E41D374BA /* Pods_FTMTableSectionModules_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD70E0AC180F436F08389B73 /* Pods_FTMTableSectionModules_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A573B80166A1AB9A05E81D2 /* Pods-FTMTableSectionModules_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTMTableSectionModules_Tests.release.xcconfig"; path = "Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2745BD53CF1E5D29B717D233 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* FTMTableSectionModules_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTMTableSectionModules_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,11 +59,12 @@
 		690BCA091CE9DA86006C4381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		690BCA0F1CE9DB42006C4381 /* TableSectionModuleTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionModuleTest.swift; sourceTree = "<group>"; };
 		690BCA111CE9EDCD006C4381 /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
-		76209C8DA89DCB6665EE0982 /* Pods-FTMTableSectionModules_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTMTableSectionModules_Example.release.xcconfig"; path = "Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example.release.xcconfig"; sourceTree = "<group>"; };
+		75DCDF5039E2B4F95DB7CDC6 /* Pods_FTMTableSectionModules_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		840D9156D5639A255BDEED7A /* FTMTableSectionModules.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FTMTableSectionModules.podspec; path = ../FTMTableSectionModules.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95036B3500320B7C6D648D02 /* Pods_FTMTableSectionModules_Example_FTMTableSectionModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Example_FTMTableSectionModules_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		96952DBF0B7976C60F5F2926 /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTMTableSectionModules_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F2A9AE56CDF3A1BE6495C5C /* Pods-FTMTableSectionModules_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTMTableSectionModules_Tests.release.xcconfig"; path = "Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9A667FCB3B69D21B8185FAC7 /* Pods-FTMTableSectionModules_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTMTableSectionModules_Example.release.xcconfig"; path = "Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AB86A5501DA8DD0A7E06B5A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AD5EB57A678E0A66FA8F71F2 /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTMTableSectionModules_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FTMTableSectionModules_Tests/Pods-FTMTableSectionModules_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B502D5161F57396300FE8177 /* Example3TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example3TableViewCell.swift; sourceTree = "<group>"; };
 		B502D5171F57396300FE8177 /* Example3TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Example3TableViewCell.xib; sourceTree = "<group>"; };
 		B5253BEA21B5A98100003820 /* HelloWorldModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldModule.swift; sourceTree = "<group>"; };
@@ -83,9 +83,8 @@
 		B5DE1FD01CE526BD00939E7C /* Example1TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Example1TableViewCell.xib; sourceTree = "<group>"; };
 		B5DE1FD31CE5273C00939E7C /* Example2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example2TableViewCell.swift; sourceTree = "<group>"; };
 		B5DE1FD41CE5273C00939E7C /* Example2TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Example2TableViewCell.xib; sourceTree = "<group>"; };
-		C2AFD33139BD7C007F3CDED3 /* Pods_FTMTableSectionModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2E24CECFCF8817104DB1719 /* Pods-FTMTableSectionModules_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTMTableSectionModules_Example.debug.xcconfig"; path = "Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DD70E0AC180F436F08389B73 /* Pods_FTMTableSectionModules_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9815715C4358D03A5DFBDEA /* Pods-FTMTableSectionModules_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTMTableSectionModules_Example.debug.xcconfig"; path = "Target Support Files/Pods-FTMTableSectionModules_Example/Pods-FTMTableSectionModules_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FD65F85C345EEDFE00158B08 /* Pods_FTMTableSectionModules_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTMTableSectionModules_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEADEF1F20FB792E41D374BA /* Pods_FTMTableSectionModules_Example.framework in Frameworks */,
+				03CE4A80929BF766B8CE4E7D /* Pods_FTMTableSectionModules_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,13 +100,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64FB34E223EB35FF8E4D569D /* Pods_FTMTableSectionModules_Tests.framework in Frameworks */,
+				B5196163E438114B0E370DB2 /* Pods_FTMTableSectionModules_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E9AE79B9D00B66CFE9E5C5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9815715C4358D03A5DFBDEA /* Pods-FTMTableSectionModules_Example.debug.xcconfig */,
+				9A667FCB3B69D21B8185FAC7 /* Pods-FTMTableSectionModules_Example.release.xcconfig */,
+				AD5EB57A678E0A66FA8F71F2 /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */,
+				8F2A9AE56CDF3A1BE6495C5C /* Pods-FTMTableSectionModules_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +126,8 @@
 				607FACD21AFB9204008FA782 /* Example for FTMTableSectionModules */,
 				690BCA061CE9DA86006C4381 /* FTMTableSectionModules_Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				C9790F443C0ADBFA12DEFA91 /* Pods */,
-				F2B3E2F2450306D1FB5F5535 /* Frameworks */,
+				3E9AE79B9D00B66CFE9E5C5F /* Pods */,
+				D4A452F9E9B5B20A37C3E045 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,23 +240,11 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		C9790F443C0ADBFA12DEFA91 /* Pods */ = {
+		D4A452F9E9B5B20A37C3E045 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C2E24CECFCF8817104DB1719 /* Pods-FTMTableSectionModules_Example.debug.xcconfig */,
-				76209C8DA89DCB6665EE0982 /* Pods-FTMTableSectionModules_Example.release.xcconfig */,
-				96952DBF0B7976C60F5F2926 /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */,
-				0A573B80166A1AB9A05E81D2 /* Pods-FTMTableSectionModules_Tests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		F2B3E2F2450306D1FB5F5535 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DD70E0AC180F436F08389B73 /* Pods_FTMTableSectionModules_Example.framework */,
-				95036B3500320B7C6D648D02 /* Pods_FTMTableSectionModules_Example_FTMTableSectionModules_Tests.framework */,
-				C2AFD33139BD7C007F3CDED3 /* Pods_FTMTableSectionModules_Tests.framework */,
+				75DCDF5039E2B4F95DB7CDC6 /* Pods_FTMTableSectionModules_Example.framework */,
+				FD65F85C345EEDFE00158B08 /* Pods_FTMTableSectionModules_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -315,10 +314,9 @@
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "FTMTableSectionModules" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -616,7 +614,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2E24CECFCF8817104DB1719 /* Pods-FTMTableSectionModules_Example.debug.xcconfig */;
+			baseConfigurationReference = D9815715C4358D03A5DFBDEA /* Pods-FTMTableSectionModules_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FTMTableSectionModules/Info.plist;
@@ -631,7 +629,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76209C8DA89DCB6665EE0982 /* Pods-FTMTableSectionModules_Example.release.xcconfig */;
+			baseConfigurationReference = 9A667FCB3B69D21B8185FAC7 /* Pods-FTMTableSectionModules_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FTMTableSectionModules/Info.plist;
@@ -646,7 +644,7 @@
 		};
 		690BCA0D1CE9DA86006C4381 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96952DBF0B7976C60F5F2926 /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */;
+			baseConfigurationReference = AD5EB57A678E0A66FA8F71F2 /* Pods-FTMTableSectionModules_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -663,7 +661,7 @@
 		};
 		690BCA0E1CE9DA86006C4381 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A573B80166A1AB9A05E81D2 /* Pods-FTMTableSectionModules_Tests.release.xcconfig */;
+			baseConfigurationReference = 8F2A9AE56CDF3A1BE6495C5C /* Pods-FTMTableSectionModules_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
