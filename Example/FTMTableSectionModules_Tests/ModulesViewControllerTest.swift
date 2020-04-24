@@ -111,4 +111,58 @@ class ModulesViewControllerTest: XCTestCase {
         XCTAssertEqual(modulesVC.numberOfSections(in: newTableView), 3, "The number of section shoulb be 3")
     }
     
+    func testFirstModule() {
+        let module0 = TestModule2(tableView: newTableView)
+        let module1 = TestModule1(tableView: newTableView)
+        let module2 = TestModule2(tableView: newTableView)
+        let module3 = TestModule1(tableView: newTableView)
+        
+        modulesVC.appendModule(module0)
+        modulesVC.appendModule(module1)
+        modulesVC.appendModule(module2)
+        modulesVC.appendModule(module3)
+        
+        let firstModule1: TestModule1? = modulesVC.firstModule()
+        let firstModule2: TestModule2? = modulesVC.firstModule()
+        
+        XCTAssert(module1 == firstModule1, "The first module filter is not working properly")
+        XCTAssert(module0 == firstModule2, "The first module filter is not working properly")
+    }
+    
+    func testLastModule() {
+        let module0 = TestModule2(tableView: newTableView)
+        let module1 = TestModule1(tableView: newTableView)
+        let module2 = TestModule2(tableView: newTableView)
+        let module3 = TestModule1(tableView: newTableView)
+        
+        modulesVC.appendModule(module0)
+        modulesVC.appendModule(module1)
+        modulesVC.appendModule(module2)
+        modulesVC.appendModule(module3)
+        
+        let lastModule1: TestModule1? = modulesVC.lastModule()
+        let lastModule2: TestModule2? = modulesVC.lastModule()
+        
+        XCTAssert(module3 == lastModule1, "The last module filter is not working properly")
+        XCTAssert(module2 == lastModule2, "The last module filter is not working properly")
+    }
+    
+    func testFilterModule() {
+        let module0 = TestModule2(tableView: newTableView)
+        let module1 = TestModule1(tableView: newTableView)
+        let module2 = TestModule2(tableView: newTableView)
+        let module3 = TestModule1(tableView: newTableView)
+        
+        modulesVC.appendModule(module0)
+        modulesVC.appendModule(module1)
+        modulesVC.appendModule(module2)
+        modulesVC.appendModule(module3)
+        
+        let filterModules1: [TestModule1]? = modulesVC.filterModules()
+        
+        XCTAssert(filterModules1?.count == 2, "The filter modules function is not working properly")
+        XCTAssert(filterModules1?.first == module1, "The filter modules function is not working properly")
+        XCTAssert(filterModules1?.last == module3, "The filter modules function is not working properly")
+    }
+    
 }

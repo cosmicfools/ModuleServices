@@ -88,6 +88,18 @@ extension ModulesViewController: TableSectionModuleSectionSource {
     public func sectionForModule(_ module: TableSectionModule) -> NSInteger {
         return modules.firstIndex(of: module) ?? NSNotFound
     }
+    
+    public func firstModule<T>() -> T? {
+        return modules.first { $0 is T } as? T
+    }
+    
+    public func lastModule<T>() -> T? {
+        return modules.last { $0 is T } as? T
+    }
+    
+    public func filterModules<T>() -> [T]? {
+        return modules.filter { $0 is T } as? [T]
+    }
 }
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
