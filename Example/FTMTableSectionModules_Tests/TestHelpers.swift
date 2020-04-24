@@ -61,3 +61,17 @@ class TestModule3 : TableSectionModule {
                 TestExample2HeaderFooterView.classForCoder()]
     }
 }
+
+// MARK: - TableSectionModule subclass
+class TestBooleanModule : TableSectionModule {
+    var fold: Bool = false
+    override func registerClassForCells() -> [AnyClass] {
+        return [TestExample1TableViewCell.classForCoder(),
+                TestExample2TableViewCell.classForCoder()]
+    }
+    
+    override func registerClassForHeadersFooters() -> [AnyClass] {
+        return [TestExample1HeaderFooterView.classForCoder(),
+                TestExample2HeaderFooterView.classForCoder()]
+    }
+}

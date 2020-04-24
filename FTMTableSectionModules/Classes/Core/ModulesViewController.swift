@@ -89,16 +89,37 @@ extension ModulesViewController: TableSectionModuleSectionSource {
         return modules.firstIndex(of: module) ?? NSNotFound
     }
     
-    public func firstModule<T>() -> T? {
+    public func firstModule<T: TableSectionModule>() -> T? {
         return modules.first { $0 is T } as? T
     }
     
-    public func lastModule<T>() -> T? {
+    public func firstModule<T: TableSectionModule>(where predicate: (T) -> Bool) -> T? {
+        return modules.first {
+            guard let module = $0 as? T else { return false }
+            return predicate(module)
+        } as? T
+    }
+    
+    public func lastModule<T: TableSectionModule>() -> T? {
         return modules.last { $0 is T } as? T
     }
     
-    public func filterModules<T>() -> [T]? {
+    public func lastModule<T: TableSectionModule>(where predicate: (T) -> Bool) -> T? {
+        return modules.last {
+            guard let module = $0 as? T else { return false }
+            return predicate(module)
+        } as? T
+    }
+    
+    public func filterModules<T: TableSectionModule>() -> [T]? {
         return modules.filter { $0 is T } as? [T]
+    }
+    
+    public func filterModules<T: TableSectionModule>(where predicate: (T) -> Bool) -> [T]? {
+        return modules.filter {
+            guard let module = $0 as? T else { return false }
+            return predicate(module)
+        } as? [T]
     }
 }
 
