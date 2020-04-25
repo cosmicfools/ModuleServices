@@ -17,7 +17,7 @@ class FirstModuleSnapshotTestCase: FBSnapshotTestCase, ModulesHelperTestsViewCon
     
     override func setUp() {
         super.setUp()
-        recordMode = false;
+        recordMode = false
         
         modulesHelperVC.modulesDelegate = self
     }
