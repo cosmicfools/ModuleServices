@@ -6,6 +6,7 @@
 //
 
 import CombinationGenerator
+import UIKit
 
 open class SnapshotGenerator<T: Any>: Generator<T> {
 

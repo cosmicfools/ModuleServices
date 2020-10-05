@@ -7,6 +7,7 @@
 //
 
 import UIKit
+@testable import FTMTableSectionModules
 
 private struct Constants {
     static let estimatedRowHeight: CGFloat = 44.0
