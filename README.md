@@ -6,19 +6,31 @@
 [![Platform](https://img.shields.io/cocoapods/p/TableModulesKit.svg?style=flat)](http://cocoapods.org/pods/TableModulesKit)
 [![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/cosmicfools/moduleskit)](http://clayallsopp.github.io/readme-score?url=https://github.com/cosmicfools/moduleskit)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
 
-Is valid for iOS 7 and higher.
-Requires Swift 5.0 and XCode 8.0 or higher.
+Is valid for iOS 9 and higher.
+Requires Swift 5.2 and XCode 11.0 or higher.
 
 ## Installation
 
-ModulesKit is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### Swift Package Manager
+
+You can install CombinationGenerator via [Swift Package Manager](https://swift.org/package-manager/) by adding the following line to your `Package.swift`:
+
+```swift
+import PackageDescription
+
+let package = Package(
+    [...]
+    dependencies: [
+        .Package(name: "ModulesKit", url: "https://github.com/cosmicfools/ModulesKit.git", .branch("master"))
+    ]
+)
+```
+
+### Cocoapods
+
+You can install CombinationGenerator via [Cocoapods](https://cocoapods.org/) by adding the following line to your `Podfile`:
 
 ```ruby
 pod 'TableModulesKit'
