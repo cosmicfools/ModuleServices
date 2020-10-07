@@ -18,8 +18,8 @@ jobs:
 
     - name: Run tests
       run: |
-        xcodebuild test -scheme ModulesKit-Package -destination 'platform=iOS Simulator,name=iPhone 11,OS=14.0'
+        xcodebuild test -scheme ModulesKit-Package -configuration Debug -destination 'name=iPhone 11' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
 
     - name: Compile project (in Release)
       run: |
-        xcodebuild build -scheme ModulesKit-Package -destination 'platform=iOS Simulator,name=iPhone 11,OS=14.0'
+        xcodebuild build -scheme ModulesKit-Package -configuration Debug -destination 'name=iPhone 11' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
