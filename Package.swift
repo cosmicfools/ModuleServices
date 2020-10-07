@@ -4,17 +4,37 @@
 import PackageDescription
 
 let package = Package(
-    name: "FTMTableSectionModules",
+    name: "ModulesKit",
+    platforms: [
+        .iOS(.v9)
+    ],
     products: [
+        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "FTMTableSectionModules",
-            targets: ["FTMTableSectionModules"]),
+            name: "ModulesKit",
+            targets: ["ModulesKit"]),
+        .library(
+            name: "ModulesKitSnapshot",
+            targets: ["ModulesKitSnapshot"]),
     ],
     dependencies: [
-        .package(name: "CombinationGenerator", url: "https://github.com/CRoig/CombinationGenerator", .branch("feature/spm-support"))
+        // Dependencies declare other packages that this package depends on.
+        .package(name: "CombinationGenerator", url: "https://github.com/cosmicfools/CombinationGenerator", .branch("master"))
     ],
     targets: [
-        .target(name: "FTMTableSectionModules", path: "FTMTableSectionMOdules/Classes/Core"),
-        .testTarget(name: "FTMTableSectionModulesTests", dependencies: ["FTMTableSectionModules","CombinationGenerator"], path: "FTMTableSectionMOdules/Classes/Test")
+        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
+        // Targets can depend on other targets in this package, and on products in packages this package depends on.
+        .target(
+            name: "ModulesKit",
+            dependencies: []),
+        .target(
+            name: "ModulesKitSnapshot",
+            dependencies: ["CombinationGenerator"]),
+        .testTarget(
+            name: "ModulesKitTests",
+            dependencies: ["ModulesKit"]),
+        .testTarget(
+            name: "ModulesKitSnapshotTests",
+            dependencies: ["ModulesKit", "ModulesKitSnapshot"]),
     ]
 )
