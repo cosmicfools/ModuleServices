@@ -1,6 +1,6 @@
 //
 //  ModulesViewAdditions.swift
-//  FTMTableSectionModules
+//  ModulesKit
 //
 //  Created by Francisco Javier Trujillo Mata on 09/05/2019.
 //

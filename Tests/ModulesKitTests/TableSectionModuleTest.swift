@@ -1,6 +1,6 @@
 //
 //  TableSectionModuleTest.swift
-//  FTMTableSectionModules
+//  ModulesKit
 //
 //  Created by Francisco Trujillo on 16/05/2016.
 //  Copyright © 2016 FJTRUJY. All rights reserved.

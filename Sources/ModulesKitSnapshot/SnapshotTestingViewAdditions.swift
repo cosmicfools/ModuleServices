@@ -1,6 +1,6 @@
 //
 //  SnapshotTestingViewAdditions.swift
-//  FTMTableSectionModules
+//  ModulesKit
 //
 //  Created by Francisco Javier Trujillo Mata on 13/06/2019.
 //
@@ -13,16 +13,16 @@ public extension UIView {
         let width = orientation.isPortrait ? deviceSize.width : deviceSize.height
         bounds = CGRect(origin: CGPoint.zero,
                         size: CGSize(width: width, height: CGFloat.greatestFiniteMagnitude - 1))
-        
+
         setNeedsLayout()
         layoutIfNeeded()
-        
+
         var adjustedFrame = bounds
         adjustedFrame.size = systemLayoutSizeFitting(adjustedFrame.size,
                                                      withHorizontalFittingPriority: .required,
                                                      verticalFittingPriority: .fittingSizeLevel)
         adjustedFrame.size.height = ceil(adjustedFrame.size.height)
-        
+
         bounds = adjustedFrame
     }
 }

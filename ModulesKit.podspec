@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint FTMTableSectionModules.podspec' to ensure this is a
+# Be sure to run `pod lib lint TableModulesKit.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,16 +7,16 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "FTMTableSectionModules"
-  s.version          = "0.8"
+  s.name             = "TableModulesKit"
+  s.version          = "0.9"
   s.summary          = "Reusable ViewController with TableView, splitted in Sections"
 
   s.description      = "Reusable ViewController with TableView, split in Sections (called here modules) that help you to develop faster in Swift"
 
-  s.homepage         = "https://github.com/fjtrujy/FTMTableSectionModules"
+  s.homepage         = "https://github.com/cosmicfools/ModulesKit"
   s.license          = 'MIT'
   s.author           = { "Francisco Javier Trujillo Mata" => "fjtrujy@gmail.com" }
-  s.source           = { :git => "https://github.com/fjtrujy/FTMTableSectionModules.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/cosmicfools/ModulesKit.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/fjtrujy'
 
   s.ios.deployment_target = '9.0'
@@ -25,13 +25,13 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
   
   s.subspec 'Core' do |ss|
-    ss.source_files = 'FTMTableSectionModules/Classes/Core/**/*'
+    ss.source_files = 'Sources/ModulesKit/**/*'
   end
   
   s.subspec 'Tests' do |ss|
-    ss.dependency 'FTMTableSectionModules/Core'
+    ss.dependency 'TableModulesKit/Core'
     ss.dependency 'CombinationGenerator', '~> 0.1'
-    ss.source_files = 'FTMTableSectionModules/Classes/Test/**/*'
+    ss.source_files = 'Sources/ModulesKitSnapshot/**/*'
   end
 
 end
