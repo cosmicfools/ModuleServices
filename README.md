@@ -1,10 +1,10 @@
-# FTMTableSectionModules
+# ModulesKit
 
-[![Build Status](https://travis-ci.org/fjtrujy/FTMTableSectionModules.svg?branch=master)](https://travis-ci.org/fjtrujy/FTMTableSectionModules)
-[![Version](https://img.shields.io/cocoapods/v/FTMTableSectionModules.svg?style=flat)](http://cocoapods.org/pods/FTMTableSectionModules)
-[![License](https://img.shields.io/cocoapods/l/FTMTableSectionModules.svg?style=flat)](http://cocoapods.org/pods/FTMTableSectionModules)
-[![Platform](https://img.shields.io/cocoapods/p/FTMTableSectionModules.svg?style=flat)](http://cocoapods.org/pods/FTMTableSectionModules)
-[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/fjtrujy/ftmtablesectionmodules)](http://clayallsopp.github.io/readme-score?url=https://github.com/fjtrujy/ftmtablesectionmodules)
+[![Build Status](https://travis-ci.org/cosmicfools/ModulesKit.svg?branch=master)](https://travis-ci.org/cosmicfools/ModulesKit)
+[![Version](https://img.shields.io/cocoapods/v/TableModulesKit.svg?style=flat)](http://cocoapods.org/pods/TableModulesKit)
+[![License](https://img.shields.io/cocoapods/l/TableModulesKit.svg?style=flat)](http://cocoapods.org/pods/TableModulesKit)
+[![Platform](https://img.shields.io/cocoapods/p/TableModulesKit.svg?style=flat)](http://cocoapods.org/pods/TableModulesKit)
+[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/cosmicfools/moduleskit)](http://clayallsopp.github.io/readme-score?url=https://github.com/cosmicfools/moduleskit)
 
 ## Example
 
@@ -17,35 +17,27 @@ Requires Swift 5.0 and XCode 8.0 or higher.
 
 ## Installation
 
-FTMTableSectionModules is available through [CocoaPods](http://cocoapods.org). To install
+ModulesKit is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'FTMTableSectionModules'
+pod 'TableModulesKit'
 ```
 
 ## How to use it
 
-FTMTableSectionModules basically is a pack of tools that is helping you to develop faster. This libabry is so useful for those UIViewControllers that are based in UITableView.
+ModulesKit basically is a pack of tools that is helping you to develop faster. This libabry is so useful for those UIViewControllers that are based in UITableView.
 The main concept in this libary is, a Module means a Section in a UITableView, so there is a subclass of UIViewController called ModulesViewController that manage all modules.
 
 A Module is a like and mini UIViewController, should be able to work it self.
 
 Basically a ModulesViewController has an array of TableSectionModules.
 
-Sometimes an example is easier to understand than 1000 words.. so, please to see the example use:
+Sometimes an example is easier to understand than 1000 words.. so, we have an additionaly repository full of examples:
+[Module-examples](https://github.com/fjtrujy/module-examples)
 
-```ruby
-pod  try 'FTMTableSectionModules'
-```
 
-If you don't have `pod try` installed go to https://github.com/CocoaPods/cocoapods-try to install it.
-
-Inside you will see an example of a ViewController with 2 differents modules and a couple of cells per module.
-
-In case that you still want to see here the examples, let's give a try.
-
-![Let me give it a try](https://raw.githubusercontent.com/fjtrujy/FTMTableSectionModules/master/Example/FTMTableSectionModules/Images.xcassets/FirstModule/giveATry.imageset/giveATry.jpg)
+![Let me give it a try](https://raw.githubusercontent.com/cosmicfools/ModulesKit/master/giveATry.jpg)
 
 #### 1. Create a Module
 You need to create a subclass of `TableSectionModule`
@@ -83,7 +75,7 @@ You can override basically the same method that the `UITableViewDelegate` and `U
 <br>
 
 ```swift
-import FTMTableSectionModules
+import ModulesKit
 
 class FirstSectionModule: TableSectionModule {
     override func registerNibsForCells() -> [AnyClass] {
@@ -153,7 +145,7 @@ override func createModules() {
 <br>
 
 ```swift
-import FTMTableSectionModules
+import ModulesKit
 
 class MyViewController: ModulesViewController {
     override func viewDidLoad() {
@@ -190,4 +182,4 @@ Francisco Javier Trujillo Mata, fjtrujy@gmail.com
 
 ## License
 
-FTMTableSectionModules is available under the MIT license. See the LICENSE file for more info.
+ModulesKit is available under the MIT license. See the LICENSE file for more info.

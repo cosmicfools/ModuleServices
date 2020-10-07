@@ -1,6 +1,0 @@
-framework module CombinationGenerator {
-  umbrella header "CombinationGenerator-umbrella.h"
-
-  export *
-  module * { export * }
-}

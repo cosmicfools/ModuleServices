@@ -1,6 +1,0 @@
-framework module Pods_FTMTableSectionModules_Tests {
-  umbrella header "Pods-FTMTableSectionModules_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

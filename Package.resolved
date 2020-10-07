@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CombinationGenerator",
+        "repositoryURL": "https://github.com/cosmicfools/CombinationGenerator",
+        "state": {
+          "branch": "master",
+          "revision": "debebbe0714f940e6b0e3be6ef89a49c0c62d26c",
+          "version": null
+        }
+      },
+      {
+        "package": "Runtime",
+        "repositoryURL": "https://github.com/wickwirew/Runtime.git",
+        "state": {
+          "branch": "master",
+          "revision": "102ea0dc60db7178754c2b5a120b14a361126141",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
