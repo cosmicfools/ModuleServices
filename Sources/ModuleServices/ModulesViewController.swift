@@ -203,11 +203,6 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    public func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath,
-                          toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
-        proposedDestinationIndexPath
-    }
-    
     public func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int {
         modules[indexPath.section].tableView(tableView, indentationLevelForRowAtIndexPath: indexPath)
     }
@@ -254,6 +249,17 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         modules[indexPath.section].tableView(tableView, canMoveRowAtIndexPath: indexPath)
+    }
+    
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle,
+                          forRowAt indexPath: IndexPath) {
+        modules[indexPath.section].tableView(tableView, commitEditingStyle: editingStyle, forRowAtIndexPath: indexPath)
+    }
+    
+    public func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath,
+                          toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+        return modules[sourceIndexPath.section].tableView(tableView, targetIndexPathForMoveFromRowAt: sourceIndexPath,
+                                                          toProposedIndexPath: proposedDestinationIndexPath)
     }
     
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle,
