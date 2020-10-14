@@ -1,6 +1,6 @@
 # ModuleServices
 
-[![Build Status](https://travis-ci.org/cosmicfools/ModuleServices.svg?branch=master)](https://travis-ci.org/cosmicfools/ModuleServices)
+![CI](https://github.com/cosmicfools/ModuleServices/workflows/CI/badge.svg)
 [![Version](https://img.shields.io/cocoapods/v/ModuleServices.svg?style=flat)](http://cocoapods.org/pods/ModuleServices)
 [![License](https://img.shields.io/cocoapods/l/ModuleServices.svg?style=flat)](http://cocoapods.org/pods/ModuleServices)
 [![Platform](https://img.shields.io/cocoapods/p/ModuleServices.svg?style=flat)](http://cocoapods.org/pods/ModuleServices)
@@ -23,7 +23,7 @@ import PackageDescription
 let package = Package(
     [...]
     dependencies: [
-        .Package(name: "ModulesKit", url: "https://github.com/cosmicfools/ModuleServices.git", .branch("master"))
+        .Package(name: "ModuleServices", url: "https://github.com/cosmicfools/ModuleServices.git", .branch("master"))
     ]
 )
 ```
