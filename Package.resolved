@@ -5,18 +5,18 @@
         "package": "CombinationGenerator",
         "repositoryURL": "https://github.com/cosmicfools/CombinationGenerator",
         "state": {
-          "branch": "master",
-          "revision": "debebbe0714f940e6b0e3be6ef89a49c0c62d26c",
-          "version": null
+          "branch": null,
+          "revision": "48fe12420a4765c126af9799540f474da5848f3c",
+          "version": "0.2.3"
         }
       },
       {
         "package": "Runtime",
         "repositoryURL": "https://github.com/wickwirew/Runtime.git",
         "state": {
-          "branch": "master",
-          "revision": "102ea0dc60db7178754c2b5a120b14a361126141",
-          "version": null
+          "branch": null,
+          "revision": "a848b81e1a0100801f572e5273ffe4352fd54088",
+          "version": "2.2.2"
         }
       }
     ]

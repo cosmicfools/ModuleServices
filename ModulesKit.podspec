@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint TableModulesKit.podspec' to ensure this is a
+# Be sure to run `pod lib lint ModulesKit.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TableModulesKit"
-  s.version          = "0.9"
+  s.version          = "0.9.1"
   s.summary          = "Reusable ViewController with TableView, splitted in Sections"
 
   s.description      = "Reusable ViewController with TableView, split in Sections (called here modules) that help you to develop faster in Swift"
@@ -28,9 +28,9 @@ Pod::Spec.new do |s|
     ss.source_files = 'Sources/ModulesKit/**/*'
   end
   
-  s.subspec 'Tests' do |ss|
+  s.subspec 'Snapshot' do |ss|
     ss.dependency 'TableModulesKit/Core'
-    ss.dependency 'CombinationGenerator', '~> 0.1'
+    ss.dependency 'CombinationGenerator', '~> 0.2.3'
     ss.source_files = 'Sources/ModulesKitSnapshot/**/*'
   end
 

@@ -1,9 +1,9 @@
 # ModulesKit
 
 [![Build Status](https://travis-ci.org/cosmicfools/ModulesKit.svg?branch=master)](https://travis-ci.org/cosmicfools/ModulesKit)
-[![Version](https://img.shields.io/cocoapods/v/TableModulesKit.svg?style=flat)](http://cocoapods.org/pods/TableModulesKit)
-[![License](https://img.shields.io/cocoapods/l/TableModulesKit.svg?style=flat)](http://cocoapods.org/pods/TableModulesKit)
-[![Platform](https://img.shields.io/cocoapods/p/TableModulesKit.svg?style=flat)](http://cocoapods.org/pods/TableModulesKit)
+[![Version](https://img.shields.io/cocoapods/v/TableModulesKit.svg?style=flat)](http://cocoapods.org/pods/ModulesKit)
+[![License](https://img.shields.io/cocoapods/l/TableModulesKit.svg?style=flat)](http://cocoapods.org/pods/ModulesKit)
+[![Platform](https://img.shields.io/cocoapods/p/TableModulesKit.svg?style=flat)](http://cocoapods.org/pods/ModulesKit)
 [![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/cosmicfools/moduleskit)](http://clayallsopp.github.io/readme-score?url=https://github.com/cosmicfools/moduleskit)
 
 ## Requirements
