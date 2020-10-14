@@ -4,33 +4,33 @@
 import PackageDescription
 
 let package = Package(
-    name: "ModulesKit",
+    name: "ModuleServices",
     platforms: [
         .iOS(.v9)
     ],
     products: [
         .library(
-            name: "ModulesKit",
-            targets: ["ModulesKit"]),
+            name: "ModuleServices",
+            targets: ["ModuleServices"]),
         .library(
-            name: "ModulesKitSnapshot",
-            targets: ["ModulesKitSnapshot"]),
+            name: "ModuleSnapshotServices",
+            targets: ["ModuleSnapshotServices"]),
     ],
     dependencies: [
         .package(name: "CombinationGenerator", url: "https://github.com/cosmicfools/CombinationGenerator", from: "0.2.3"),
     ],
     targets: [
         .target(
-            name: "ModulesKit",
+            name: "ModuleServices",
             dependencies: []),
         .target(
-            name: "ModulesKitSnapshot",
+            name: "ModuleSnapshotServices",
             dependencies: ["CombinationGenerator"]),
         .testTarget(
-            name: "ModulesKitTests",
-            dependencies: ["ModulesKit"]),
+            name: "ModuleServicesTests",
+            dependencies: ["ModuleServices"]),
         .testTarget(
-            name: "ModulesKitSnapshotTests",
-            dependencies: ["ModulesKit", "ModulesKitSnapshot"]),
+            name: "ModuleSnapshotServicesTests",
+            dependencies: ["ModuleServices", "ModuleSnapshotServices"]),
     ]
 )

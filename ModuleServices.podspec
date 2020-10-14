@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint ModulesKit.podspec' to ensure this is a
+# Be sure to run `pod lib lint ModuleServices.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,16 +7,16 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "TableModulesKit"
+  s.name             = "ModuleServices"
   s.version          = "0.9.1"
   s.summary          = "Reusable ViewController with TableView, splitted in Sections"
 
   s.description      = "Reusable ViewController with TableView, split in Sections (called here modules) that help you to develop faster in Swift"
 
-  s.homepage         = "https://github.com/cosmicfools/ModulesKit"
+  s.homepage         = "https://github.com/cosmicfools/ModuleServices"
   s.license          = 'MIT'
   s.author           = { "Francisco Javier Trujillo Mata" => "fjtrujy@gmail.com" }
-  s.source           = { :git => "https://github.com/cosmicfools/ModulesKit.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/cosmicfools/ModuleServices.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/fjtrujy'
 
   s.ios.deployment_target = '9.0'
@@ -25,13 +25,13 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
   
   s.subspec 'Core' do |ss|
-    ss.source_files = 'Sources/ModulesKit/**/*'
+    ss.source_files = 'Sources/ModuleServices/**/*'
   end
   
   s.subspec 'Snapshot' do |ss|
-    ss.dependency 'TableModulesKit/Core'
+    ss.dependency 'ModuleServices/Core'
     ss.dependency 'CombinationGenerator', '~> 0.2.3'
-    ss.source_files = 'Sources/ModulesKitSnapshot/**/*'
+    ss.source_files = 'Sources/ModuleSnapshotServices/**/*'
   end
 
 end

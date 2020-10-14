@@ -1,9 +1,9 @@
 import XCTest
 
-import ModulesKitTests
-import ModulesKitSnapshotTests
+import ModuleServicesTests
+import ModuleSnapshotServicesTests
 
 var tests = [XCTestCaseEntry]()
-tests += ModulesKitTests.allTests()
-tests += ModulesKitSnapshotTests.allTests()
+tests += ModuleServicesTests.allTests()
+tests += ModuleSnapshotServicesTests.allTests()
 XCTMain(tests)

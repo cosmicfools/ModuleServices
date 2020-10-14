@@ -1,10 +1,10 @@
-# ModulesKit
+# ModuleServices
 
-[![Build Status](https://travis-ci.org/cosmicfools/ModulesKit.svg?branch=master)](https://travis-ci.org/cosmicfools/ModulesKit)
-[![Version](https://img.shields.io/cocoapods/v/TableModulesKit.svg?style=flat)](http://cocoapods.org/pods/ModulesKit)
-[![License](https://img.shields.io/cocoapods/l/TableModulesKit.svg?style=flat)](http://cocoapods.org/pods/ModulesKit)
-[![Platform](https://img.shields.io/cocoapods/p/TableModulesKit.svg?style=flat)](http://cocoapods.org/pods/ModulesKit)
-[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/cosmicfools/moduleskit)](http://clayallsopp.github.io/readme-score?url=https://github.com/cosmicfools/moduleskit)
+[![Build Status](https://travis-ci.org/cosmicfools/ModuleServices.svg?branch=master)](https://travis-ci.org/cosmicfools/ModuleServices)
+[![Version](https://img.shields.io/cocoapods/v/ModuleServices.svg?style=flat)](http://cocoapods.org/pods/ModuleServices)
+[![License](https://img.shields.io/cocoapods/l/ModuleServices.svg?style=flat)](http://cocoapods.org/pods/ModuleServices)
+[![Platform](https://img.shields.io/cocoapods/p/ModuleServices.svg?style=flat)](http://cocoapods.org/pods/ModuleServices)
+[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/cosmicfools/moduleservices)](http://clayallsopp.github.io/readme-score?url=https://github.com/cosmicfools/moduleservices)
 
 ## Requirements
 
@@ -23,7 +23,7 @@ import PackageDescription
 let package = Package(
     [...]
     dependencies: [
-        .Package(name: "ModulesKit", url: "https://github.com/cosmicfools/ModulesKit.git", .branch("master"))
+        .Package(name: "ModulesKit", url: "https://github.com/cosmicfools/ModuleServices.git", .branch("master"))
     ]
 )
 ```
@@ -33,12 +33,12 @@ let package = Package(
 You can install CombinationGenerator via [Cocoapods](https://cocoapods.org/) by adding the following line to your `Podfile`:
 
 ```ruby
-pod 'TableModulesKit'
+pod 'ModuleServices'
 ```
 
 ## How to use it
 
-ModulesKit basically is a pack of tools that is helping you to develop faster. This libabry is so useful for those UIViewControllers that are based in UITableView.
+ModuleServices basically is a pack of tools that is helping you to develop faster. This libabry is so useful for those UIViewControllers that are based in UITableView.
 The main concept in this libary is, a Module means a Section in a UITableView, so there is a subclass of UIViewController called ModulesViewController that manage all modules.
 
 A Module is a like and mini UIViewController, should be able to work it self.
@@ -49,7 +49,7 @@ Sometimes an example is easier to understand than 1000 words.. so, we have an ad
 [Module-examples](https://github.com/fjtrujy/module-examples)
 
 
-![Let me give it a try](https://raw.githubusercontent.com/cosmicfools/ModulesKit/master/giveATry.jpg)
+![Let me give it a try](https://raw.githubusercontent.com/cosmicfools/ModuleServices/master/giveATry.jpg)
 
 #### 1. Create a Module
 You need to create a subclass of `TableSectionModule`
@@ -87,7 +87,7 @@ You can override basically the same method that the `UITableViewDelegate` and `U
 <br>
 
 ```swift
-import ModulesKit
+import ModuleServices
 
 class FirstSectionModule: TableSectionModule {
     override func registerNibsForCells() -> [AnyClass] {
@@ -157,7 +157,7 @@ override func createModules() {
 <br>
 
 ```swift
-import ModulesKit
+import ModuleServices
 
 class MyViewController: ModulesViewController {
     override func viewDidLoad() {
@@ -194,4 +194,4 @@ Francisco Javier Trujillo Mata, fjtrujy@gmail.com
 
 ## License
 
-ModulesKit is available under the MIT license. See the LICENSE file for more info.
+ModuleServices is available under the MIT license. See the LICENSE file for more info.

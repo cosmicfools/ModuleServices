@@ -1,6 +1,6 @@
 //
 //  SnapshotTestingViewAdditions.swift
-//  ModulesKit
+//  ModuleServices
 //
 //  Created by Francisco Javier Trujillo Mata on 13/06/2019.
 //

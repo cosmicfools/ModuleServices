@@ -1,6 +1,6 @@
 //
 //  TableSectionModuleTest.swift
-//  ModulesKit
+//  ModuleServices
 //
 //  Created by Francisco Trujillo on 16/05/2016.
 //  Copyright © 2016 FJTRUJY. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 import XCTest
-import ModulesKit
+import ModuleServices
 
 class TableSectionModuleTest: XCTestCase {
 }
