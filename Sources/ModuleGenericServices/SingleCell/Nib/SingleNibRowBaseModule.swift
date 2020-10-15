@@ -8,8 +8,8 @@
 import UIKit
 import ModuleServices
 
-class SingleNibRowBaseModule<Cell: ConfigurableCell, Decorator: NSObject>: SingleRowBaseModule<Cell, Decorator> {
-    override func registerNibsForCells() -> [AnyClass] {
+open class SingleNibRowBaseModule<Cell: ConfigurableCell, Decorator: NSObject>: SingleRowBaseModule<Cell, Decorator> {
+    open override func registerNibsForCells() -> [AnyClass] {
         super.registerNibsForCells() + [
             Cell.classForCoder()
         ]

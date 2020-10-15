@@ -8,8 +8,8 @@
 import UIKit
 import ModuleServices
 
-public class SingleClassRowBaseModule<Cell: ConfigurableCell, Decorator: NSObject>: SingleRowBaseModule<Cell, Decorator> {
-    public override func registerClassForCells() -> [AnyClass] {
+open class SingleClassRowBaseModule<Cell: ConfigurableCell, Decorator: NSObject>: SingleRowBaseModule<Cell, Decorator> {
+    open override func registerClassForCells() -> [AnyClass] {
         super.registerClassForCells() + [
             Cell.classForCoder()
         ]

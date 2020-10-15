@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol RowsDecoratorProtocol {
+public protocol RowsDecoratorProtocol {
     associatedtype RowElement
     
     var rows: [RowElement] { get set }

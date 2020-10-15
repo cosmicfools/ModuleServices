@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol RowSelectableProtocol: NSObject {
+public protocol RowSelectableProtocol: NSObject {
     var element: Any { get }
 }
 

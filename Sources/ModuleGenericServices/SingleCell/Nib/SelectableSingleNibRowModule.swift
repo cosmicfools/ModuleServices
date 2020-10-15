@@ -8,11 +8,11 @@
 import UIKit
 import ModuleServices
 
-class SelectableSingleNibRowModule <Cell: ConfigurableCell, Decorator: RowSelectableProtocol>:
-        ConfigurableSingleNibRowModule<Cell, Decorator> {
-    weak var delegate: SelectableSingleNibRowModuleDelegate?
+open class SelectableSingleNibRowModule <Cell: ConfigurableCell, Decorator: RowSelectableProtocol>:
+    ConfigurableSingleNibRowModule<Cell, Decorator> {
+    open weak var delegate: SelectableSingleNibRowModuleDelegate?
     
-    override func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+    open override func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         guard let element = decorator?.element else { return }
         delegate?.selectableSingleNibRowModule(self, didSelectElement: element)
@@ -20,7 +20,7 @@ class SelectableSingleNibRowModule <Cell: ConfigurableCell, Decorator: RowSelect
 }
 
 // MARK: - SelectableSingleNibRowModuleDelegate
-protocol SelectableSingleNibRowModuleDelegate: class {
+public protocol SelectableSingleNibRowModuleDelegate: class {
     func selectableSingleNibRowModule<Cell: ConfigurableCell, Decorator: RowSelectableProtocol>
             (_ module: SelectableSingleNibRowModule<Cell, Decorator>, didSelectElement element: Any)
 }

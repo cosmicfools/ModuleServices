@@ -8,8 +8,8 @@
 import UIKit
 import ModuleServices
 
-class SingleNibRowModule<Cell: ConfigurableCell, Decorator: NSObject>: SingleNibRowBaseModule<Cell, Decorator> {
-    override func createRows() {
+open class SingleNibRowModule<Cell: ConfigurableCell, Decorator: NSObject>: SingleNibRowBaseModule<Cell, Decorator> {
+    open override func createRows() {
         super.createRows()
         
         rows += [Decorator()]

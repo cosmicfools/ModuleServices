@@ -31,6 +31,6 @@ let package = Package(
             dependencies: ["ModuleServices", "ModuleSnapshotServices"]),
         .testTarget(
             name: "ModuleGenericServicesTests",
-            dependencies: ["ModuleServices", "ModuleGenericServices"]),
+            dependencies: ["ModuleServices", "ModuleGenericServices", "ModuleSnapshotServices"]),
     ]
 )

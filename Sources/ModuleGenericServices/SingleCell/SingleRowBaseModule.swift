@@ -8,9 +8,9 @@
 import UIKit
 import ModuleServices
 
-public class SingleRowBaseModule<Cell: ConfigurableCell, Decorator: NSObject>: TableSectionModule {
-    
-    public override func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
+open class SingleRowBaseModule<Cell: ConfigurableCell, Decorator: NSObject>: TableSectionModule {
+    open override func tableView(_ tableView: UITableView,
+                                   cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: Cell.self), for: indexPath)
         
         guard let decorator = rows[indexPath.row] as? Cell.Decorator, let myCell = cell as? Cell else { return cell }
@@ -20,9 +20,9 @@ public class SingleRowBaseModule<Cell: ConfigurableCell, Decorator: NSObject>: T
         return myCell
     }
     
-    public override func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
+    open override func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
         UITableView.automaticDimension
     }
     
-    func configureDelegateCell(_ cell: Cell) {}
+    open func configureDelegateCell(_ cell: Cell) {}
 }
