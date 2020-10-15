@@ -28,6 +28,11 @@ Pod::Spec.new do |s|
     ss.source_files = 'Sources/ModuleServices/**/*'
   end
   
+  s.subspec 'Generic' do |ss|
+    ss.dependency 'ModuleServices/Core'
+    ss.source_files = 'Sources/ModuleGenericServices/**/*'
+  end
+
   s.subspec 'Snapshot' do |ss|
     ss.dependency 'ModuleServices/Core'
     ss.dependency 'CombinationGenerator', '~> 0.2.3'
