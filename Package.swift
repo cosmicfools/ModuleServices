@@ -9,12 +9,9 @@ let package = Package(
         .iOS(.v9)
     ],
     products: [
-        .library(
-            name: "ModuleServices",
-            targets: ["ModuleServices"]),
-        .library(
-            name: "ModuleSnapshotServices",
-            targets: ["ModuleSnapshotServices"]),
+        .library(name: "ModuleServices", targets: ["ModuleServices"]),
+        .library( name: "ModuleSnapshotServices", targets: ["ModuleSnapshotServices"]),
+        .library(name: "ModuleGenericServices", targets: ["ModuleGenericServices"]),
     ],
     dependencies: [
         .package(name: "CombinationGenerator", url: "https://github.com/cosmicfools/CombinationGenerator", from: "0.2.3"),
@@ -25,12 +22,15 @@ let package = Package(
             dependencies: []),
         .target(
             name: "ModuleSnapshotServices",
-            dependencies: ["CombinationGenerator"]),
-        .testTarget(
-            name: "ModuleServicesTests",
+            dependencies: ["CombinationGenerator", "ModuleServices"]),
+        .target(
+            name: "ModuleGenericServices",
             dependencies: ["ModuleServices"]),
         .testTarget(
             name: "ModuleSnapshotServicesTests",
             dependencies: ["ModuleServices", "ModuleSnapshotServices"]),
+        .testTarget(
+            name: "ModuleGenericServicesTests",
+            dependencies: ["ModuleServices", "ModuleGenericServices"]),
     ]
 )
