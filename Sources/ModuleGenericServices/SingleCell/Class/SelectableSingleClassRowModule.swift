@@ -15,7 +15,7 @@ open class SelectableSingleClassRowModule<Cell: ConfigurableCell, Decorator: Row
     open override func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         guard let element = decorator?.element else { return }
-        delegate?.selectableSingleNibRowModule(self, didSelectElement: element)
+        delegate?.selectableSingleClassRowModule(self, didSelectElement: element)
     }
 }
 
