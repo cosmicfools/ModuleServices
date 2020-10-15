@@ -251,6 +251,12 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
         modules[indexPath.section].tableView(tableView, canMoveRowAtIndexPath: indexPath)
     }
     
+    public func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath,
+                          to destinationIndexPath: IndexPath) {
+        return modules[sourceIndexPath.section].tableView(tableView, moveRowAt: sourceIndexPath,
+                                                          to: destinationIndexPath)
+   }
+    
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle,
                           forRowAt indexPath: IndexPath) {
         modules[indexPath.section].tableView(tableView, commitEditingStyle: editingStyle, forRowAtIndexPath: indexPath)
@@ -260,10 +266,5 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
                           toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
         return modules[sourceIndexPath.section].tableView(tableView, targetIndexPathForMoveFromRowAt: sourceIndexPath,
                                                           toProposedIndexPath: proposedDestinationIndexPath)
-    }
-    
-    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle,
-                          forRowAt indexPath: IndexPath) {
-        modules[indexPath.section].tableView(tableView, commitEditingStyle: editingStyle, forRowAtIndexPath: indexPath)
     }
 }
