@@ -348,4 +348,14 @@ extension TableSectionModule {
     open func tableView(_ tableView: UITableView, moveRowAtIndexPath sourceIndexPath: IndexPath,
                         toIndexPath destinationIndexPath: IndexPath) {}
     
+    @objc
+    open func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath,
+                        to destinationIndexPath: IndexPath) {}
+    
+    @objc
+    open func tableView(_ tableView: UITableView,
+                        targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath,
+                        toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+        return proposedDestinationIndexPath
+    }
 }
