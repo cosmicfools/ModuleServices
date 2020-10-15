@@ -8,7 +8,7 @@
 import UIKit
 import ModuleServices
 
-open class SelectableSingleNibRowModule <Cell: ConfigurableCell, Decorator: RowSelectableProtocol>:
+open class SelectableSingleNibRowModule<Cell: ConfigurableCell, Decorator: RowSelectableProtocol>:
     ConfigurableSingleNibRowModule<Cell, Decorator> {
     open weak var delegate: SelectableSingleNibRowModuleDelegate?
     
