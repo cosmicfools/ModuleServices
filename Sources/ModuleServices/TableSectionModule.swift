@@ -9,8 +9,6 @@
 import UIKit
 
 private struct TableSectionModuleConstants{
-    static let estimatedRowHeight : CGFloat = 44
-    static let estimatedHeaderFooterHeight : CGFloat = 30
     static let separatorHeight : CGFloat = 1
 }
 
@@ -232,17 +230,17 @@ extension TableSectionModule {
     
     @objc
     open func tableView(_ tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
-        TableSectionModuleConstants.estimatedRowHeight
+        .leastNormalMagnitude
     }
     
     @objc
     open func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-        TableSectionModuleConstants.estimatedHeaderFooterHeight
+        .leastNormalMagnitude
     }
     
     @objc
     open func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
-        TableSectionModuleConstants.estimatedHeaderFooterHeight
+        .leastNormalMagnitude
     }
     
     @objc
