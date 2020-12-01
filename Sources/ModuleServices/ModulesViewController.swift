@@ -99,14 +99,17 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
 
     public func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell,
                           forRowAt indexPath: IndexPath) {
+        guard modules.count > indexPath.section else { return }
         modules[indexPath.section].tableView(tableView, didEndDisplayingCell: cell, forRowAtIndexPath: indexPath)
     }
     
     public func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {
+        guard modules.count > section else { return }
         modules[section].tableView(tableView, didEndDisplayingHeaderView: view, forSection: section)
     }
     
     public func tableView(_ tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int) {
+        guard modules.count > section else { return }
         modules[section].tableView(tableView, didEndDisplayingFooterView: view, forSection: section)
     }
     
