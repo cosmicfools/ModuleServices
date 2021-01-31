@@ -25,7 +25,7 @@ open class ConfigurableSingleClassRowModule<Cell: ConfigurableCell, Decorator: N
         createRows()
     }
     
-    open  func refreshCell() {
+    open func refreshCell() {
         guard let cell = tableView.cellForRow(at: IndexPath(row: .zero, section: section)) as? Cell,
             let decorator = decorator as? Cell.Decorator else { return }
         cell.configure(decorator: decorator)
