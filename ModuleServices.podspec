@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ModuleServices"
-  s.version          = "1.0.2"
+  s.version          = "1.0.3"
   s.summary          = "Reusable ViewController with TableView, splitted in Sections"
 
   s.description      = "Reusable ViewController with TableView, split in Sections (called here modules) that help you to develop faster in Swift"
