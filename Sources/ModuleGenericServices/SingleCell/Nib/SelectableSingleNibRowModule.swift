@@ -20,7 +20,7 @@ open class SelectableSingleNibRowModule<Cell: ConfigurableCell, Decorator: RowSe
 }
 
 // MARK: - SelectableSingleNibRowModuleDelegate
-public protocol SelectableSingleNibRowModuleDelegate: class {
+public protocol SelectableSingleNibRowModuleDelegate: AnyObject {
     func selectableSingleNibRowModule<Cell: ConfigurableCell, Decorator: RowSelectableProtocol>
             (_ module: SelectableSingleNibRowModule<Cell, Decorator>, didSelectElement element: Any)
 }

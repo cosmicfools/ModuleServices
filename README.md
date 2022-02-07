@@ -97,7 +97,7 @@ class FirstSectionModule: TableSectionModule {
     }
     
     override func registerClassForCells() -> [AnyClass] {
-        return super.registerClassForCells() + [UITableViewCell.classForCoder()]
+        super.registerClassForCells() + [UITableViewCell.classForCoder()]
     }
     
     override func createRows() {
