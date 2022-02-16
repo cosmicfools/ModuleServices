@@ -15,8 +15,8 @@ jobs:
     # Github Actions' machines do in fact have recent versions of Xcode,
     # but you may have to explicitly switch to them.  We explicitly want
     # to use Xcode 12, so we use xcode-select to switch to it.
-    - name: Switch to Xcode 12
-      run: sudo xcode-select --switch /Applications/Xcode_12.app
+    - name: Switch to Xcode 12.4
+      run: sudo xcode-select --switch /Applications/Xcode_12.4.app
 
     - name: Generate project file to execute test and build properly
       run: |
