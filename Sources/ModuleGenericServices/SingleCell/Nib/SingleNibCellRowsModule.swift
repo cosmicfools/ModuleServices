@@ -9,10 +9,10 @@ import UIKit
 import ModuleServices
 
 open class SingleNibCellRowsModule<Cell: ConfigurableCell, RowsDecorator: RowsDecoratorProtocol>: TableSectionModule {
-    open override func registerNibsForCells() -> [AnyClass] {
-        super.registerNibsForCells() + [
-            Cell.classForCoder()
-        ]
+    var cellBundle: Bundle? { nil }
+    
+    open override func registerNibsForCellsWithBundle() -> CellsClassesWithBundle {
+        CellsClassesWithBundle(classes: [Cell.classForCoder()], bundle: cellBundle)
     }
     
     open override func createRows() {

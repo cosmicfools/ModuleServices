@@ -93,6 +93,16 @@ extension TableSectionModule {
         return []
     }
     
+    @objc
+    open func registerNibsForCellsWithBundle() -> CellsClassesWithBundle {
+        return CellsClassesWithBundle(classes: [], bundle: nil)
+    }
+    
+    @objc
+    open func registerNibsForHeadersFootersWithBundle() -> CellsClassesWithBundle {
+        return CellsClassesWithBundle(classes: [], bundle: nil)
+    }
+    
     fileprivate func autoRegisterClassForCells() {
         registerClassForCells().forEach { currentClass in
             let identifier = String(describing: currentClass)
@@ -108,20 +118,22 @@ extension TableSectionModule {
     }
     
     fileprivate func autoRegisterNibsForCells() {
-        registerNibsForCells().forEach { currentClass in
-            let identifier = String(describing: currentClass)
-            let nib = UINib(nibName: identifier, bundle: nil)
-            tableView.register(nib, forCellReuseIdentifier: identifier)
-        }
-    }
-    
-    fileprivate func autoRegisterNibsForHeadersFooters() {
-        registerNibsForHeadersFooters().forEach { currentClass in
-            let identifier = String(describing: currentClass)
-            let nib = UINib(nibName: identifier, bundle: nil)
-            tableView.register(nib, forHeaderFooterViewReuseIdentifier: identifier)
-        }
-    }
+          let classesAndBundle = registerNibsForCellsWithBundle()
+          (classesAndBundle.classes + registerNibsForCells()).forEach { currentClass in
+              let identifier = String(describing: currentClass)
+              let nib = UINib(nibName: identifier, bundle: classesAndBundle.bundle)
+              tableView.register(nib, forCellReuseIdentifier: identifier)
+          }
+      }
+      
+      fileprivate func autoRegisterNibsForHeadersFooters() {
+          let classesAndBundle = registerNibsForHeadersFootersWithBundle()
+          (classesAndBundle.classes + registerNibsForHeadersFooters()).forEach { currentClass in
+              let identifier = String(describing: currentClass)
+              let nib = UINib(nibName: identifier, bundle: classesAndBundle.bundle)
+              tableView.register(nib, forHeaderFooterViewReuseIdentifier: identifier)
+          }
+      }
 }
 
 // MARK: - Methods for sepatartor of the Cells
@@ -355,5 +367,15 @@ extension TableSectionModule {
                         targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath,
                         toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
         return proposedDestinationIndexPath
+    }
+}
+
+open class CellsClassesWithBundle: NSObject {
+    let classes: [AnyClass]
+    let bundle: Bundle?
+
+    public init(classes: [AnyClass], bundle: Bundle?){
+        self.classes = classes
+        self.bundle = bundle
     }
 }
