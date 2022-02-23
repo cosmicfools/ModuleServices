@@ -57,7 +57,7 @@ class ModulesViewControllerTest: XCTestCase {
         
         modulesVC.removeModuleAtIndex(0)
         
-        XCTAssert(modulesVC.sectionForModule(firstModule) == NSNotFound, "The firstModule shouldbn't in the modules array")
+        XCTAssertNil(modulesVC.sectionForModule(firstModule), "The firstModule shouldbn't in the modules array")
         XCTAssert(modulesVC.numberOfSections(in: newTableView) == 1, "The number of section shoulb be 1")
     }
     
@@ -69,7 +69,7 @@ class ModulesViewControllerTest: XCTestCase {
         
         modulesVC.removeFirstModule()
         
-        XCTAssert(modulesVC.sectionForModule(firstModule) == NSNotFound, "The firstModule shouldbn't in the modules array")
+        XCTAssertNil(modulesVC.sectionForModule(firstModule), "The firstModule shouldbn't in the modules array")
         XCTAssert(modulesVC.numberOfSections(in: newTableView) == 1, "The number of section shoulb be 1")
     }
     
@@ -81,7 +81,7 @@ class ModulesViewControllerTest: XCTestCase {
         
         modulesVC.removeLastModule()
         
-        XCTAssert(modulesVC.sectionForModule(lastModule) == NSNotFound, "The firstModule shouldbn't in the modules array")
+        XCTAssertNil(modulesVC.sectionForModule(lastModule), "The firstModule shouldbn't in the modules array")
         XCTAssert(modulesVC.numberOfSections(in: newTableView) == 1, "The number of section shoulb be 1")
     }
     
@@ -103,10 +103,10 @@ class ModulesViewControllerTest: XCTestCase {
         modulesVC.appendModule(secondModule)
         modulesVC.appendModule(lastModule)
         
-        let index = modulesVC.sectionForModule(secondModule)
+        guard let index = modulesVC.sectionForModule(secondModule) else { return XCTFail("There should be module") }
         
         modulesVC.replaceModuleAtSection(index, withModule: newSecondModule)
-        XCTAssert(modulesVC.sectionForModule(secondModule) == NSNotFound, "The second shouldbn't in the modules array")
+        XCTAssertNil(modulesVC.sectionForModule(secondModule), "The second shouldbn't in the modules array")
         XCTAssert(modulesVC.sectionForModule(newSecondModule) == index, "The newSecondModule should be in the second position")
         XCTAssert(modulesVC.numberOfSections(in: newTableView) == 3, "The number of section shoulb be 3")
     }

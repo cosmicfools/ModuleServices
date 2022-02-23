@@ -10,7 +10,7 @@ import UIKit
 
 open class ModulesViewController: UIViewController {
     @IBOutlet weak open var tableView:UITableView?
-    fileprivate(set) internal var modules:[TableSectionModule] = []
+    private(set) internal var modules:[TableSectionModule] = []
     
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,18 +41,18 @@ extension ModulesViewController: TableSectionModuleSectionSource {
     }
     
     public func removeAllModules() { modules.removeAll() }
-    public func removeModule(_ module: TableSectionModule) { modules.removeAll{$0.isEqual(module)} }
+    public func removeModule(_ module: TableSectionModule) { modules.removeAll { $0 == module } }
     public func removeModuleAtIndex(_ atIndex: Int) { modules.remove(at: atIndex) }
     public func removeFirstModule() { modules.removeFirst() }
     public func removeLastModule() { modules.removeLast() }
     
-    public func replaceModuleAtSection(_ section: NSInteger, withModule module: TableSectionModule) {
+    public func replaceModuleAtSection(_ section: Int, withModule module: TableSectionModule) {
         module.sectionSource = self
         modules[section] = module
     }
     
-    public func sectionForModule(_ module: TableSectionModule) -> NSInteger {
-        modules.firstIndex(of: module) ?? NSNotFound
+    public func sectionForModule(_ module: TableSectionModule) -> Int? {
+        modules.firstIndex(of: module)
     }
     
     public func firstModule<T: TableSectionModule>() -> T? { modules.first { $0 is T } as? T }
@@ -177,18 +177,15 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
         modules[indexPath.section].tableView(tableView, didDeselectRowAtIndexPath: indexPath)
     }
     
-    public func tableView(_ tableView: UITableView,
-                          editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         modules[indexPath.section].tableView(tableView, editingStyleForRowAtIndexPath: indexPath)
     }
     
-    public func tableView(_ tableView: UITableView,
-                          titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+    public func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
         modules[indexPath.section].tableView(tableView, titleForDeleteConfirmationButtonForRowAtIndexPath: indexPath)
     }
     
-    public func tableView(_ tableView: UITableView,
-                          editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+    public func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         modules[indexPath.section].tableView(tableView, editActionsForRowAtIndexPath: indexPath)
     }
     
@@ -201,9 +198,8 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
-        if let validIndexPath = indexPath, validIndexPath.section < modules.count {
-            modules[validIndexPath.section].tableView(tableView, didEndEditingRowAtIndexPath: validIndexPath)
-        }
+        guard let validIndexPath = indexPath, validIndexPath.section < modules.count else { return }
+        modules[validIndexPath.section].tableView(tableView, didEndEditingRowAtIndexPath: validIndexPath)
     }
     
     public func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int {
@@ -254,20 +250,17 @@ extension ModulesViewController: UITableViewDelegate, UITableViewDataSource {
         modules[indexPath.section].tableView(tableView, canMoveRowAtIndexPath: indexPath)
     }
     
-    public func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath,
-                          to destinationIndexPath: IndexPath) {
-        return modules[sourceIndexPath.section].tableView(tableView, moveRowAt: sourceIndexPath,
-                                                          to: destinationIndexPath)
+    public func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        modules[sourceIndexPath.section].tableView(tableView, moveRowAt: sourceIndexPath, to: destinationIndexPath)
    }
     
-    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle,
-                          forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         modules[indexPath.section].tableView(tableView, commitEditingStyle: editingStyle, forRowAtIndexPath: indexPath)
     }
     
     public func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath,
                           toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
-        return modules[sourceIndexPath.section].tableView(tableView, targetIndexPathForMoveFromRowAt: sourceIndexPath,
-                                                          toProposedIndexPath: proposedDestinationIndexPath)
+        modules[sourceIndexPath.section].tableView(tableView, targetIndexPathForMoveFromRowAt: sourceIndexPath,
+                                                   toProposedIndexPath: proposedDestinationIndexPath)
     }
 }

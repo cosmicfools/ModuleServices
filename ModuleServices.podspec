@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ModuleServices"
-  s.version          = "1.0.3"
+  s.version          = "1.1.0"
   s.summary          = "Reusable ViewController with TableView, splitted in Sections"
 
   s.description      = "Reusable ViewController with TableView, split in Sections (called here modules) that help you to develop faster in Swift"
@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/fjtrujy'
 
   s.ios.deployment_target = '9.0'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
-  s.swift_version = '5.0'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.5' }
+  s.swift_version = '5.5'
   s.default_subspec = 'Core'
   
   s.subspec 'Core' do |ss|
@@ -35,8 +35,9 @@ Pod::Spec.new do |s|
 
   s.subspec 'Snapshot' do |ss|
     ss.dependency 'ModuleServices/Core'
-    ss.dependency 'CombinationGenerator', '~> 0.2.3'
+    ss.dependency 'CombinationGenerator', '~> 0.2.4'
     ss.source_files = 'Sources/ModuleSnapshotServices/**/*'
+    ss.frameworks = 'XCTest'
   end
 
 end

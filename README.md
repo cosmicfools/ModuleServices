@@ -8,8 +8,8 @@
 
 ## Requirements
 
-Is valid for iOS 9 and higher.
-Requires Swift 5.2 and XCode 11.0 or higher.
+Is valid for iOS 12 and higher.
+Requires Swift 5.5 and XCode 11.0 or higher.
 
 ## Installation
 
@@ -97,7 +97,7 @@ class FirstSectionModule: TableSectionModule {
     }
     
     override func registerClassForCells() -> [AnyClass] {
-        return super.registerClassForCells() + [UITableViewCell.classForCoder()]
+        super.registerClassForCells() + [UITableViewCell.classForCoder()]
     }
     
     override func createRows() {
