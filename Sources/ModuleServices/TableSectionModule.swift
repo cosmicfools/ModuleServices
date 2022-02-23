@@ -156,14 +156,14 @@ open class TableSectionModule: NSObject {
     }
     
     // MARK: - Methods for sepatartor of the Cells
-    func setupSeparatorInsetForCell(_ cell : UITableViewCell, forIndexPath indexPath : IndexPath) {
+    open func setupSeparatorInsetForCell(_ cell : UITableViewCell, forIndexPath indexPath : IndexPath) {
         // Remove seperator inset
         cell.separatorInset = .zero
         cell.preservesSuperviewLayoutMargins = false
         cell.layoutMargins = .zero
     }
     
-    func removeSeparatorInsetForCell(_ cell : UITableViewCell, forIndexPath indexPath : IndexPath) {
+    open func removeSeparatorInsetForCell(_ cell : UITableViewCell, forIndexPath indexPath : IndexPath) {
         // Remove seperator inset
         cell.separatorInset = UIEdgeInsets.init(top: .zero, left: cell.bounds.size.width, bottom: .zero, right: .zero)
         cell.preservesSuperviewLayoutMargins = true
@@ -171,7 +171,7 @@ open class TableSectionModule: NSObject {
     }
     
     // MARK: - Mothod for Refresh the section
-    func refreshSection() {
+    open func refreshSection() {
         createRows()
         tableView.reloadSections(IndexSet(integer: section), with: .automatic)
     }
